@@ -1,0 +1,238 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/PlayListPanner.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<div class=\"  bg-white rounded-xl border border-gray-200 grid gap-2  p-4  md:p-5\">\r\n\t\t<div class=\"flex  items-center md:gap-5 gap-2\">\r\n\t\t\t<img class=\"md:size-[145px] size-[64px]  rounded-xl\" src=\"/all-sheio5.png\" />\r\n\t\t\t<div class=\" grid md:gap-1.5 gap-0.5\r\n\t\t\t\t\t\tw-full\">\r\n\t\t\t\t<div class=\"flex justify-between items-center w-full\">\r\n\t\t\t\t\t<div class=\"cent gap-2\">\r\n\r\n\t\t\t\t\t\t<div class=\" cent gap-1\">\r\n\t\t\t\t\t\t\t<img src=\"/svgs/play.svg\" alt=\"\" class=\" max-md:w-4 max-md:h-4\">\r\n\t\t\t\t\t\t\t<p class=\"text-amber-300 md:text-[13px] text-[11px] font-normal \">200 تشغيل\r\n\t\t\t\t\t\t\t</p>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"cent md:gap-4 gap-2\">\r\n\t\t\t\t\t\t<button>\r\n\t\t\t\t\t\t\t<img src=\"/svgs/copy.svg\" alt=\"\" class=\" w-4 h-4\">\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t\t<button>\r\n\t\t\t\t\t\t\t<img src=\"/svgs/share.svg\" alt=\"\" class=\" w-4 h-4\">\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\" text-primary md:text-sm text-xs font-normal  \">\r\n\t\t\t\t\tسورة قريش بصوت :</div>\r\n\t\t\t\t<div class=\" text-neutral-700 md:text-2xl lg:text-3xl text-[14.25px]  font-bold  \">\r\n\t\t\t\t\tقائمة تشغيل - أئمة الحرم المكي</div>\r\n\t\t\t\t<div class=\" max-md:hidden\"><span\r\n\t\t\t\t\t\tclass=\"text-stone-500 text-xs font-light line-clamp-1 \" ref=\"textClamped\">سورة\r\n\t\t\t\t\t\tقريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم\r\n\t\t\t\t\t\tالمكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر .\r\n\t\t\t\t\t\tقريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم\r\n\t\t\t\t\t\tالمكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر .\r\n\t\t\t\t\t</span>\r\n\t\t\t\t\t<button class=\"text-primary text-xs font-medium  underline \" @click=\" seeMore \">\r\n\t\t\t\t\t\t<span v-if=\" showMore \"> رؤية أقل</span>\r\n\t\t\t\t\t\t<span v-else>\r\n\t\t\t\t\t\t\tرؤيةالمزيد\r\n\t\t\t\t\t\t</span>\r\n\t\t\t\t\t</button>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div class=\"md:hidden\"><span class=\"text-stone-500 text-xs font-light  \">سورة\r\n\t\t\t\tقريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم\r\n\t\t\t\tالمكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر . </span><span\r\n\t\t\t\tclass=\"text-primary text-xs font-medium  underline \">رؤية\r\n\t\t\t\tالمزيد</span></div>\r\n\t</div>\r\n</template>\r\n\r\n<script setup>\r\nimport { ref } from 'vue'\r\nconst showMore = ref( false )\r\nconst textClamped = ref( null )\r\nfunction seeMore () {\r\n\tshowMore.value = !showMore.value\r\n\ttextClamped.value.classList.toggle( 'line-clamp-1' )\r\n}\r\n</script>\r\n",
+      "start": 1710887974121,
+      "end": 1710887974677,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887974678,
+      "end": 1710887974678,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, createStaticVNode as _createStaticVNode } from \"vue\"\nimport _imports_0 from '/all-sheio5.png'\nimport _imports_1 from '/svgs/play.svg'\nimport _imports_2 from '/svgs/copy.svg'\nimport _imports_3 from '/svgs/share.svg'\n\n\nconst _hoisted_1 = { class: \"bg-white rounded-xl border border-gray-200 grid gap-2 p-4 md:p-5\" }\nconst _hoisted_2 = { class: \"flex items-center md:gap-5 gap-2\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"img\", {\n  class: \"md:size-[145px] size-[64px] rounded-xl\",\n  src: _imports_0\n}, null, -1)\nconst _hoisted_4 = { class: \"grid md:gap-1.5 gap-0.5 w-full\" }\nconst _hoisted_5 = /*#__PURE__*/_createStaticVNode(\"<div class=\\\"flex justify-between items-center w-full\\\"><div class=\\\"cent gap-2\\\"><div class=\\\"cent gap-1\\\"><img src=\\\"\" + _imports_1 + \"\\\" alt=\\\"\\\" class=\\\"max-md:w-4 max-md:h-4\\\"><p class=\\\"text-amber-300 md:text-[13px] text-[11px] font-normal\\\">200 تشغيل </p></div></div><div class=\\\"cent md:gap-4 gap-2\\\"><button><img src=\\\"\" + _imports_2 + \"\\\" alt=\\\"\\\" class=\\\"w-4 h-4\\\"></button><button><img src=\\\"\" + _imports_3 + \"\\\" alt=\\\"\\\" class=\\\"w-4 h-4\\\"></button></div></div><div class=\\\"text-primary md:text-sm text-xs font-normal\\\"> سورة قريش بصوت :</div><div class=\\\"text-neutral-700 md:text-2xl lg:text-3xl text-[14.25px] font-bold\\\"> قائمة تشغيل - أئمة الحرم المكي</div>\", 3)\nconst _hoisted_8 = { class: \"max-md:hidden\" }\nconst _hoisted_9 = { key: 0 }\nconst _hoisted_10 = { key: 1 }\nconst _hoisted_11 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"md:hidden\" }, [\n  /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-stone-500 text-xs font-light\" }, \"سورة قريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم المكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر . \"),\n  /*#__PURE__*/_createElementVNode(\"span\", { class: \"text-primary text-xs font-medium underline\" }, \"رؤية المزيد\")\n], -1)\n\nimport { ref } from 'vue'\r\n\nconst _sfc_main = {\n  __name: 'PlayListPanner',\n  setup(__props) {\n\r\nconst showMore = ref( false )\r\nconst textClamped = ref( null )\r\nfunction seeMore () {\r\n\tshowMore.value = !showMore.value\r\n\ttextClamped.value.classList.toggle( 'line-clamp-1' )\r\n}\r\n\nreturn (_ctx, _cache) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _hoisted_5,\n        _createElementVNode(\"div\", _hoisted_8, [\n          _createElementVNode(\"span\", {\n            class: \"text-stone-500 text-xs font-light line-clamp-1\",\n            ref_key: \"textClamped\",\n            ref: textClamped\n          }, \"سورة قريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم المكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر . قريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم المكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر . \", 512),\n          _createElementVNode(\"button\", {\n            class: \"text-primary text-xs font-medium underline\",\n            onClick: _cache[0] || (_cache[0] = (...args) => ( seeMore  &&  seeMore (...args)))\n          }, [\n            ( showMore.value )\n              ? (_openBlock(), _createElementBlock(\"span\", _hoisted_9, \" رؤية أقل\"))\n              : (_openBlock(), _createElementBlock(\"span\", _hoisted_10, \" رؤيةالمزيد \"))\n          ])\n        ])\n      ])\n    ]),\n    _hoisted_11\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1710887974678,
+      "end": 1710887974682,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887974682,
+      "end": 1710887974682,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887974682,
+      "end": 1710887974683,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887974683,
+      "end": 1710887974684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887974684,
+      "end": 1710887974684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887974684,
+      "end": 1710887974684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887974684,
+      "end": 1710887974684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887974684,
+      "end": 1710887974684,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887974684,
+      "end": 1710887974684,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887974684,
+      "end": 1710887974684,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887974684,
+      "end": 1710887974684,
+      "order": "normal"
+    }
+  ]
+}

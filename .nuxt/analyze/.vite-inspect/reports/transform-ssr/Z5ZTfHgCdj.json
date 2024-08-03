@@ -1,0 +1,304 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/locales/en.json",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "{\n  \"header\": {\n    \"headerbtn\": \"Download Priority Now\"\n  },\n  \"banner\": {\n    \"subheading\": \"Get prayer times alert on your phone for free\",\n    \"heading\": \"Did you miss your prayer again? The Prayer Now app can help you .\",\n    \"bannerbtn\": \"Download Priority Now.\"\n  },\n  \"sidebar\": {\n    \"item\": \"Prayer times\",\n    \"item1\": \"The Holy Quran\",\n    \"item2\": \"Islamic History\",\n    \"item3\": \"Islamic History\",\n    \"item4\": \"Islamic History\",\n    \"download\": \"Download the app\"\n  },\n  \"add1\": {\n    \"heading\": \"Ad space\",\n    \"subheading\": \"Lorem Ipsum is simply a formal text (meaning form is the goal, not content) and is used by the printing and publishing industries.\"\n  },\n  \"searchbar\": {\n    \"searchtext1\": \"Find prayer times, reciters,...\",\n    \"searchtext2\": \"Search for Cairo Governorate...\"\n  },\n  \"allcountries\": {\n    \"heading\": \"All countries\",\n    \"country\": \"Arab countries\",\n    \"country1\": \"Europe\",\n    \"country2\": \"north america\",\n    \"country3\": \"south america\",\n    \"country4\": \"Asia\",\n    \"country5\": \"Africa\",\n    \"country6\": \"other\"\n  },\n  \"location\": {\n    \"locationtext\": \"To get the correct time, please indicate your location.\",\n    \"buttongreen\": \"detect location\",\n    \"buttonwhite\": \"I do not agree\"\n  },\n  \"add2\": {\n    \"heading\": \"Ad space\",\n    \"subheading\": \"Lorem Ipsum is simply a formal text (meaning form is the goal, not content) and is used by the printing and publishing industries.\",\n    \"startbtn\": \"start now\"\n  },\n  \"citiesbanner\": {\n    \"heading\": \"major Islamic cities\"\n  },\n  \"advantagebanner\": {\n    \"topheading\": \"Advantages of Priority Now.\",\n    \"topsubheading\": \"Get prayer times alert on your phone for free.\",\n    \"heading1\": \"prayer time\",\n    \"subheading1\": \"This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.\",\n    \"heading2\": \"Read the Qur'an\",\n    \"subheading2\": \"This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.\",\n    \"heading3\": \"prayer time\",\n    \"subheading3\": \"This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.\"\n  },\n  \"mobilebanner\": {\n    \"subheading\": \"Get prayer times alert on your phone for free.\",\n    \"heading\": \"Did you miss your prayer again? The Prayer Now app can help you.\"\n  },\n  \"add3\": {\n    \"heading\": \"Today's talk\",\n    \"subheading\": \"On the authority of Alqamah bin Waqqas Al-Laithi, he says: I heard Umar bin Al-Khattab, may God be pleased with him, on the pulpit, he said: I heard the Messenger of God, may God’s prayers and peace be upon him, say: “Actions are but by intentions, and each person will have what he intended. So I emigrated him for what he emigrated for.”\"\n  },\n  \"infobanner\": {\n    \"topheading\": \"Information about the country\",\n    \"para1\": \"Coordinates:\",\n    \"para2\": \"corresponding\",\n    \"countryheading\": \"Country:\",\n    \"countrysubheading\": \"The capital:\",\n    \"timepara\": \"Time format:\",\n    \"doctrinepara\": \"Doctrine:\",\n    \"calpara\": \"Calculation method:\",\n    \"timingheading\": \"Prayer Timings\",\n    \"timingsubheading\": \"today\",\n    \"monthsubheading\": \"Prayer times for this month\",\n    \"week1\": \"Week 1\",\n    \"week2\": \"Week 2\",\n    \"week3\": \"Week 3\",\n    \"week4\": \"Week 4\",\n    \"time1\": \"Daybreak\",\n    \"time2\": \"Sunrise\",\n    \"time3\": \"noon\",\n    \"time4\": \"age\",\n    \"time5\": \"Morocco\",\n    \"time6\": \"dinner\",\n    \"date\": \"the date\",\n    \"countrysubheading2\": \"city\"\n  },\n  \"citiescounrybanner\": {\n    \"heading\": \"cities within the country\"\n  },\n  \"playbanner\": {\n    \"heading\": \"Latest playlists\"\n  },\n  \"trendingbanner\": {\n    \"heading\": \"trending topics\",\n    \"cardheading1\": \"Preserving the brotherhood of religion\",\n    \"cardsubheading1\": \"What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation\",\n    \"cardheading2\": \"Preserving the brotherhood of religion\",\n    \"cardsubheading2\": \"What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation\",\n    \"cardheading3\": \"Preserving the brotherhood of religion\",\n    \"cardsubheading3\": \"What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation\"\n  },\n  \"eldersbanner\": {\n    \"heading\": \"All elders\",\n    \"seacrhheading\": \"Looking for readers,...\",\n    \"yellowpara\": \"All elders\",\n    \"alphabet1\": \"a\",\n    \"alphabet2\": \"B\",\n    \"alphabet3\": \"T\",\n    \"alphabet4\": \"W\",\n    \"alphabet5\": \"c\",\n    \"alphabet6\": \"h\",\n    \"alphabet7\": \"x\",\n    \"alphabet8\": \"Dr\",\n    \"alphabet9\": \"y\",\n    \"alphabet10\": \"R\",\n    \"alphabet11\": \"g\",\n    \"alphabet12\": \"s\",\n    \"alphabet13\": \"u\",\n    \"alphabet14\": \"s\",\n    \"alphabet15\": \"z\",\n    \"alphabet16\": \"i\",\n    \"alphabet17\": \"Z\",\n    \"alphabet18\": \"p\",\n    \"alphabet19\": \"M\",\n    \"alphabet20\": \"a\",\n    \"alphabet21\": \"a\",\n    \"alphabet22\": \"B\",\n    \"alphabet23\": \"T\",\n    \"alphabet24\": \"w\",\n    \"alphabet25\": \"c\",\n    \"alphabet26\": \"h\",\n    \"alphabet27\": \"x\",\n    \"alphabet28\": \"Dr\",\n    \"alphabet29\": \"y\",\n    \"alphabet31\": \"R\",\n    \"alphabet32\": \"g\",\n    \"alphabet33\": \"s\",\n    \"alphabet34\": \"u\",\n    \"alphabet35\": \"s\",\n    \"alphabet36\": \"z\",\n    \"alphabet37\": \"i\",\n    \"alphabet38\": \"Z\",\n    \"alphabet39\": \"p\",\n    \"alphabet40\": \"M\",\n    \"greenheading1\": \"a\",\n    \"greenheading2\": \"B\",\n    \"greenheading3\": \"T\",\n    \"greenheading4\": \"w\",\n    \"greenheading5\": \"c\"\n  },\n  \"playlistbanner\": {\n    \"heading\": \"Playlist\",\n    \"date\": \"1/2/2020\",\n    \"run\": \"runs\",\n    \"listgreenheading\": \"Surah Quraish with voice:\",\n    \"listheading\": \"Playlist - Imams of the Great Mosque of Mecca\",\n    \"listsubheading\": \"Surah Quraish, complete, the Qur’an of the Grand Mosque in Mecca 1439, with high quality, narrated by Hafs on the authority of Asim, in the voice of the imams of the Grand Mosque in Mecca. Listen online with the possibility of copying and sharing with one direct link. see more\"\n  },\n  \"suratbanner\": {\n    \"seacrhbar\": \"Look for the names of the surahs, ...\"\n  },\n  \"moreplaybanner\": {\n    \"heading\": \"More playlists\"\n  },\n  \"footerbanner\": {\n    \"logoheading\": \"Prayer Now | Pray now\",\n    \"link1\": \"Help Center\",\n    \"link2\": \"Mosques\",\n    \"link3\": \"Application features\",\n    \"link4\": \"advertise with us\",\n    \"link5\": \"about us\",\n    \"link6\": \"call us\",\n    \"footerbtn\": \"Arabic\",\n    \"para1\": \"Frequently Asked Questions \",\n    \"para2\": \"Privacy Policy \",\n    \"para3\": \"Terms of Use\",\n    \"para4\": \"Articles \",\n    \"para5\": \"inform about the content\",\n    \"para6\": \"of suggestions and complaints\",\n    \"para7\": \"Download Prayer Now\",\n    \"para8\": \"around the Islamic world\",\n    \"para9\": \"mosques\",\n    \"footerleft\": \"Developed by Ab Rocks\",\n    \"footerright\": \"© Bray Now  Pray now. Registered trademark 2014 - 2022.\"\n  }\n}\n",
+      "start": 1710887982469,
+      "end": 1710887982876,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887982876,
+      "end": 1710887982876,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "result": "export const header = {\n\theaderbtn: \"Download Priority Now\"\n};\nexport const banner = {\n\tsubheading: \"Get prayer times alert on your phone for free\",\n\theading: \"Did you miss your prayer again? The Prayer Now app can help you .\",\n\tbannerbtn: \"Download Priority Now.\"\n};\nexport const sidebar = {\n\titem: \"Prayer times\",\n\titem1: \"The Holy Quran\",\n\titem2: \"Islamic History\",\n\titem3: \"Islamic History\",\n\titem4: \"Islamic History\",\n\tdownload: \"Download the app\"\n};\nexport const add1 = {\n\theading: \"Ad space\",\n\tsubheading: \"Lorem Ipsum is simply a formal text (meaning form is the goal, not content) and is used by the printing and publishing industries.\"\n};\nexport const searchbar = {\n\tsearchtext1: \"Find prayer times, reciters,...\",\n\tsearchtext2: \"Search for Cairo Governorate...\"\n};\nexport const allcountries = {\n\theading: \"All countries\",\n\tcountry: \"Arab countries\",\n\tcountry1: \"Europe\",\n\tcountry2: \"north america\",\n\tcountry3: \"south america\",\n\tcountry4: \"Asia\",\n\tcountry5: \"Africa\",\n\tcountry6: \"other\"\n};\nexport const location = {\n\tlocationtext: \"To get the correct time, please indicate your location.\",\n\tbuttongreen: \"detect location\",\n\tbuttonwhite: \"I do not agree\"\n};\nexport const add2 = {\n\theading: \"Ad space\",\n\tsubheading: \"Lorem Ipsum is simply a formal text (meaning form is the goal, not content) and is used by the printing and publishing industries.\",\n\tstartbtn: \"start now\"\n};\nexport const citiesbanner = {\n\theading: \"major Islamic cities\"\n};\nexport const advantagebanner = {\n\ttopheading: \"Advantages of Priority Now.\",\n\ttopsubheading: \"Get prayer times alert on your phone for free.\",\n\theading1: \"prayer time\",\n\tsubheading1: \"This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.\",\n\theading2: \"Read the Qur'an\",\n\tsubheading2: \"This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.\",\n\theading3: \"prayer time\",\n\tsubheading3: \"This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.\"\n};\nexport const mobilebanner = {\n\tsubheading: \"Get prayer times alert on your phone for free.\",\n\theading: \"Did you miss your prayer again? The Prayer Now app can help you.\"\n};\nexport const add3 = {\n\theading: \"Today's talk\",\n\tsubheading: \"On the authority of Alqamah bin Waqqas Al-Laithi, he says: I heard Umar bin Al-Khattab, may God be pleased with him, on the pulpit, he said: I heard the Messenger of God, may God’s prayers and peace be upon him, say: “Actions are but by intentions, and each person will have what he intended. So I emigrated him for what he emigrated for.”\"\n};\nexport const infobanner = {\n\ttopheading: \"Information about the country\",\n\tpara1: \"Coordinates:\",\n\tpara2: \"corresponding\",\n\tcountryheading: \"Country:\",\n\tcountrysubheading: \"The capital:\",\n\ttimepara: \"Time format:\",\n\tdoctrinepara: \"Doctrine:\",\n\tcalpara: \"Calculation method:\",\n\ttimingheading: \"Prayer Timings\",\n\ttimingsubheading: \"today\",\n\tmonthsubheading: \"Prayer times for this month\",\n\tweek1: \"Week 1\",\n\tweek2: \"Week 2\",\n\tweek3: \"Week 3\",\n\tweek4: \"Week 4\",\n\ttime1: \"Daybreak\",\n\ttime2: \"Sunrise\",\n\ttime3: \"noon\",\n\ttime4: \"age\",\n\ttime5: \"Morocco\",\n\ttime6: \"dinner\",\n\tdate: \"the date\",\n\tcountrysubheading2: \"city\"\n};\nexport const citiescounrybanner = {\n\theading: \"cities within the country\"\n};\nexport const playbanner = {\n\theading: \"Latest playlists\"\n};\nexport const trendingbanner = {\n\theading: \"trending topics\",\n\tcardheading1: \"Preserving the brotherhood of religion\",\n\tcardsubheading1: \"What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation\",\n\tcardheading2: \"Preserving the brotherhood of religion\",\n\tcardsubheading2: \"What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation\",\n\tcardheading3: \"Preserving the brotherhood of religion\",\n\tcardsubheading3: \"What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation\"\n};\nexport const eldersbanner = {\n\theading: \"All elders\",\n\tseacrhheading: \"Looking for readers,...\",\n\tyellowpara: \"All elders\",\n\talphabet1: \"a\",\n\talphabet2: \"B\",\n\talphabet3: \"T\",\n\talphabet4: \"W\",\n\talphabet5: \"c\",\n\talphabet6: \"h\",\n\talphabet7: \"x\",\n\talphabet8: \"Dr\",\n\talphabet9: \"y\",\n\talphabet10: \"R\",\n\talphabet11: \"g\",\n\talphabet12: \"s\",\n\talphabet13: \"u\",\n\talphabet14: \"s\",\n\talphabet15: \"z\",\n\talphabet16: \"i\",\n\talphabet17: \"Z\",\n\talphabet18: \"p\",\n\talphabet19: \"M\",\n\talphabet20: \"a\",\n\talphabet21: \"a\",\n\talphabet22: \"B\",\n\talphabet23: \"T\",\n\talphabet24: \"w\",\n\talphabet25: \"c\",\n\talphabet26: \"h\",\n\talphabet27: \"x\",\n\talphabet28: \"Dr\",\n\talphabet29: \"y\",\n\talphabet31: \"R\",\n\talphabet32: \"g\",\n\talphabet33: \"s\",\n\talphabet34: \"u\",\n\talphabet35: \"s\",\n\talphabet36: \"z\",\n\talphabet37: \"i\",\n\talphabet38: \"Z\",\n\talphabet39: \"p\",\n\talphabet40: \"M\",\n\tgreenheading1: \"a\",\n\tgreenheading2: \"B\",\n\tgreenheading3: \"T\",\n\tgreenheading4: \"w\",\n\tgreenheading5: \"c\"\n};\nexport const playlistbanner = {\n\theading: \"Playlist\",\n\tdate: \"1/2/2020\",\n\trun: \"runs\",\n\tlistgreenheading: \"Surah Quraish with voice:\",\n\tlistheading: \"Playlist - Imams of the Great Mosque of Mecca\",\n\tlistsubheading: \"Surah Quraish, complete, the Qur’an of the Grand Mosque in Mecca 1439, with high quality, narrated by Hafs on the authority of Asim, in the voice of the imams of the Grand Mosque in Mecca. Listen online with the possibility of copying and sharing with one direct link. see more\"\n};\nexport const suratbanner = {\n\tseacrhbar: \"Look for the names of the surahs, ...\"\n};\nexport const moreplaybanner = {\n\theading: \"More playlists\"\n};\nexport const footerbanner = {\n\tlogoheading: \"Prayer Now | Pray now\",\n\tlink1: \"Help Center\",\n\tlink2: \"Mosques\",\n\tlink3: \"Application features\",\n\tlink4: \"advertise with us\",\n\tlink5: \"about us\",\n\tlink6: \"call us\",\n\tfooterbtn: \"Arabic\",\n\tpara1: \"Frequently Asked Questions \",\n\tpara2: \"Privacy Policy \",\n\tpara3: \"Terms of Use\",\n\tpara4: \"Articles \",\n\tpara5: \"inform about the content\",\n\tpara6: \"of suggestions and complaints\",\n\tpara7: \"Download Prayer Now\",\n\tpara8: \"around the Islamic world\",\n\tpara9: \"mosques\",\n\tfooterleft: \"Developed by Ab Rocks\",\n\tfooterright: \"© Bray Now  Pray now. Registered trademark 2014 - 2022.\"\n};\nexport default {\n\theader: header,\n\tbanner: banner,\n\tsidebar: sidebar,\n\tadd1: add1,\n\tsearchbar: searchbar,\n\tallcountries: allcountries,\n\tlocation: location,\n\tadd2: add2,\n\tcitiesbanner: citiesbanner,\n\tadvantagebanner: advantagebanner,\n\tmobilebanner: mobilebanner,\n\tadd3: add3,\n\tinfobanner: infobanner,\n\tcitiescounrybanner: citiescounrybanner,\n\tplaybanner: playbanner,\n\ttrendingbanner: trendingbanner,\n\teldersbanner: eldersbanner,\n\tplaylistbanner: playlistbanner,\n\tsuratbanner: suratbanner,\n\tmoreplaybanner: moreplaybanner,\n\tfooterbanner: footerbanner\n};\n",
+      "start": 1710887982876,
+      "end": 1710887982877,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887982877,
+      "end": 1710887982877,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710887982877,
+      "end": 1710887982877,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887982877,
+      "end": 1710887982877,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982877,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982877,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887982878,
+      "end": 1710887982878,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887982878,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887982878,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887982879,
+      "end": 1710887982879,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/AllCountries.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<div\r\n\t\tclass=\"bg-white rounded-xl border border-gray-200 px-4 flex justify-between flex-col gap-4 py-6\">\r\n\t\t<div class=\"grid gap-4\">\r\n\t\t\t<div class=\"flex justify-between items-center gap-4 flex-wrap\"\r\n\t\t\t\tv-if=\" regions?.data?.length > 0 \">\r\n\t\t\t\t<h2 class=\"h__primary\">{{ $t( 'allcountries.heading' ) }}</h2>\r\n\t\t\t\t<div class=\"flex md:gap-[21px] gap-4 text-[#828282] flex-wrap\"\r\n\t\t\t\t\tv-if=\" regions?.data?.length > 0 \">\r\n\t\t\t\t\t<template v-for=\" res  in  regions?.data || [] \" :key=\"res?.id\">\r\n\t\t\t\t\t\t<button class=\"text-primary  region  border-b-2 border-transparent\"\r\n\t\t\t\t\t\t\t:class=\" res.id === region ? 'region_active' : '' \"\r\n\t\t\t\t\t\t\t@click=\"changeRegion( res.id )\">\r\n\t\t\t\t\t\t\t{{ res?.attributes?.title }}\r\n\t\t\t\t\t\t</button>\r\n\t\t\t\t\t</template>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t\t<div class=\"country__grid\" v-if=\" countries && countries.data.length > 0 \">\r\n\t\t\t\t<NuxtLink\r\n\t\t\t\t\t:to=\" `/app/prayer-time/${ res.attributes.slug }/${ res.attributes.default_prayer_time_city.data?.attributes.slug }/${ res.id }/${ res.attributes.api_country_code }/${ res.attributes.default_prayer_time_city.data?.attributes.api_city_code }/${ res.attributes.default_prayer_time_city.data?.id}` \"\r\n\t\t\t\t\tv-for=\" res  in  countries.data \" :key=\" res.id \">\r\n\t\t\t\t\t<CountryCard>\r\n\t\t\t\t\t\t<template v-slot:image>\r\n\t\t\t\t\t\t\t<template\r\n\t\t\t\t\t\t\t\tv-if=\" res && res.attributes.flag && res.attributes.flag.data && res.attributes.flag.data.attributes && res.attributes.flag.data.attributes.url \">\r\n\t\t\t\t\t\t\t\t<img :src=\" res.attributes.flag.data.attributes.url \" alt=\"\"\r\n\t\t\t\t\t\t\t\t\tclass=\"size-[64px] aspect-square rounded-full\">\r\n\t\t\t\t\t\t\t</template>\r\n\t\t\t\t\t\t</template>\r\n\t\t\t\t\t\t<template v-slot:text>\r\n\t\t\t\t\t\t\t{{ res.attributes.name }}\r\n\t\t\t\t\t\t</template>\r\n\t\t\t\t\t</CountryCard>\r\n\t\t\t\t</NuxtLink>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t\t<div v-if=\" countries && countries.data && countries.data.length > 14 \">\r\n\t\t\t<Pagination />\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script setup>\r\n\timport { ref, onMounted } from 'vue'\r\n\timport { useI18n } from 'vue-i18n'\r\n\timport axios from 'axios'\r\n\r\n\tconst { locale } = useI18n()\r\n\tconst getAllCountries = import.meta.env.VITE_GET_ALL_COUNTRIES\r\n\tconst getAllRegions = import.meta.env.VITE_GET_ALL_REGIONS\r\n\tconst domain = import.meta.env.VITE_DOMAIN\r\n\r\n\tconst regions = ref(null)\r\n\tconst countries = ref(null)\r\n\r\n\tconst region = ref(null)\r\n\r\nconst fetchRegions = async () => {\r\n  try {\r\n    const response = await axios.get(domain + getAllRegions + locale.value)\r\n\tregions.value = response.data\r\n\t// Set the initial region to the first one\r\n\tregion.value = regions.value.data[0]?.id\r\n\tawait fetchCountries()\r\n  } catch (error) {\r\n\t\tconsole.error( 'Error fetching regions:', error )\r\n\t}\r\n}\r\n\r\nconst fetchCountries = async () => {\r\n  try {\r\n    const response = await axios.get(domain + getAllCountries + region.value + '&locale[0]=' + locale.value)\r\n\tcountries.value = response.data\r\n  } catch (error) {\r\n\t\tconsole.error( 'Error fetching countries:', error )\r\n\t}\r\n}\r\n\r\nconst changeRegion = async (newRegionId) => {\r\n\t\tregion.value = newRegionId\r\n  await fetchCountries()\r\n}\r\n\r\n\tonMounted(fetchRegions)\r\n</script>\r\n",
+      "start": 1710887973784,
+      "end": 1710887974198,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887974198,
+      "end": 1710887974198,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeClass as _normalizeClass, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-white rounded-xl border border-gray-200 px-4 flex justify-between flex-col gap-4 py-6\" }\nconst _hoisted_2 = { class: \"grid gap-4\" }\nconst _hoisted_3 = {\n  key: 0,\n  class: \"flex justify-between items-center gap-4 flex-wrap\"\n}\nconst _hoisted_4 = { class: \"h__primary\" }\nconst _hoisted_5 = {\n  key: 0,\n  class: \"flex md:gap-[21px] gap-4 text-[#828282] flex-wrap\"\n}\nconst _hoisted_6 = [\"onClick\"]\nconst _hoisted_7 = {\n  key: 1,\n  class: \"country__grid\"\n}\nconst _hoisted_8 = [\"src\"]\nconst _hoisted_9 = { key: 0 }\n\nimport { ref, onMounted } from 'vue'\r\n\timport { useI18n } from 'vue-i18n'\r\n\timport axios from 'axios'\r\n\r\n\t\nconst _sfc_main = {\n  __name: 'AllCountries',\n  setup(__props) {\n\r\n\tconst { locale } = useI18n()\r\n\tconst getAllCountries = import.meta.env.VITE_GET_ALL_COUNTRIES\r\n\tconst getAllRegions = import.meta.env.VITE_GET_ALL_REGIONS\r\n\tconst domain = import.meta.env.VITE_DOMAIN\r\n\r\n\tconst regions = ref(null)\r\n\tconst countries = ref(null)\r\n\r\n\tconst region = ref(null)\r\n\r\nconst fetchRegions = async () => {\r\n  try {\r\n    const response = await axios.get(domain + getAllRegions + locale.value)\r\n\tregions.value = response.data\r\n\t// Set the initial region to the first one\r\n\tregion.value = regions.value.data[0]?.id\r\n\tawait fetchCountries()\r\n  } catch (error) {\r\n\t\tconsole.error( 'Error fetching regions:', error )\r\n\t}\r\n}\r\n\r\nconst fetchCountries = async () => {\r\n  try {\r\n    const response = await axios.get(domain + getAllCountries + region.value + '&locale[0]=' + locale.value)\r\n\tcountries.value = response.data\r\n  } catch (error) {\r\n\t\tconsole.error( 'Error fetching countries:', error )\r\n\t}\r\n}\r\n\r\nconst changeRegion = async (newRegionId) => {\r\n\t\tregion.value = newRegionId\r\n  await fetchCountries()\r\n}\r\n\r\n\tonMounted(fetchRegions)\r\n\nreturn (_ctx, _cache) => {\n  const _component_CountryCard = _resolveComponent(\"CountryCard\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n  const _component_Pagination = _resolveComponent(\"Pagination\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      ( regions.value?.data?.length > 0 )\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n            _createElementVNode(\"h2\", _hoisted_4, _toDisplayString(_ctx.$t( 'allcountries.heading' )), 1),\n            ( regions.value?.data?.length > 0 )\n              ? (_openBlock(), _createElementBlock(\"div\", _hoisted_5, [\n                  (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(regions.value?.data || [], (res) => {\n                    return (_openBlock(), _createElementBlock(\"button\", {\n                      key: res?.id,\n                      class: _normalizeClass([\"text-primary region border-b-2 border-transparent\",  res.id === region.value ? 'region_active' : '' ]),\n                      onClick: $event => (changeRegion( res.id ))\n                    }, _toDisplayString(res?.attributes?.title), 11, _hoisted_6))\n                  }), 128))\n                ]))\n              : _createCommentVNode(\"\", true)\n          ]))\n        : _createCommentVNode(\"\", true),\n      ( countries.value && countries.value.data.length > 0 )\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_7, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(countries.value.data, (res) => {\n              return (_openBlock(), _createBlock(_component_NuxtLink, {\n                to:  `/app/prayer-time/${ res.attributes.slug }/${ res.attributes.default_prayer_time_city.data?.attributes.slug }/${ res.id }/${ res.attributes.api_country_code }/${ res.attributes.default_prayer_time_city.data?.attributes.api_city_code }/${ res.attributes.default_prayer_time_city.data?.id}` ,\n                key:  res.id \n              }, {\n                default: _withCtx(() => [\n                  _createVNode(_component_CountryCard, null, {\n                    image: _withCtx(() => [\n                      ( res && res.attributes.flag && res.attributes.flag.data && res.attributes.flag.data.attributes && res.attributes.flag.data.attributes.url )\n                        ? (_openBlock(), _createElementBlock(\"img\", {\n                            key: 0,\n                            src:  res.attributes.flag.data.attributes.url ,\n                            alt: \"\",\n                            class: \"size-[64px] aspect-square rounded-full\"\n                          }, null, 8, _hoisted_8))\n                        : _createCommentVNode(\"\", true)\n                    ]),\n                    text: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(res.attributes.name), 1)\n                    ]),\n                    _: 2\n                  }, 1024)\n                ]),\n                _: 2\n              }, 1032, [\"to\"]))\n            }), 128))\n          ]))\n        : _createCommentVNode(\"\", true)\n    ]),\n    ( countries.value && countries.value.data && countries.value.data.length > 14 )\n      ? (_openBlock(), _createElementBlock(\"div\", _hoisted_9, [\n          _createVNode(_component_Pagination)\n        ]))\n      : _createCommentVNode(\"\", true)\n  ]))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1710887974198,
+      "end": 1710887974220,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887974220,
+      "end": 1710887974220,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974220,
+      "end": 1710887974220,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887974220,
+      "end": 1710887974220,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887974220,
+      "end": 1710887974220,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887974220,
+      "end": 1710887974220,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974221,
+      "end": 1710887974221,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887974221,
+      "end": 1710887974221,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeClass as _normalizeClass, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"bg-white rounded-xl border border-gray-200 px-4 flex justify-between flex-col gap-4 py-6\" };\nconst _hoisted_2 = { class: \"grid gap-4\" };\nconst _hoisted_3 = {\n  key: 0,\n  class: \"flex justify-between items-center gap-4 flex-wrap\"\n};\nconst _hoisted_4 = { class: \"h__primary\" };\nconst _hoisted_5 = {\n  key: 0,\n  class: \"flex md:gap-[21px] gap-4 text-[#828282] flex-wrap\"\n};\nconst _hoisted_6 = [\"onClick\"];\nconst _hoisted_7 = {\n  key: 1,\n  class: \"country__grid\"\n};\nconst _hoisted_8 = [\"src\"];\nconst _hoisted_9 = { key: 0 };\nimport { ref, onMounted } from \"vue\";\nimport { useI18n } from \"vue-i18n\";\nimport axios from \"axios\";\nconst _sfc_main = {\n  __name: \"AllCountries\",\n  setup(__props) {\n    const { locale } = useI18n();\n    const getAllCountries = \"/api/prayer-time-countries/?filters[prayer_time_region][id][$eq]=\";\n    const getAllRegions = \"/api/prayer-time-regions?locale[0]=\";\n    const domain = \"https://cms.prayer-now.com\";\n    const regions = ref(null);\n    const countries = ref(null);\n    const region = ref(null);\n    const fetchRegions = async () => {\n      try {\n        const response = await axios.get(domain + getAllRegions + locale.value);\n        regions.value = response.data;\n        region.value = regions.value.data[0]?.id;\n        await fetchCountries();\n      } catch (error) {\n        console.error(\"Error fetching regions:\", error);\n      }\n    };\n    const fetchCountries = async () => {\n      try {\n        const response = await axios.get(domain + getAllCountries + region.value + \"&locale[0]=\" + locale.value);\n        countries.value = response.data;\n      } catch (error) {\n        console.error(\"Error fetching countries:\", error);\n      }\n    };\n    const changeRegion = async (newRegionId) => {\n      region.value = newRegionId;\n      await fetchCountries();\n    };\n    onMounted(fetchRegions);\n    return (_ctx, _cache) => {\n      const _component_CountryCard = _resolveComponent(\"CountryCard\");\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Pagination = _resolveComponent(\"Pagination\");\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          regions.value?.data?.length > 0 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n            _createElementVNode(\"h2\", _hoisted_4, _toDisplayString(_ctx.$t(\"allcountries.heading\")), 1),\n            regions.value?.data?.length > 0 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_5, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(regions.value?.data || [], (res) => {\n                return _openBlock(), _createElementBlock(\"button\", {\n                  key: res?.id,\n                  class: _normalizeClass([\"text-primary region border-b-2 border-transparent\", res.id === region.value ? \"region_active\" : \"\"]),\n                  onClick: ($event) => changeRegion(res.id)\n                }, _toDisplayString(res?.attributes?.title), 11, _hoisted_6);\n              }), 128))\n            ])) : _createCommentVNode(\"\", true)\n          ])) : _createCommentVNode(\"\", true),\n          countries.value && countries.value.data.length > 0 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_7, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(countries.value.data, (res) => {\n              return _openBlock(), _createBlock(_component_NuxtLink, {\n                to: `/app/prayer-time/${res.attributes.slug}/${res.attributes.default_prayer_time_city.data?.attributes.slug}/${res.id}/${res.attributes.api_country_code}/${res.attributes.default_prayer_time_city.data?.attributes.api_city_code}/${res.attributes.default_prayer_time_city.data?.id}`,\n                key: res.id\n              }, {\n                default: _withCtx(() => [\n                  _createVNode(_component_CountryCard, null, {\n                    image: _withCtx(() => [\n                      res && res.attributes.flag && res.attributes.flag.data && res.attributes.flag.data.attributes && res.attributes.flag.data.attributes.url ? (_openBlock(), _createElementBlock(\"img\", {\n                        key: 0,\n                        src: res.attributes.flag.data.attributes.url,\n                        alt: \"\",\n                        class: \"size-[64px] aspect-square rounded-full\"\n                      }, null, 8, _hoisted_8)) : _createCommentVNode(\"\", true)\n                    ]),\n                    text: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(res.attributes.name), 1)\n                    ]),\n                    _: 2\n                  }, 1024)\n                ]),\n                _: 2\n              }, 1032, [\"to\"]);\n            }), 128))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        countries.value && countries.value.data && countries.value.data.length > 14 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_9, [\n          _createVNode(_component_Pagination)\n        ])) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n};\nexport default _sfc_main;\n",
+      "start": 1710887974221,
+      "end": 1710887974694,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887974694,
+      "end": 1710887974699,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887974699,
+      "end": 1710887974700,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887974700,
+      "end": 1710887974700,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887974700,
+      "end": 1710887974700,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887974700,
+      "end": 1710887974722,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887974723,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"D:/quran/nuxt-app - Copy/components/CountryCard.vue\";\nimport { default as __nuxt_component_1 } from \"D:/quran/nuxt-app - Copy/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_2 } from \"D:/quran/nuxt-app - Copy/components/Pagination.vue\";\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, normalizeClass as _normalizeClass, createCommentVNode as _createCommentVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = { class: \"bg-white rounded-xl border border-gray-200 px-4 flex justify-between flex-col gap-4 py-6\" };\nconst _hoisted_2 = { class: \"grid gap-4\" };\nconst _hoisted_3 = {\n  key: 0,\n  class: \"flex justify-between items-center gap-4 flex-wrap\"\n};\nconst _hoisted_4 = { class: \"h__primary\" };\nconst _hoisted_5 = {\n  key: 0,\n  class: \"flex md:gap-[21px] gap-4 text-[#828282] flex-wrap\"\n};\nconst _hoisted_6 = [\"onClick\"];\nconst _hoisted_7 = {\n  key: 1,\n  class: \"country__grid\"\n};\nconst _hoisted_8 = [\"src\"];\nconst _hoisted_9 = { key: 0 };\nimport { ref, onMounted } from \"vue\";\nimport { useI18n } from \"vue-i18n\";\nimport axios from \"axios\";\nconst _sfc_main = {\n  __name: \"AllCountries\",\n  setup(__props) {\n    const { locale } = useI18n();\n    const getAllCountries = \"/api/prayer-time-countries/?filters[prayer_time_region][id][$eq]=\";\n    const getAllRegions = \"/api/prayer-time-regions?locale[0]=\";\n    const domain = \"https://cms.prayer-now.com\";\n    const regions = ref(null);\n    const countries = ref(null);\n    const region = ref(null);\n    const fetchRegions = async () => {\n      try {\n        const response = await axios.get(domain + getAllRegions + locale.value);\n        regions.value = response.data;\n        region.value = regions.value.data[0]?.id;\n        await fetchCountries();\n      } catch (error) {\n        console.error(\"Error fetching regions:\", error);\n      }\n    };\n    const fetchCountries = async () => {\n      try {\n        const response = await axios.get(domain + getAllCountries + region.value + \"&locale[0]=\" + locale.value);\n        countries.value = response.data;\n      } catch (error) {\n        console.error(\"Error fetching countries:\", error);\n      }\n    };\n    const changeRegion = async (newRegionId) => {\n      region.value = newRegionId;\n      await fetchCountries();\n    };\n    onMounted(fetchRegions);\n    return (_ctx, _cache) => {\n      const _component_CountryCard = __nuxt_component_0;\n      const _component_NuxtLink = __nuxt_component_1;\n      const _component_Pagination = __nuxt_component_2;\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          regions.value?.data?.length > 0 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_3, [\n            _createElementVNode(\"h2\", _hoisted_4, _toDisplayString(_ctx.$t(\"allcountries.heading\")), 1),\n            regions.value?.data?.length > 0 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_5, [\n              (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(regions.value?.data || [], (res) => {\n                return _openBlock(), _createElementBlock(\"button\", {\n                  key: res?.id,\n                  class: _normalizeClass([\"text-primary region border-b-2 border-transparent\", res.id === region.value ? \"region_active\" : \"\"]),\n                  onClick: ($event) => changeRegion(res.id)\n                }, _toDisplayString(res?.attributes?.title), 11, _hoisted_6);\n              }), 128))\n            ])) : _createCommentVNode(\"\", true)\n          ])) : _createCommentVNode(\"\", true),\n          countries.value && countries.value.data.length > 0 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_7, [\n            (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(countries.value.data, (res) => {\n              return _openBlock(), _createBlock(_component_NuxtLink, {\n                to: `/app/prayer-time/${res.attributes.slug}/${res.attributes.default_prayer_time_city.data?.attributes.slug}/${res.id}/${res.attributes.api_country_code}/${res.attributes.default_prayer_time_city.data?.attributes.api_city_code}/${res.attributes.default_prayer_time_city.data?.id}`,\n                key: res.id\n              }, {\n                default: _withCtx(() => [\n                  _createVNode(_component_CountryCard, null, {\n                    image: _withCtx(() => [\n                      res && res.attributes.flag && res.attributes.flag.data && res.attributes.flag.data.attributes && res.attributes.flag.data.attributes.url ? (_openBlock(), _createElementBlock(\"img\", {\n                        key: 0,\n                        src: res.attributes.flag.data.attributes.url,\n                        alt: \"\",\n                        class: \"size-[64px] aspect-square rounded-full\"\n                      }, null, 8, _hoisted_8)) : _createCommentVNode(\"\", true)\n                    ]),\n                    text: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(res.attributes.name), 1)\n                    ]),\n                    _: 2\n                  }, 1024)\n                ]),\n                _: 2\n              }, 1032, [\"to\"]);\n            }), 128))\n          ])) : _createCommentVNode(\"\", true)\n        ]),\n        countries.value && countries.value.data && countries.value.data.length > 14 ? (_openBlock(), _createElementBlock(\"div\", _hoisted_9, [\n          _createVNode(_component_Pagination)\n        ])) : _createCommentVNode(\"\", true)\n      ]);\n    };\n  }\n};\nexport default _sfc_main;\n",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887974725,
+      "end": 1710887974725,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887974725,
+      "end": 1710887974725,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887974725,
+      "end": 1710887974725,
+      "order": "normal"
+    }
+  ]
+}

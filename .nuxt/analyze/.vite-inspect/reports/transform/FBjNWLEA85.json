@@ -1,0 +1,239 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/PlayBar.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<div class=\"w-full  bg-primary  md:py-2.5 py-1 drop-shadow shadow-primary  hidden\">\r\n\t\t<div class=\"container flex justify-between items-center  gap-y-2  gap-8 flex-wrap\">\r\n\t\t\t<div class=\"flex items-center gap-3 \">\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<Image isrc=\"/play-bar.png\" ialt=\"logo\"\r\n\t\t\t\t\t\ticlass=\"md:size-[64px] size-[48px] rounded\" />\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"divide-y divide-transparent\">\r\n\t\t\t\t\t<div class=\"text-white md:text-[22px]  font-bold font-['Almarai']\">سورة أل عمران\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class=\"text-zinc-300 md:text-lg text-sm font-normal\">ماهر المعيقلي</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<!-- (B) AUDIO PLAYERS -->\r\n\t\t\t<PlayControl />\r\n\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style scoped></style>\r\n",
+      "start": 1710887974841,
+      "end": 1710887974966,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887974966,
+      "end": 1710887974966,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887974966,
+      "end": 1710887974966,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887974966,
+      "end": 1710887974966,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887974966,
+      "end": 1710887974966,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887974966,
+      "end": 1710887974966,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887974966,
+      "end": 1710887974966,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887974967,
+      "end": 1710887974967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887974967,
+      "end": 1710887974967,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"w-full bg-primary md:py-2.5 py-1 drop-shadow shadow-primary hidden\" }\nconst _hoisted_2 = { class: \"container flex justify-between items-center gap-y-2 gap-8 flex-wrap\" }\nconst _hoisted_3 = { class: \"flex items-center gap-3\" }\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"divide-y divide-transparent\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-white md:text-[22px] font-bold font-['Almarai']\" }, \"سورة أل عمران \"),\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-zinc-300 md:text-lg text-sm font-normal\" }, \"ماهر المعيقلي\")\n], -1)\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Image = _resolveComponent(\"Image\")\n  const _component_PlayControl = _resolveComponent(\"PlayControl\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", null, [\n          _createVNode(_component_Image, {\n            isrc: \"/play-bar.png\",\n            ialt: \"logo\",\n            iclass: \"md:size-[64px] size-[48px] rounded\"\n          })\n        ]),\n        _hoisted_4\n      ]),\n      _createVNode(_component_PlayControl)\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710887974967,
+      "end": 1710887974968,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887974968,
+      "end": 1710887974968,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887974968,
+      "end": 1710887974969,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887974969,
+      "end": 1710887974969,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887974969,
+      "end": 1710887974969,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887974969,
+      "end": 1710887974970,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887974970,
+      "end": 1710887974970,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887974971,
+      "end": 1710887974971,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887974971,
+      "end": 1710887974971,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887974971,
+      "end": 1710887974971,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"D:/quran/nuxt-app - Copy/components/Image.vue\";\nimport { default as __nuxt_component_1 } from \"D:/quran/nuxt-app - Copy/components/PlayControl.vue\";\nconst _sfc_main = {}\nimport { resolveComponent as _resolveComponent, createVNode as _createVNode, createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"w-full bg-primary md:py-2.5 py-1 drop-shadow shadow-primary hidden\" }\nconst _hoisted_2 = { class: \"container flex justify-between items-center gap-y-2 gap-8 flex-wrap\" }\nconst _hoisted_3 = { class: \"flex items-center gap-3\" }\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"divide-y divide-transparent\" }, [\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-white md:text-[22px] font-bold font-['Almarai']\" }, \"سورة أل عمران \"),\n  /*#__PURE__*/_createElementVNode(\"div\", { class: \"text-zinc-300 md:text-lg text-sm font-normal\" }, \"ماهر المعيقلي\")\n], -1)\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Image = __nuxt_component_0\n  const _component_PlayControl = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _createElementVNode(\"div\", null, [\n          _createVNode(_component_Image, {\n            isrc: \"/play-bar.png\",\n            ialt: \"logo\",\n            iclass: \"md:size-[64px] size-[48px] rounded\"\n          })\n        ]),\n        _hoisted_4\n      ]),\n      _createVNode(_component_PlayControl)\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710887974971,
+      "end": 1710887974971,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887974971,
+      "end": 1710887974972,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887974972,
+      "end": 1710887974972,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887974972,
+      "end": 1710887974972,
+      "order": "normal"
+    }
+  ]
+}

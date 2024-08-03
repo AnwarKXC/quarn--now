@@ -1,0 +1,239 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/layout/Footer.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n    <footer :style=\" { backgroundImage: 'url(' + footerBg + ')' } \"\r\n        :class=\" { 'hidden': !footerBg } \" class=\" bg-no-repeat bg-cover \">\r\n        <div class=\" pt-10  grid gap-5 bg-black bg-opacity-80\">\r\n            <div class=\"container grid gap-6 \">\r\n                <div class=\"text-center cent__col gap-6\">\r\n                    <Logo v-if=\" props.branding && props.branding.logo && props.branding.logo.data && props.branding.logo.data.attributes && props.branding.logo.data.attributes.url \" \r\n                        :source=\" props.branding.logo.data.attributes.url \" />\r\n                    <span class=\" text-white font-medium\">{{ $t( 'footerbanner.logoheading' )\r\n                        }}</span>\r\n                    <div class=\" cent gap-4\">\r\n                        <NuxtLink to=\" /\"><img src=\"/svgs/twiiter.svg\" alt=\"\"></NuxtLink>\r\n                        <NuxtLink to=\"/\"><img src=\"/svgs/youtube.svg\" alt=\"\"></NuxtLink>\r\n                        <NuxtLink to=\"/\"><img src=\"/svgs/instagram.svg\" alt=\"\"></NuxtLink>\r\n                        <NuxtLink to=\"/\"><img src=\"/svgs/linked.svg\" alt=\"\"></NuxtLink>\r\n                        <NuxtLink to=\"/\"><img src=\"/svgs/facebook.svg\" alt=\"\"></NuxtLink>\r\n                    </div>\r\n                </div>\r\n                <ul class=\"cent__bet max-sm:justify-center flex-wrap gap-5 text-white \">\r\n                    <li\r\n                        v-for=\"(                    link, index                    ) in                    props.data.slice( 0, 6 )                  \">\r\n                        <NuxtLink :to=\" link.link \" class=\" flex-1\">{{ link.title }}</NuxtLink>\r\n                    </li>\r\n\r\n                </ul>\r\n                <div v-if=\"props.data && props.data.length\"\r\n                    class=\" text-sec cent__bet max-sm:grid grid-cols-2 flex-wrap gap-5 gap-y-12 justify-items-center max-md:my-5\">\r\n                    <div class=\"grid gap-3 \">\r\n                        <NuxtLink\r\n                            v-for=\"               link                in                props.data.slice( 6, 10 )                  \"\r\n                            :to=\" link.link \">{{\r\n                            link.title }}</NuxtLink>\r\n\r\n                    </div>\r\n                    <div class=\" grid gap-3\">\r\n                        <NuxtLink\r\n                            v-for=\"                link                in                 props.data.slice( 11, 15 )                  \"\r\n                            :to=\" link.link \">\r\n                            {{ link.title }}</NuxtLink>\r\n                    </div>\r\n                    <div class=\"grid gap-3 \">\r\n                        <NuxtLink\r\n                            v-for=\"               link                in                 props.data.slice( 16, 21 )                  \"\r\n                            :to=\" link.link \">\r\n                            {{ link.title }}</NuxtLink>\r\n                    </div>\r\n\r\n                    <div class=\"\">\r\n                        <Button :buttonText=\" $t( 'footerbanner.footerbtn' ) \"\r\n                            buttonClass=\" btn__primary border-white text-white border \" />\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"w-full h-[.5px] bg-white mt-5\"></div>\r\n            <div v-if=\"props.data && props.branding\" class=\" container pb-5 cent__bet gap-5 max-md:text-sm\">\r\n                <a href=\"#\" class=\"font-medium text-white md:hidden flex-1 \"\r\n                    v-if=\"props.data.mobile_right\">\r\n                    {{ props.data.mobile_right }}\r\n                </a>\r\n                <a :href=\" props.branding.link_download \" target=\"_blank\"\r\n                    class=\"font-medium text-white max-md:flex-1 hidden md:inline-flex \"\r\n                    v-if=\"props.branding.copy_rights_info\">\r\n                    {{ props.branding.copy_rights_info }}\r\n                </a>\r\n                <a href=\"#\" class=\"font-medium text-white max-sm:flex-1 \"\r\n                    v-if=\"props.data.left\">\r\n                    {{ props.data.left }}\r\n                </a>\r\n            </div>\r\n        </div>\r\n    </footer>\r\n</template>\r\n\r\n<script setup>\r\nimport { ref } from 'vue'\r\nconst props = defineProps( {\r\n    data: {\r\n        type: Object,\r\n        default: {},\r\n    },\r\n    branding: {\r\n        type: Object,\r\n        default: {},\r\n    },\r\n} )\r\n\r\nconst footerBg = ref( '/footer-bg.png' )\r\n</script>\r\n\r\n\r\n<style scoped></style>\r\n",
+      "start": 1710887974876,
+      "end": 1710887974978,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887974978,
+      "end": 1710887974978,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887974978,
+      "end": 1710887974979,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887974979,
+      "end": 1710887974979,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887974979,
+      "end": 1710887974979,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887974979,
+      "end": 1710887974979,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887974979,
+      "end": 1710887974979,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887974979,
+      "end": 1710887974979,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887974979,
+      "end": 1710887974979,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, withCtx as _withCtx, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, normalizeClass as _normalizeClass, normalizeStyle as _normalizeStyle } from \"vue\"\nimport _imports_0 from '/svgs/twiiter.svg'\nimport _imports_1 from '/svgs/youtube.svg'\nimport _imports_2 from '/svgs/instagram.svg'\nimport _imports_3 from '/svgs/linked.svg'\nimport _imports_4 from '/svgs/facebook.svg'\n\n\nconst _hoisted_1 = { class: \"pt-10 grid gap-5 bg-black bg-opacity-80\" }\nconst _hoisted_2 = { class: \"container grid gap-6\" }\nconst _hoisted_3 = { class: \"text-center cent__col gap-6\" }\nconst _hoisted_4 = { class: \"text-white font-medium\" }\nconst _hoisted_5 = { class: \"cent gap-4\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_7 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_9 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_3,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_10 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_4,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_11 = { class: \"cent__bet max-sm:justify-center flex-wrap gap-5 text-white\" }\nconst _hoisted_12 = {\n  key: 0,\n  class: \"text-sec cent__bet max-sm:grid grid-cols-2 flex-wrap gap-5 gap-y-12 justify-items-center max-md:my-5\"\n}\nconst _hoisted_13 = { class: \"grid gap-3\" }\nconst _hoisted_14 = { class: \"grid gap-3\" }\nconst _hoisted_15 = { class: \"grid gap-3\" }\nconst _hoisted_16 = { class: \"\" }\nconst _hoisted_17 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"w-full h-[.5px] bg-white mt-5\" }, null, -1)\nconst _hoisted_18 = {\n  key: 0,\n  class: \"container pb-5 cent__bet gap-5 max-md:text-sm\"\n}\nconst _hoisted_19 = {\n  key: 0,\n  href: \"#\",\n  class: \"font-medium text-white md:hidden flex-1\"\n}\nconst _hoisted_20 = [\"href\"]\nconst _hoisted_21 = {\n  key: 2,\n  href: \"#\",\n  class: \"font-medium text-white max-sm:flex-1\"\n}\n\nimport { ref } from 'vue'\r\n\nconst _sfc_main = {\n  __name: 'Footer',\n  props: {\r\n    data: {\r\n        type: Object,\r\n        default: {},\r\n    },\r\n    branding: {\r\n        type: Object,\r\n        default: {},\r\n    },\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nconst footerBg = ref( '/footer-bg.png' )\r\n\nreturn (_ctx, _cache) => {\n  const _component_Logo = _resolveComponent(\"Logo\")\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n  const _component_Button = _resolveComponent(\"Button\")\n\n  return (_openBlock(), _createElementBlock(\"footer\", {\n    style: _normalizeStyle( { backgroundImage: 'url(' + footerBg.value + ')' } ),\n    class: _normalizeClass([ { 'hidden': !footerBg.value } , \"bg-no-repeat bg-cover\"])\n  }, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          ( props.branding && props.branding.logo && props.branding.logo.data && props.branding.logo.data.attributes && props.branding.logo.data.attributes.url )\n            ? (_openBlock(), _createBlock(_component_Logo, {\n                key: 0,\n                source:  props.branding.logo.data.attributes.url \n              }, null, 8, [\"source\"]))\n            : _createCommentVNode(\"\", true),\n          _createElementVNode(\"span\", _hoisted_4, _toDisplayString(_ctx.$t( 'footerbanner.logoheading' )), 1),\n          _createElementVNode(\"div\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, { to: \" /\" }, {\n              default: _withCtx(() => [\n                _hoisted_6\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_7\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_8\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_9\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_10\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _createElementVNode(\"ul\", _hoisted_11, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 0, 6 ), (link, index) => {\n            return (_openBlock(), _createElementBlock(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to:  link.link ,\n                class: \"flex-1\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(_toDisplayString(link.title), 1)\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]))\n          }), 256))\n        ]),\n        (props.data && props.data.length)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_12, [\n              _createElementVNode(\"div\", _hoisted_13, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 6, 10 ), (link) => {\n                  return (_openBlock(), _createBlock(_component_NuxtLink, {\n                    to:  link.link \n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(link.title), 1)\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"]))\n                }), 256))\n              ]),\n              _createElementVNode(\"div\", _hoisted_14, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 11, 15 ), (link) => {\n                  return (_openBlock(), _createBlock(_component_NuxtLink, {\n                    to:  link.link \n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(link.title), 1)\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"]))\n                }), 256))\n              ]),\n              _createElementVNode(\"div\", _hoisted_15, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 16, 21 ), (link) => {\n                  return (_openBlock(), _createBlock(_component_NuxtLink, {\n                    to:  link.link \n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(link.title), 1)\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"]))\n                }), 256))\n              ]),\n              _createElementVNode(\"div\", _hoisted_16, [\n                _createVNode(_component_Button, {\n                  buttonText:  _ctx.$t( 'footerbanner.footerbtn' ) ,\n                  buttonClass: \" btn__primary border-white text-white border \"\n                }, null, 8, [\"buttonText\"])\n              ])\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _hoisted_17,\n      (props.data && props.branding)\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_18, [\n            (props.data.mobile_right)\n              ? (_openBlock(), _createElementBlock(\"a\", _hoisted_19, _toDisplayString(props.data.mobile_right), 1))\n              : _createCommentVNode(\"\", true),\n            (props.branding.copy_rights_info)\n              ? (_openBlock(), _createElementBlock(\"a\", {\n                  key: 1,\n                  href:  props.branding.link_download ,\n                  target: \"_blank\",\n                  class: \"font-medium text-white max-md:flex-1 hidden md:inline-flex\"\n                }, _toDisplayString(props.branding.copy_rights_info), 9, _hoisted_20))\n              : _createCommentVNode(\"\", true),\n            (props.data.left)\n              ? (_openBlock(), _createElementBlock(\"a\", _hoisted_21, _toDisplayString(props.data.left), 1))\n              : _createCommentVNode(\"\", true)\n          ]))\n        : _createCommentVNode(\"\", true)\n    ])\n  ], 6))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1710887974979,
+      "end": 1710887974984,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887974984,
+      "end": 1710887974984,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887974984,
+      "end": 1710887974986,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887974986,
+      "end": 1710887974986,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887974986,
+      "end": 1710887974986,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887974986,
+      "end": 1710887974986,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887974986,
+      "end": 1710887974986,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"D:/quran/nuxt-app - Copy/components/Logo.vue\";\nimport { default as __nuxt_component_1 } from \"D:/quran/nuxt-app - Copy/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_2 } from \"D:/quran/nuxt-app - Copy/components/Button.vue\";\nimport { resolveComponent as _resolveComponent, openBlock as _openBlock, createBlock as _createBlock, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, withCtx as _withCtx, createVNode as _createVNode, renderList as _renderList, Fragment as _Fragment, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, normalizeClass as _normalizeClass, normalizeStyle as _normalizeStyle } from \"vue\"\nimport _imports_0 from '/svgs/twiiter.svg'\nimport _imports_1 from '/svgs/youtube.svg'\nimport _imports_2 from '/svgs/instagram.svg'\nimport _imports_3 from '/svgs/linked.svg'\nimport _imports_4 from '/svgs/facebook.svg'\n\n\nconst _hoisted_1 = { class: \"pt-10 grid gap-5 bg-black bg-opacity-80\" }\nconst _hoisted_2 = { class: \"container grid gap-6\" }\nconst _hoisted_3 = { class: \"text-center cent__col gap-6\" }\nconst _hoisted_4 = { class: \"text-white font-medium\" }\nconst _hoisted_5 = { class: \"cent gap-4\" }\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_7 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_8 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_9 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_3,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_10 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_4,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_11 = { class: \"cent__bet max-sm:justify-center flex-wrap gap-5 text-white\" }\nconst _hoisted_12 = {\n  key: 0,\n  class: \"text-sec cent__bet max-sm:grid grid-cols-2 flex-wrap gap-5 gap-y-12 justify-items-center max-md:my-5\"\n}\nconst _hoisted_13 = { class: \"grid gap-3\" }\nconst _hoisted_14 = { class: \"grid gap-3\" }\nconst _hoisted_15 = { class: \"grid gap-3\" }\nconst _hoisted_16 = { class: \"\" }\nconst _hoisted_17 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"w-full h-[.5px] bg-white mt-5\" }, null, -1)\nconst _hoisted_18 = {\n  key: 0,\n  class: \"container pb-5 cent__bet gap-5 max-md:text-sm\"\n}\nconst _hoisted_19 = {\n  key: 0,\n  href: \"#\",\n  class: \"font-medium text-white md:hidden flex-1\"\n}\nconst _hoisted_20 = [\"href\"]\nconst _hoisted_21 = {\n  key: 2,\n  href: \"#\",\n  class: \"font-medium text-white max-sm:flex-1\"\n}\n\nimport { ref } from 'vue'\r\n\nconst _sfc_main = {\n  __name: 'Footer',\n  props: {\r\n    data: {\r\n        type: Object,\r\n        default: {},\r\n    },\r\n    branding: {\r\n        type: Object,\r\n        default: {},\r\n    },\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nconst footerBg = ref( '/footer-bg.png' )\r\n\nreturn (_ctx, _cache) => {\n  const _component_Logo = __nuxt_component_0\n  const _component_NuxtLink = __nuxt_component_1\n  const _component_Button = __nuxt_component_2\n\n  return (_openBlock(), _createElementBlock(\"footer\", {\n    style: _normalizeStyle( { backgroundImage: 'url(' + footerBg.value + ')' } ),\n    class: _normalizeClass([ { 'hidden': !footerBg.value } , \"bg-no-repeat bg-cover\"])\n  }, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          ( props.branding && props.branding.logo && props.branding.logo.data && props.branding.logo.data.attributes && props.branding.logo.data.attributes.url )\n            ? (_openBlock(), _createBlock(_component_Logo, {\n                key: 0,\n                source:  props.branding.logo.data.attributes.url \n              }, null, 8, [\"source\"]))\n            : _createCommentVNode(\"\", true),\n          _createElementVNode(\"span\", _hoisted_4, _toDisplayString(_ctx.$t( 'footerbanner.logoheading' )), 1),\n          _createElementVNode(\"div\", _hoisted_5, [\n            _createVNode(_component_NuxtLink, { to: \" /\" }, {\n              default: _withCtx(() => [\n                _hoisted_6\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_7\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_8\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_9\n              ]),\n              _: 1\n            }),\n            _createVNode(_component_NuxtLink, { to: \"/\" }, {\n              default: _withCtx(() => [\n                _hoisted_10\n              ]),\n              _: 1\n            })\n          ])\n        ]),\n        _createElementVNode(\"ul\", _hoisted_11, [\n          (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 0, 6 ), (link, index) => {\n            return (_openBlock(), _createElementBlock(\"li\", null, [\n              _createVNode(_component_NuxtLink, {\n                to:  link.link ,\n                class: \"flex-1\"\n              }, {\n                default: _withCtx(() => [\n                  _createTextVNode(_toDisplayString(link.title), 1)\n                ]),\n                _: 2\n              }, 1032, [\"to\"])\n            ]))\n          }), 256))\n        ]),\n        (props.data && props.data.length)\n          ? (_openBlock(), _createElementBlock(\"div\", _hoisted_12, [\n              _createElementVNode(\"div\", _hoisted_13, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 6, 10 ), (link) => {\n                  return (_openBlock(), _createBlock(_component_NuxtLink, {\n                    to:  link.link \n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(link.title), 1)\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"]))\n                }), 256))\n              ]),\n              _createElementVNode(\"div\", _hoisted_14, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 11, 15 ), (link) => {\n                  return (_openBlock(), _createBlock(_component_NuxtLink, {\n                    to:  link.link \n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(link.title), 1)\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"]))\n                }), 256))\n              ]),\n              _createElementVNode(\"div\", _hoisted_15, [\n                (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(props.data.slice( 16, 21 ), (link) => {\n                  return (_openBlock(), _createBlock(_component_NuxtLink, {\n                    to:  link.link \n                  }, {\n                    default: _withCtx(() => [\n                      _createTextVNode(_toDisplayString(link.title), 1)\n                    ]),\n                    _: 2\n                  }, 1032, [\"to\"]))\n                }), 256))\n              ]),\n              _createElementVNode(\"div\", _hoisted_16, [\n                _createVNode(_component_Button, {\n                  buttonText:  _ctx.$t( 'footerbanner.footerbtn' ) ,\n                  buttonClass: \" btn__primary border-white text-white border \"\n                }, null, 8, [\"buttonText\"])\n              ])\n            ]))\n          : _createCommentVNode(\"\", true)\n      ]),\n      _hoisted_17,\n      (props.data && props.branding)\n        ? (_openBlock(), _createElementBlock(\"div\", _hoisted_18, [\n            (props.data.mobile_right)\n              ? (_openBlock(), _createElementBlock(\"a\", _hoisted_19, _toDisplayString(props.data.mobile_right), 1))\n              : _createCommentVNode(\"\", true),\n            (props.branding.copy_rights_info)\n              ? (_openBlock(), _createElementBlock(\"a\", {\n                  key: 1,\n                  href:  props.branding.link_download ,\n                  target: \"_blank\",\n                  class: \"font-medium text-white max-md:flex-1 hidden md:inline-flex\"\n                }, _toDisplayString(props.branding.copy_rights_info), 9, _hoisted_20))\n              : _createCommentVNode(\"\", true),\n            (props.data.left)\n              ? (_openBlock(), _createElementBlock(\"a\", _hoisted_21, _toDisplayString(props.data.left), 1))\n              : _createCommentVNode(\"\", true)\n          ]))\n        : _createCommentVNode(\"\", true)\n    ])\n  ], 6))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1710887974986,
+      "end": 1710887974986,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887974986,
+      "end": 1710887974986,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887974986,
+      "end": 1710887974987,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887974987,
+      "end": 1710887974987,
+      "order": "normal"
+    }
+  ]
+}

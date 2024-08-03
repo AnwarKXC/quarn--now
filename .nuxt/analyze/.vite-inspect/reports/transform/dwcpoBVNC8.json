@@ -1,0 +1,239 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/AllTracks.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<div class=\"  bg-white rounded-xl border border-gray-200 px-4 py-6 grid gap-6\">\r\n\t\t<h2 class=\"h__primary\">{{ $t( 'playbanner.heading' ) }}</h2>\r\n\t\t<div class=\"tracks__grid\">\r\n\t\t\t<TrackCard\r\n\t\t\t\tv-for=\"                    index                     in                     6                   \"\r\n\t\t\t\t:key=\" index \">\r\n\t\t\t\t<template v-slot:image>\r\n\t\t\t\t\t<Image isrc=\"/play-bar.png\" ialt=\"logo\" iclass=\"h-full rounded\" />\r\n\t\t\t\t</template>\r\n\t\t\t\t<template v-slot:title>\r\n\t\t\t\t\tقائمة تشغيل قرأن جديدة\r\n\t\t\t\t</template>\r\n\t\t\t\t<template v-slot:by>\r\n\t\t\t\t\tماهر المعيقلي\r\n\t\t\t\t</template>\r\n\t\t\t</TrackCard>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style lang=\"scss\" scoped></style>",
+      "start": 1710887974297,
+      "end": 1710887974899,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887974899,
+      "end": 1710887974899,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-white rounded-xl border border-gray-200 px-4 py-6 grid gap-6\" }\nconst _hoisted_2 = { class: \"h__primary\" }\nconst _hoisted_3 = { class: \"tracks__grid\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Image = _resolveComponent(\"Image\")\n  const _component_TrackCard = _resolveComponent(\"TrackCard\")\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"h2\", _hoisted_2, _toDisplayString(_ctx.$t( 'playbanner.heading' )), 1),\n    _createElementVNode(\"div\", _hoisted_3, [\n      (_openBlock(), _createElementBlock(_Fragment, null, _renderList(6, (index) => {\n        return _createVNode(_component_TrackCard, {\n          key:  index \n        }, {\n          image: _withCtx(() => [\n            _createVNode(_component_Image, {\n              isrc: \"/play-bar.png\",\n              ialt: \"logo\",\n              iclass: \"h-full rounded\"\n            })\n          ]),\n          title: _withCtx(() => [\n            _createTextVNode(\" قائمة تشغيل قرأن جديدة \")\n          ]),\n          by: _withCtx(() => [\n            _createTextVNode(\" ماهر المعيقلي \")\n          ]),\n          _: 2\n        }, 1024)\n      }), 64))\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710887974899,
+      "end": 1710887974901,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887974901,
+      "end": 1710887974901,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887974901,
+      "end": 1710887974902,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"D:/quran/nuxt-app - Copy/components/Image.vue\";\nimport { default as __nuxt_component_1 } from \"D:/quran/nuxt-app - Copy/components/trackCard.vue\";\nconst _sfc_main = {}\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, resolveComponent as _resolveComponent, createVNode as _createVNode, createTextVNode as _createTextVNode, withCtx as _withCtx } from \"vue\"\n\nconst _hoisted_1 = { class: \"bg-white rounded-xl border border-gray-200 px-4 py-6 grid gap-6\" }\nconst _hoisted_2 = { class: \"h__primary\" }\nconst _hoisted_3 = { class: \"tracks__grid\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_Image = __nuxt_component_0\n  const _component_TrackCard = __nuxt_component_1\n\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    _createElementVNode(\"h2\", _hoisted_2, _toDisplayString(_ctx.$t( 'playbanner.heading' )), 1),\n    _createElementVNode(\"div\", _hoisted_3, [\n      (_openBlock(), _createElementBlock(_Fragment, null, _renderList(6, (index) => {\n        return _createVNode(_component_TrackCard, {\n          key:  index \n        }, {\n          image: _withCtx(() => [\n            _createVNode(_component_Image, {\n              isrc: \"/play-bar.png\",\n              ialt: \"logo\",\n              iclass: \"h-full rounded\"\n            })\n          ]),\n          title: _withCtx(() => [\n            _createTextVNode(\" قائمة تشغيل قرأن جديدة \")\n          ]),\n          by: _withCtx(() => [\n            _createTextVNode(\" ماهر المعيقلي \")\n          ]),\n          _: 2\n        }, 1024)\n      }), 64))\n    ])\n  ]))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887974902,
+      "end": 1710887974902,
+      "order": "normal"
+    }
+  ]
+}

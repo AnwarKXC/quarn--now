@@ -1,0 +1,194 @@
+{
+    "header": {
+        "headerbtn": "Unduh Prioritas Sekarang"
+    },
+    "banner": {
+        "subheading": "Dapatkan peringatan waktu sholat di ponsel Anda secara gratis",
+        "heading": "Apakah Anda melewatkan doa Anda lagi? Aplikasi Doa Sekarang dapat membantu Anda.",
+        "bannerbtn": "Unduh Prioritas Sekarang."
+    },
+    "sidebar": {
+        "item": "Waktu sholat",
+        "item1": "Kitab suci Al-Quran",
+        "item2": "Sejarah Islam",
+        "item3": "Sejarah Islam",
+        "item4": "Sejarah Islam",
+        "download": "Unduh aplikasi"
+    },
+    "add1": {
+        "heading": "Ruang iklan",
+        "subheading": "Lorem Ipsum hanyalah teks formal (artinya bentuk adalah tujuan, bukan isi) dan digunakan oleh industri percetakan dan penerbitan."
+    },
+
+    "searchbar": {
+        "searchtext1": "Temukan waktu sholat, qari, ...",
+        "searchtext2": "Telusuri Kegubernuran Kairo..."
+    },
+    "allcountries": {
+        "heading": "Semua negara",
+        "country": "negara-negara Arab",
+        "country1": "Eropa",
+        "country2": "Amerika Utara",
+        "country3": "Amerika Selatan",
+        "country4": "Asia",
+        "country5": "Afrika",
+        "country6": "lainnya"
+    },
+    "location": {
+        "locationtext": "Untuk mendapatkan waktu yang tepat, harap tunjukkan lokasi Anda.",
+        "buttongreen": "mendeteksi lokasi",
+        "buttonwhite": "saya tidak setuju"
+    },
+    "add2": {
+        "heading": "Ruang iklan",
+        "subheading": "Lorem Ipsum hanyalah teks formal (artinya bentuk adalah tujuan, bukan isi) dan digunakan oleh industri percetakan dan penerbitan..",
+        "startbtn": "mulai sekarang"
+    },
+    "citiesbanner": {
+        "heading": "kota-kota besar Islam"
+
+    },
+    "advantagebanner": {
+        "topheading": "Keuntungan Prioritas Sekarang.",
+        "topsubheading": "Dapatkan peringatan waktu sholat di ponsel Anda secara gratis.",
+        "heading1": "waktunya sholat",
+        "subheading1": "Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.",
+        "heading2": "Baca Al-Qur'an",
+        "subheading2": "Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.",
+        "heading3": "waktunya sholat",
+        "subheading3": "Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an."
+    },
+    "mobilebanner": {
+        "subheading": "Dapatkan peringatan waktu sholat di ponsel Anda secara gratis.",
+        "heading": "Apakah Anda melewatkan doa Anda lagi? Aplikasi Doa Sekarang dapat membantu Anda."
+    },
+    "add3": {
+        "heading": "Pembicaraan hari ini",
+        "subheading": "Atas otoritas Alqamah bin Waqqas Al-Laithi, dia berkata: Saya mendengar Umar bin Al-Khattab, semoga Tuhan meridhoi dia, di atas mimbar, dia berkata: Saya mendengar Rasulullah, semoga doa dan damai Tuhan menyertai kepadanya, katakanlah: “Amal itu hanyalah karena niat, dan setiap orang akan mendapatkan apa yang dia niatkan. Jadi saya beremigrasi untuk apa dia beremigrasi."
+    },
+    "infobanner": {
+        "topheading": "Informasi tentang negara",
+        "para1": "Koordinat:",
+        "para2": "sesuai",
+        "countryheading": "Negara:",
+        "countrysubheading": "The capital:",
+        "timepara": "Time format:",
+        "doctrinepara": "Doctrine:",
+        "calpara": "Calculation method:",
+        "timingheading": "Prayer Timings",
+        "timingsubheading": "today",
+        "monthsubheading": "Prayer times for this month",
+        "week1": "Week 1",
+        "week2": "Week 2",
+        "week3": "Week 3",
+        "week4": "Week 4",
+        "time1": "Fajar",
+        "time2": "Matahari terbit",
+        "time3": "siang",
+        "time4": "usia",
+        "time5": "Maroko",
+        "time6": "makan malam",
+        "date": "tanggal"
+
+    },
+    "citiescounrybanner": {
+        "heading": "kota-kota di dalam negeri"
+    },
+    "playbanner": {
+        "heading": "Daftar putar terbaru"
+    },
+    "trendingbanner": {
+        "heading": "topik yang sedang tren",
+        "cardheading1": "Menjaga persaudaraan antar agama",
+        "cardsubheading1": "Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan",
+        "cardheading2": "Menjaga persaudaraan antar agama",
+        "cardsubheading2": "Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan",
+        "cardheading3": "Menjaga persaudaraan antar agama",
+        "cardsubheading3": "Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan"
+    },
+    "eldersbanner": {
+        "heading": "Semua penatua",
+        "seacrhheading": "Mencari pembaca,...",
+        "yellowpara": "Semua penatua",
+        "alphabet1": "A",
+        "alphabet2": "B",
+        "alphabet3": "T",
+        "alphabet4": "w",
+        "alphabet5": "C",
+        "alphabet6": "H",
+        "alphabet7": "X",
+        "alphabet8": "dr",
+        "alphabet9": "y",
+        "alphabet10": "R",
+        "alphabet11": "G",
+        "alphabet12": "S",
+        "alphabet13": "kamu",
+        "alphabet14": "S",
+        "alphabet15": "z",
+        "alphabet16": "Saya",
+        "alphabet17": "Z",
+        "alphabet18": "p",
+        "alphabet19": "M",
+        "alphabet20": "A",
+        "alphabet21": "A",
+        "alphabet22": "B",
+        "alphabet23": "T",
+        "alphabet24": "w",
+        "alphabet25": "C",
+        "alphabet26": "H",
+        "alphabet27": "X",
+        "alphabet28": "dr",
+        "alphabet29": "y",
+        "alphabet31": "R",
+        "alphabet32": "G",
+        "alphabet33": "S",
+        "alphabet34": "kamu",
+        "alphabet35": "S",
+        "alphabet36": "z",
+        "alphabet37": "Saya",
+        "alphabet38": "Z",
+        "alphabet39": "p",
+        "alphabet40": "M",
+        "greenheading1": "A",
+        "greenheading2": "B",
+        "greenheading3": "T",
+        "greenheading4": "w",
+        "greenheading5": "C"
+    },
+    "playlistbanner": {
+        "heading": "Daftar putar",
+        "date": "1/2/2020",
+        "run": "lari",
+        "listgreenheading": "Surat Quraisy dengan suara:",
+        "listheading": "Playlist - Imam Masjid Agung Mekkah",
+        "listsubheading": "Surah Quraish, lengkap, Al-Qur'an Masjidil Haram di Mekkah 1439, dengan kualitas tinggi, diriwayatkan oleh Hafs atas otoritas Asim, dengan suara para imam Masjidil Haram di Mekkah. Dengarkan online dengan kemungkinan menyalin dan berbagi dengan satu tautan langsung. lihat lebih banyak"
+    },
+    "suratbanner": {
+        "seacrhbar": "Carilah nama-nama surah, ..."
+    },
+    "moreplaybanner": {
+        "heading": "Daftar putar lainnya"
+    },
+
+    "footerbanner": {
+        "logoheading": "Doa Sekarang | Berdoalah sekarang",
+        "link1": "Pusat Bantuan",
+        "link2": "Masjid",
+        "link3": "Fitur aplikasi",
+        "link4": "Beriklan dengan kami",
+        "link5": "tentang kami",
+        "link6": "hubungi kami",
+        "footerbtn": "Arab",
+        "para1": "Pertanyaan yang Sering Diajukan",
+        "para2": "Kebijakan pribadi",
+        "para3": "Syarat Penggunaan",
+        "para4": "Artikel",
+        "para5": "menginformasikan tentang isinya",
+        "para6": "dari saran dan keluhan",
+        "para7": "Unduh Doa Sekarang",
+        "para8": "di seluruh dunia Islam",
+        "para9": "masjid",
+        "footerleft": "Dikembangkan oleh Ab Rocks",
+        "footerright": "© Bray Sekarang  Berdoalah sekarang. Merek dagang terdaftar 2014 - 2022."
+    }
+}

@@ -1,0 +1,241 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/Search.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<form class=\"flex-grow relative\">\r\n\t\t<input type=\"search\" name=\"\" v-model=\"searchQuery\" @input=\" getSearchResults \"\r\n\t\t\t:placeholder=\" $t( 'searchbar.searchtext1' ) \"\r\n\t\t\tclass=\"w-full focus:border-primary outline-none border-2 rtl:pl-14 ltr:pr-14\" id=\"myInput\"\r\n\t\t\t@focus=\" showList \">\r\n\t\t<button type=\"submit\">\r\n\t\t\t<img src=\"/svgs/Search.svg\" alt=\"\"\r\n\t\t\t\tclass=\"absolute rtl:left-1.5 ltr:right-1.5 top-2 rounded-xl bg-white ltr:scale-x-[-1] transform p-2\">\r\n\t\t</button>\r\n\t</form>\r\n\t<button class=\"bg-primary size-[45px] rounded-xl cent\" @click=\" toggleModal \">\r\n\t\t<img src=\"/svgs/gps.svg\" alt=\"\">\r\n\t</button>\r\n\t<ul id=\"myUL\"\r\n\t\tclass=\"divide-y divide-gray-200 drop-shadow  bg-white rounded-xl max-h-56 overflow-y-auto absolute top-20 w-full left-0 right-0 my-1\"\r\n\t\tv-if=\" countrySearchResults && show \">\r\n\t\t<p class=\"py-2\" v-if=\" searchError \">\r\n\t\t\tSorry, something went wrong, please try again.\r\n\t\t</p>\r\n\t\t<p class=\"py-2\" v-if=\" !searchError && countrySearchResults.length === 0 \">\r\n\t\t\tNo results match your query, try a different term.\r\n\t\t</p>\r\n\t\t<template v-else>\r\n\t\t\t<NuxtLink @click=\" hideList \"\r\n\t\t\t\t:to=\" '/app/prayer-time/' + res.attributes.prayer_time_country.data.attributes.slug + '/' + res.attributes.slug + '/' + res.attributes.prayer_time_country.data.id + '/' + res.attributes.prayer_time_country.data.attributes.api_country_code + '/' + res.attributes.api_city_code\"\r\n\t\t\t\tv-for=\"          res           in           countrySearchResults         \"\r\n\t\t\t\t:key=\" res.id \">\r\n\t\t\t\t<li class=\"py-2 cursor-pointer flex gap-1 items-center hover:bg-primary \r\n\t\t\t\t\t\t\thover:text-white\">\r\n\t\t\t\t\t<img\r\n\t\t\t\t\t\tv-if=\" res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url \"\r\n\t\t\t\t\t\t:src=\"  res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url \"\r\n\t\t\t\t\t\t:alt=\" res.attributes.title \" class=\" h-7 aspect-square rounded-full mx-2\">\r\n\t\t\t\t\t<span>\r\n\t\t\t\t\t\t{{ res.attributes.title + \" - \" +\r\n\t\t\t\t\t\tres.attributes.prayer_time_country.data.attributes.name }}\r\n\t\t\t\t\t</span>\r\n\t\t\t\t</li>\r\n\t\t\t</NuxtLink>\r\n\t\t</template>\r\n\t</ul>\r\n\r\n\r\n\r\n\t<Modal :modalActive=\" modalActive \" @close-modal=\" toggleModal \">\r\n\t\t<div\r\n\t\t\tclass=\" bg-white rounded-[27px] flex  gap-6 p-6 md:p-8 items-center justify-center flex-wrap\">\r\n\t\t\t<div>\r\n\t\t\t\t<Image isrc=\"/modal-gps.png\" ialt=\"mobile GPS\" iclass=\"max-h-[200px] min-h-[100px]  \" />\r\n\t\t\t</div>\r\n\t\t\t<div class=\" grid md:gap-8 gap-4 \">\r\n\t\t\t\t<h2 class=\" h__primary max-md:text-center max-w-[450px]\">{{ $t( 'location.locationtext'\r\n\t\t\t\t\t)\r\n\t\t\t\t\t}}</h2>\r\n\t\t\t\t<div class=\"flex gap-4 items-center max-md:justify-center whitespace-nowrap\">\r\n\t\t\t\t\t<Button buttonText=\"location.buttongreen\"\r\n\t\t\t\t\t\tbuttonClass=\"bg-primary text-white btn__primary max-md:text-sm \"></Button>\r\n\t\t\t\t\t<Button @click=\" toggleModal \" buttonText=\"location.buttonwhite\"\r\n\t\t\t\t\t\tbuttonClass=\" text-primary btn__primary max-md:text-sm border border-primary \"></Button>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\r\n\t\t</div>\r\n\r\n\t</Modal>\r\n</template>\r\n\r\n<script setup>\r\nimport { ref } from \"vue\"\r\nimport axios from \"axios\"\r\nconst show = ref( false )\r\nfunction showList () {\r\n\tshow.value = true\r\n}\r\nfunction hideList () {\r\n\tshow.value = false\r\n}\r\n\r\n\r\n\r\n// open modal\r\nconst modalActive = ref( null )\r\nconst toggleModal = () => {\r\n\tmodalActive.value = !modalActive.value\r\n}\r\n\r\n\r\nconst searchKey = import.meta.env.VITE_GET_ALL_CITIES\r\nconst domain = import.meta.env.VITE_DOMAIN\r\nconst searchQuery = ref( \"\" )\r\nconst queryTimeout = ref( null )\r\nconst countrySearchResults = ref( null )\r\nconst searchError = ref( null )\r\nconst getSearchResults = () => {\r\n\tclearTimeout( queryTimeout.value )\r\n\tqueryTimeout.value = setTimeout( async () => {\r\n\t\tif ( searchQuery.value !== \"\" ) {\r\n\t\t\ttry {\r\n\t\t\t\tconst result = await axios.get(\r\n\t\t\t\t\t`${ domain + searchKey }${ searchQuery.value }`\r\n\t\t\t\t)\r\n\t\t\t\tcountrySearchResults.value = result.data.data\r\n\t\t\t} catch {\r\n\t\t\t\tsearchError.value = true\r\n\t\t\t}\r\n\t\t\treturn\r\n\t\t}\r\n\t\tcountrySearchResults.value = null\r\n\t}, 200 )\r\n}\r\n\r\n</script>\r\n\r\n<style scoped></style>\r\n",
+      "start": 1710887973784,
+      "end": 1710887974186,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887974186,
+      "end": 1710887974186,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { vModelText as _vModelText, createElementVNode as _createElementVNode, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createBlock as _createBlock, createVNode as _createVNode } from \"vue\"\nimport _imports_0 from '/svgs/Search.svg'\nimport _imports_1 from '/svgs/gps.svg'\n\n\nconst _hoisted_1 = { class: \"flex-grow relative\" }\nconst _hoisted_2 = [\"placeholder\"]\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"button\", { type: \"submit\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\",\n    class: \"absolute rtl:left-1.5 ltr:right-1.5 top-2 rounded-xl bg-white ltr:scale-x-[-1] transform p-2\"\n  })\n], -1)\nconst _hoisted_4 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"\"\n}, null, -1)\nconst _hoisted_5 = [\n  _hoisted_4\n]\nconst _hoisted_6 = {\n  key: 0,\n  id: \"myUL\",\n  class: \"divide-y divide-gray-200 drop-shadow bg-white rounded-xl max-h-56 overflow-y-auto absolute top-20 w-full left-0 right-0 my-1\"\n}\nconst _hoisted_7 = {\n  key: 0,\n  class: \"py-2\"\n}\nconst _hoisted_8 = {\n  key: 1,\n  class: \"py-2\"\n}\nconst _hoisted_9 = { class: \"py-2 cursor-pointer flex gap-1 items-center hover:bg-primary hover:text-white\" }\nconst _hoisted_10 = [\"src\", \"alt\"]\nconst _hoisted_11 = { class: \"bg-white rounded-[27px] flex gap-6 p-6 md:p-8 items-center justify-center flex-wrap\" }\nconst _hoisted_12 = { class: \"grid md:gap-8 gap-4\" }\nconst _hoisted_13 = { class: \"h__primary max-md:text-center max-w-[450px]\" }\nconst _hoisted_14 = { class: \"flex gap-4 items-center max-md:justify-center whitespace-nowrap\" }\n\nimport { ref } from \"vue\"\r\nimport axios from \"axios\"\r\n\nconst _sfc_main = {\n  __name: 'Search',\n  setup(__props) {\n\r\nconst show = ref( false )\r\nfunction showList () {\r\n\tshow.value = true\r\n}\r\nfunction hideList () {\r\n\tshow.value = false\r\n}\r\n\r\n\r\n\r\n// open modal\r\nconst modalActive = ref( null )\r\nconst toggleModal = () => {\r\n\tmodalActive.value = !modalActive.value\r\n}\r\n\r\n\r\nconst searchKey = import.meta.env.VITE_GET_ALL_CITIES\r\nconst domain = import.meta.env.VITE_DOMAIN\r\nconst searchQuery = ref( \"\" )\r\nconst queryTimeout = ref( null )\r\nconst countrySearchResults = ref( null )\r\nconst searchError = ref( null )\r\nconst getSearchResults = () => {\r\n\tclearTimeout( queryTimeout.value )\r\n\tqueryTimeout.value = setTimeout( async () => {\r\n\t\tif ( searchQuery.value !== \"\" ) {\r\n\t\t\ttry {\r\n\t\t\t\tconst result = await axios.get(\r\n\t\t\t\t\t`${ domain + searchKey }${ searchQuery.value }`\r\n\t\t\t\t)\r\n\t\t\t\tcountrySearchResults.value = result.data.data\r\n\t\t\t} catch {\r\n\t\t\t\tsearchError.value = true\r\n\t\t\t}\r\n\t\t\treturn\r\n\t\t}\r\n\t\tcountrySearchResults.value = null\r\n\t}, 200 )\r\n}\r\n\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n  const _component_Image = _resolveComponent(\"Image\")\n  const _component_Button = _resolveComponent(\"Button\")\n  const _component_Modal = _resolveComponent(\"Modal\")\n\n  return (_openBlock(), _createElementBlock(_Fragment, null, [\n    _createElementVNode(\"form\", _hoisted_1, [\n      _withDirectives(_createElementVNode(\"input\", {\n        type: \"search\",\n        name: \"\",\n        \"onUpdate:modelValue\": _cache[0] || (_cache[0] = $event => ((searchQuery).value = $event)),\n        onInput: _cache[1] || (_cache[1] = (...args) => ( getSearchResults  &&  getSearchResults (...args))),\n        placeholder:  _ctx.$t( 'searchbar.searchtext1' ) ,\n        class: \"w-full focus:border-primary outline-none border-2 rtl:pl-14 ltr:pr-14\",\n        id: \"myInput\",\n        onFocus: _cache[2] || (_cache[2] = (...args) => ( showList  &&  showList (...args)))\n      }, null, 40, _hoisted_2), [\n        [_vModelText, searchQuery.value]\n      ]),\n      _hoisted_3\n    ]),\n    _createElementVNode(\"button\", {\n      class: \"bg-primary size-[45px] rounded-xl cent\",\n      onClick: _cache[3] || (_cache[3] = (...args) => ( toggleModal  &&  toggleModal (...args)))\n    }, _hoisted_5),\n    ( countrySearchResults.value && show.value )\n      ? (_openBlock(), _createElementBlock(\"ul\", _hoisted_6, [\n          ( searchError.value )\n            ? (_openBlock(), _createElementBlock(\"p\", _hoisted_7, \" Sorry, something went wrong, please try again. \"))\n            : _createCommentVNode(\"\", true),\n          ( !searchError.value && countrySearchResults.value.length === 0 )\n            ? (_openBlock(), _createElementBlock(\"p\", _hoisted_8, \" No results match your query, try a different term. \"))\n            : (_openBlock(true), _createElementBlock(_Fragment, { key: 2 }, _renderList(countrySearchResults.value, (res) => {\n                return (_openBlock(), _createBlock(_component_NuxtLink, {\n                  onClick:  hideList ,\n                  to:  '/app/prayer-time/' + res.attributes.prayer_time_country.data.attributes.slug + '/' + res.attributes.slug + '/' + res.attributes.prayer_time_country.data.id + '/' + res.attributes.prayer_time_country.data.attributes.api_country_code + '/' + res.attributes.api_city_code,\n                  key:  res.id \n                }, {\n                  default: _withCtx(() => [\n                    _createElementVNode(\"li\", _hoisted_9, [\n                      ( res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url )\n                        ? (_openBlock(), _createElementBlock(\"img\", {\n                            key: 0,\n                            src:   res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url ,\n                            alt:  res.attributes.title ,\n                            class: \"h-7 aspect-square rounded-full mx-2\"\n                          }, null, 8, _hoisted_10))\n                        : _createCommentVNode(\"\", true),\n                      _createElementVNode(\"span\", null, _toDisplayString(res.attributes.title + \" - \" +\r\n\t\t\t\t\t\tres.attributes.prayer_time_country.data.attributes.name), 1)\n                    ])\n                  ]),\n                  _: 2\n                }, 1032, [\"onClick\", \"to\"]))\n              }), 128))\n        ]))\n      : _createCommentVNode(\"\", true),\n    _createVNode(_component_Modal, {\n      modalActive:  modalActive.value ,\n      onCloseModal:  toggleModal \n    }, {\n      default: _withCtx(() => [\n        _createElementVNode(\"div\", _hoisted_11, [\n          _createElementVNode(\"div\", null, [\n            _createVNode(_component_Image, {\n              isrc: \"/modal-gps.png\",\n              ialt: \"mobile GPS\",\n              iclass: \"max-h-[200px] min-h-[100px]  \"\n            })\n          ]),\n          _createElementVNode(\"div\", _hoisted_12, [\n            _createElementVNode(\"h2\", _hoisted_13, _toDisplayString(_ctx.$t( 'location.locationtext'\r\n\t\t\t\t\t)), 1),\n            _createElementVNode(\"div\", _hoisted_14, [\n              _createVNode(_component_Button, {\n                buttonText: \"location.buttongreen\",\n                buttonClass: \"bg-primary text-white btn__primary max-md:text-sm \"\n              }),\n              _createVNode(_component_Button, {\n                onClick:  toggleModal ,\n                buttonText: \"location.buttonwhite\",\n                buttonClass: \" text-primary btn__primary max-md:text-sm border border-primary \"\n              }, null, 8, [\"onClick\"])\n            ])\n          ])\n        ])\n      ]),\n      _: 1\n    }, 8, [\"modalActive\", \"onCloseModal\"])\n  ], 64))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1710887974186,
+      "end": 1710887974196,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887974196,
+      "end": 1710887974196,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974196,
+      "end": 1710887974196,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887974196,
+      "end": 1710887974197,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887974197,
+      "end": 1710887974197,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887974197,
+      "end": 1710887974197,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887974197,
+      "end": 1710887974197,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887974197,
+      "end": 1710887974197,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { vModelText as _vModelText, createElementVNode as _createElementVNode, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createBlock as _createBlock, createVNode as _createVNode } from \"vue\";\nimport _imports_0 from \"/svgs/Search.svg\";\nimport _imports_1 from \"/svgs/gps.svg\";\nconst _hoisted_1 = { class: \"flex-grow relative\" };\nconst _hoisted_2 = [\"placeholder\"];\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"button\", { type: \"submit\" }, [\n  /* @__PURE__ */ _createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\",\n    class: \"absolute rtl:left-1.5 ltr:right-1.5 top-2 rounded-xl bg-white ltr:scale-x-[-1] transform p-2\"\n  })\n], -1);\nconst _hoisted_4 = /* @__PURE__ */ _createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"\"\n}, null, -1);\nconst _hoisted_5 = [\n  _hoisted_4\n];\nconst _hoisted_6 = {\n  key: 0,\n  id: \"myUL\",\n  class: \"divide-y divide-gray-200 drop-shadow bg-white rounded-xl max-h-56 overflow-y-auto absolute top-20 w-full left-0 right-0 my-1\"\n};\nconst _hoisted_7 = {\n  key: 0,\n  class: \"py-2\"\n};\nconst _hoisted_8 = {\n  key: 1,\n  class: \"py-2\"\n};\nconst _hoisted_9 = { class: \"py-2 cursor-pointer flex gap-1 items-center hover:bg-primary hover:text-white\" };\nconst _hoisted_10 = [\"src\", \"alt\"];\nconst _hoisted_11 = { class: \"bg-white rounded-[27px] flex gap-6 p-6 md:p-8 items-center justify-center flex-wrap\" };\nconst _hoisted_12 = { class: \"grid md:gap-8 gap-4\" };\nconst _hoisted_13 = { class: \"h__primary max-md:text-center max-w-[450px]\" };\nconst _hoisted_14 = { class: \"flex gap-4 items-center max-md:justify-center whitespace-nowrap\" };\nimport { ref } from \"vue\";\nimport axios from \"axios\";\nconst _sfc_main = {\n  __name: \"Search\",\n  setup(__props) {\n    const show = ref(false);\n    function showList() {\n      show.value = true;\n    }\n    function hideList() {\n      show.value = false;\n    }\n    const modalActive = ref(null);\n    const toggleModal = () => {\n      modalActive.value = !modalActive.value;\n    };\n    const searchKey = \"/api/prayer-time-cities/?isHardPopulate=true&filters[title][$contains]=\";\n    const domain = \"https://cms.prayer-now.com\";\n    const searchQuery = ref(\"\");\n    const queryTimeout = ref(null);\n    const countrySearchResults = ref(null);\n    const searchError = ref(null);\n    const getSearchResults = () => {\n      clearTimeout(queryTimeout.value);\n      queryTimeout.value = setTimeout(async () => {\n        if (searchQuery.value !== \"\") {\n          try {\n            const result = await axios.get(\n              `${domain + searchKey}${searchQuery.value}`\n            );\n            countrySearchResults.value = result.data.data;\n          } catch {\n            searchError.value = true;\n          }\n          return;\n        }\n        countrySearchResults.value = null;\n      }, 200);\n    };\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      const _component_Image = _resolveComponent(\"Image\");\n      const _component_Button = _resolveComponent(\"Button\");\n      const _component_Modal = _resolveComponent(\"Modal\");\n      return _openBlock(), _createElementBlock(_Fragment, null, [\n        _createElementVNode(\"form\", _hoisted_1, [\n          _withDirectives(_createElementVNode(\"input\", {\n            type: \"search\",\n            name: \"\",\n            \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event) => searchQuery.value = $event),\n            onInput: _cache[1] || (_cache[1] = (...args) => getSearchResults && getSearchResults(...args)),\n            placeholder: _ctx.$t(\"searchbar.searchtext1\"),\n            class: \"w-full focus:border-primary outline-none border-2 rtl:pl-14 ltr:pr-14\",\n            id: \"myInput\",\n            onFocus: _cache[2] || (_cache[2] = (...args) => showList && showList(...args))\n          }, null, 40, _hoisted_2), [\n            [_vModelText, searchQuery.value]\n          ]),\n          _hoisted_3\n        ]),\n        _createElementVNode(\"button\", {\n          class: \"bg-primary size-[45px] rounded-xl cent\",\n          onClick: _cache[3] || (_cache[3] = (...args) => toggleModal && toggleModal(...args))\n        }, _hoisted_5),\n        countrySearchResults.value && show.value ? (_openBlock(), _createElementBlock(\"ul\", _hoisted_6, [\n          searchError.value ? (_openBlock(), _createElementBlock(\"p\", _hoisted_7, \" Sorry, something went wrong, please try again. \")) : _createCommentVNode(\"\", true),\n          !searchError.value && countrySearchResults.value.length === 0 ? (_openBlock(), _createElementBlock(\"p\", _hoisted_8, \" No results match your query, try a different term. \")) : (_openBlock(true), _createElementBlock(_Fragment, { key: 2 }, _renderList(countrySearchResults.value, (res) => {\n            return _openBlock(), _createBlock(_component_NuxtLink, {\n              onClick: hideList,\n              to: \"/app/prayer-time/\" + res.attributes.prayer_time_country.data.attributes.slug + \"/\" + res.attributes.slug + \"/\" + res.attributes.prayer_time_country.data.id + \"/\" + res.attributes.prayer_time_country.data.attributes.api_country_code + \"/\" + res.attributes.api_city_code,\n              key: res.id\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"li\", _hoisted_9, [\n                  res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url ? (_openBlock(), _createElementBlock(\"img\", {\n                    key: 0,\n                    src: res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url,\n                    alt: res.attributes.title,\n                    class: \"h-7 aspect-square rounded-full mx-2\"\n                  }, null, 8, _hoisted_10)) : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", null, _toDisplayString(res.attributes.title + \" - \" + res.attributes.prayer_time_country.data.attributes.name), 1)\n                ])\n              ]),\n              _: 2\n            }, 1032, [\"onClick\", \"to\"]);\n          }), 128))\n        ])) : _createCommentVNode(\"\", true),\n        _createVNode(_component_Modal, {\n          modalActive: modalActive.value,\n          onCloseModal: toggleModal\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_11, [\n              _createElementVNode(\"div\", null, [\n                _createVNode(_component_Image, {\n                  isrc: \"/modal-gps.png\",\n                  ialt: \"mobile GPS\",\n                  iclass: \"max-h-[200px] min-h-[100px]  \"\n                })\n              ]),\n              _createElementVNode(\"div\", _hoisted_12, [\n                _createElementVNode(\"h2\", _hoisted_13, _toDisplayString(_ctx.$t(\n                  \"location.locationtext\"\n                )), 1),\n                _createElementVNode(\"div\", _hoisted_14, [\n                  _createVNode(_component_Button, {\n                    buttonText: \"location.buttongreen\",\n                    buttonClass: \"bg-primary text-white btn__primary max-md:text-sm \"\n                  }),\n                  _createVNode(_component_Button, {\n                    onClick: toggleModal,\n                    buttonText: \"location.buttonwhite\",\n                    buttonClass: \" text-primary btn__primary max-md:text-sm border border-primary \"\n                  }, null, 8, [\"onClick\"])\n                ])\n              ])\n            ])\n          ]),\n          _: 1\n        }, 8, [\"modalActive\", \"onCloseModal\"])\n      ], 64);\n    };\n  }\n};\nexport default _sfc_main;\n",
+      "start": 1710887974197,
+      "end": 1710887974694,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887974694,
+      "end": 1710887974694,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887974694,
+      "end": 1710887974699,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887974699,
+      "end": 1710887974700,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887974700,
+      "end": 1710887974700,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887974700,
+      "end": 1710887974700,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887974700,
+      "end": 1710887974722,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887974723,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"D:/quran/nuxt-app - Copy/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { default as __nuxt_component_1 } from \"D:/quran/nuxt-app - Copy/components/Image.vue\";\nimport { default as __nuxt_component_2 } from \"D:/quran/nuxt-app - Copy/components/Button.vue\";\nimport { default as __nuxt_component_3 } from \"D:/quran/nuxt-app - Copy/components/Modal.vue\";\nimport { vModelText as _vModelText, createElementVNode as _createElementVNode, withDirectives as _withDirectives, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, renderList as _renderList, Fragment as _Fragment, toDisplayString as _toDisplayString, resolveComponent as _resolveComponent, withCtx as _withCtx, createBlock as _createBlock, createVNode as _createVNode } from \"vue\";\nimport _imports_0 from \"/svgs/Search.svg\";\nimport _imports_1 from \"/svgs/gps.svg\";\nconst _hoisted_1 = { class: \"flex-grow relative\" };\nconst _hoisted_2 = [\"placeholder\"];\nconst _hoisted_3 = /* @__PURE__ */ _createElementVNode(\"button\", { type: \"submit\" }, [\n  /* @__PURE__ */ _createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\",\n    class: \"absolute rtl:left-1.5 ltr:right-1.5 top-2 rounded-xl bg-white ltr:scale-x-[-1] transform p-2\"\n  })\n], -1);\nconst _hoisted_4 = /* @__PURE__ */ _createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"\"\n}, null, -1);\nconst _hoisted_5 = [\n  _hoisted_4\n];\nconst _hoisted_6 = {\n  key: 0,\n  id: \"myUL\",\n  class: \"divide-y divide-gray-200 drop-shadow bg-white rounded-xl max-h-56 overflow-y-auto absolute top-20 w-full left-0 right-0 my-1\"\n};\nconst _hoisted_7 = {\n  key: 0,\n  class: \"py-2\"\n};\nconst _hoisted_8 = {\n  key: 1,\n  class: \"py-2\"\n};\nconst _hoisted_9 = { class: \"py-2 cursor-pointer flex gap-1 items-center hover:bg-primary hover:text-white\" };\nconst _hoisted_10 = [\"src\", \"alt\"];\nconst _hoisted_11 = { class: \"bg-white rounded-[27px] flex gap-6 p-6 md:p-8 items-center justify-center flex-wrap\" };\nconst _hoisted_12 = { class: \"grid md:gap-8 gap-4\" };\nconst _hoisted_13 = { class: \"h__primary max-md:text-center max-w-[450px]\" };\nconst _hoisted_14 = { class: \"flex gap-4 items-center max-md:justify-center whitespace-nowrap\" };\nimport { ref } from \"vue\";\nimport axios from \"axios\";\nconst _sfc_main = {\n  __name: \"Search\",\n  setup(__props) {\n    const show = ref(false);\n    function showList() {\n      show.value = true;\n    }\n    function hideList() {\n      show.value = false;\n    }\n    const modalActive = ref(null);\n    const toggleModal = () => {\n      modalActive.value = !modalActive.value;\n    };\n    const searchKey = \"/api/prayer-time-cities/?isHardPopulate=true&filters[title][$contains]=\";\n    const domain = \"https://cms.prayer-now.com\";\n    const searchQuery = ref(\"\");\n    const queryTimeout = ref(null);\n    const countrySearchResults = ref(null);\n    const searchError = ref(null);\n    const getSearchResults = () => {\n      clearTimeout(queryTimeout.value);\n      queryTimeout.value = setTimeout(async () => {\n        if (searchQuery.value !== \"\") {\n          try {\n            const result = await axios.get(\n              `${domain + searchKey}${searchQuery.value}`\n            );\n            countrySearchResults.value = result.data.data;\n          } catch {\n            searchError.value = true;\n          }\n          return;\n        }\n        countrySearchResults.value = null;\n      }, 200);\n    };\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = __nuxt_component_0;\n      const _component_Image = __nuxt_component_1;\n      const _component_Button = __nuxt_component_2;\n      const _component_Modal = __nuxt_component_3;\n      return _openBlock(), _createElementBlock(_Fragment, null, [\n        _createElementVNode(\"form\", _hoisted_1, [\n          _withDirectives(_createElementVNode(\"input\", {\n            type: \"search\",\n            name: \"\",\n            \"onUpdate:modelValue\": _cache[0] || (_cache[0] = ($event) => searchQuery.value = $event),\n            onInput: _cache[1] || (_cache[1] = (...args) => getSearchResults && getSearchResults(...args)),\n            placeholder: _ctx.$t(\"searchbar.searchtext1\"),\n            class: \"w-full focus:border-primary outline-none border-2 rtl:pl-14 ltr:pr-14\",\n            id: \"myInput\",\n            onFocus: _cache[2] || (_cache[2] = (...args) => showList && showList(...args))\n          }, null, 40, _hoisted_2), [\n            [_vModelText, searchQuery.value]\n          ]),\n          _hoisted_3\n        ]),\n        _createElementVNode(\"button\", {\n          class: \"bg-primary size-[45px] rounded-xl cent\",\n          onClick: _cache[3] || (_cache[3] = (...args) => toggleModal && toggleModal(...args))\n        }, _hoisted_5),\n        countrySearchResults.value && show.value ? (_openBlock(), _createElementBlock(\"ul\", _hoisted_6, [\n          searchError.value ? (_openBlock(), _createElementBlock(\"p\", _hoisted_7, \" Sorry, something went wrong, please try again. \")) : _createCommentVNode(\"\", true),\n          !searchError.value && countrySearchResults.value.length === 0 ? (_openBlock(), _createElementBlock(\"p\", _hoisted_8, \" No results match your query, try a different term. \")) : (_openBlock(true), _createElementBlock(_Fragment, { key: 2 }, _renderList(countrySearchResults.value, (res) => {\n            return _openBlock(), _createBlock(_component_NuxtLink, {\n              onClick: hideList,\n              to: \"/app/prayer-time/\" + res.attributes.prayer_time_country.data.attributes.slug + \"/\" + res.attributes.slug + \"/\" + res.attributes.prayer_time_country.data.id + \"/\" + res.attributes.prayer_time_country.data.attributes.api_country_code + \"/\" + res.attributes.api_city_code,\n              key: res.id\n            }, {\n              default: _withCtx(() => [\n                _createElementVNode(\"li\", _hoisted_9, [\n                  res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url ? (_openBlock(), _createElementBlock(\"img\", {\n                    key: 0,\n                    src: res.attributes.prayer_time_country.data.attributes.flag.data.attributes.url,\n                    alt: res.attributes.title,\n                    class: \"h-7 aspect-square rounded-full mx-2\"\n                  }, null, 8, _hoisted_10)) : _createCommentVNode(\"\", true),\n                  _createElementVNode(\"span\", null, _toDisplayString(res.attributes.title + \" - \" + res.attributes.prayer_time_country.data.attributes.name), 1)\n                ])\n              ]),\n              _: 2\n            }, 1032, [\"onClick\", \"to\"]);\n          }), 128))\n        ])) : _createCommentVNode(\"\", true),\n        _createVNode(_component_Modal, {\n          modalActive: modalActive.value,\n          onCloseModal: toggleModal\n        }, {\n          default: _withCtx(() => [\n            _createElementVNode(\"div\", _hoisted_11, [\n              _createElementVNode(\"div\", null, [\n                _createVNode(_component_Image, {\n                  isrc: \"/modal-gps.png\",\n                  ialt: \"mobile GPS\",\n                  iclass: \"max-h-[200px] min-h-[100px]  \"\n                })\n              ]),\n              _createElementVNode(\"div\", _hoisted_12, [\n                _createElementVNode(\"h2\", _hoisted_13, _toDisplayString(_ctx.$t(\n                  \"location.locationtext\"\n                )), 1),\n                _createElementVNode(\"div\", _hoisted_14, [\n                  _createVNode(_component_Button, {\n                    buttonText: \"location.buttongreen\",\n                    buttonClass: \"bg-primary text-white btn__primary max-md:text-sm \"\n                  }),\n                  _createVNode(_component_Button, {\n                    onClick: toggleModal,\n                    buttonText: \"location.buttonwhite\",\n                    buttonClass: \" text-primary btn__primary max-md:text-sm border border-primary \"\n                  }, null, 8, [\"onClick\"])\n                ])\n              ])\n            ])\n          ]),\n          _: 1\n        }, 8, [\"modalActive\", \"onCloseModal\"])\n      ], 64);\n    };\n  }\n};\nexport default _sfc_main;\n",
+      "start": 1710887974724,
+      "end": 1710887974724,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887974725,
+      "end": 1710887974725,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887974725,
+      "end": 1710887974725,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887974725,
+      "end": 1710887974725,
+      "order": "normal"
+    }
+  ]
+}

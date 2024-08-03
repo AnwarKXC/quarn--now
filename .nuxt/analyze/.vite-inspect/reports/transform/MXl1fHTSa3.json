@@ -1,0 +1,238 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/locales/fr.json",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "{\r\n    \"header\":{\r\n        \"headerbtn\": \"Télécharger la priorité maintenant\"\r\n    },\r\n    \"banner\":{\r\n        \"subheading\": \"Recevez gratuitement l'alerte des heures de prière sur votre téléphone\",\r\n        \"heading\": \"Avez-vous encore manqué votre prière? L'application Prayer Now peut vous aider.\",\r\n        \"bannerbtn\": \"Téléchargez Priorité maintenant.\"\r\n    },\r\n    \"sidebar\":{\r\n        \"item\": \"Horaires de prière\",\r\n        \"item1\": \"Le Coran\",\r\n        \"item2\": \"Histoire islamique\",\r\n        \"item3\": \"Histoire islamique\",\r\n        \"item4\": \"Histoire islamique\",\r\n        \"download\": \"Téléchargez l'application\"\r\n    },\r\n    \"add1\":{\r\n        \"heading\": \"Espace publicitaire\",\r\n        \"subheading\": \"Lorem Ipsum est simplement un texte formel (ce qui signifie que la forme est l'objectif, pas le contenu) et est utilisé par les industries de l'impression et de l'édition.\"\r\n    },\r\n\r\n    \"searchbar\":{\r\n        \"searchtext1\": \"Retrouvez les horaires de prières, les récitants,...\",\r\n        \"searchtext2\": \"Rechercher Gouvernorat du Caire...\"\r\n    },\r\n    \"allcountries\":{\r\n        \"heading\": \"Tous les pays\",\r\n        \"country\": \"Arab countries\",\r\n        \"country1\": \"pays arabes\",\r\n        \"country2\": \"Amérique du Nord\",\r\n        \"country3\": \"Amérique du Sud\",\r\n        \"country4\": \"Asie\",\r\n        \"country5\": \"Afrique\",\r\n        \"country6\": \"autre\"\r\n    },\r\n    \"location\":{\r\n        \"locationtext\": \"Pour obtenir l'heure exacte, veuillez indiquer votre emplacement.\",\r\n        \"buttongreen\": \"localiser le lieu\",\r\n        \"buttonwhite\": \"Je ne suis pas d'accord\"\r\n    },\r\n    \"add2\":{\r\n        \"heading\": \"Espace publicitaire\",\r\n        \"subheading\": \"Lorem Ipsum est simplement un texte formel (ce qui signifie que la forme est l'objectif, pas le contenu) et est utilisé par les industries de l'impression et de l'édition.\",\r\n        \"startbtn\": \"commencez maintenant\"\r\n    },\r\n    \"citiesbanner\":{\r\n        \"heading\": \"grandes villes islamiques\"\r\n        \r\n    },\r\n    \"advantagebanner\":{\r\n        \"topheading\": \"Avantages de Priorité Maintenant.\",\r\n        \"topsubheading\": \"Recevez gratuitement l'alerte des heures de prière sur votre téléphone.\",\r\n        \"heading1\": \"temps de prière\",\r\n        \"subheading1\": \"Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.\",\r\n        \"heading2\": \"Lire le Coran\",\r\n        \"subheading2\": \"Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.\",\r\n        \"heading3\": \"temps de prière\",\r\n        \"subheading3\": \"Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.\"\r\n    },\r\n    \"mobilebanner\":{\r\n        \"subheading\": \"Recevez gratuitement l'alerte des heures de prière sur votre téléphone.\",\r\n        \"heading\": \"Avez-vous encore manqué votre prière? L'application Prayer Now peut vous aider.\"   \r\n    },\r\n    \"add3\":{\r\n        \"heading\": \"Le discours d'aujourd'hui\", \r\n        \"subheading\": \"Sous l'autorité d'Alqamah bin Waqqas Al-Laithi, il dit : J'ai entendu Umar bin Al-Khattab, que Dieu soit satisfait de lui, sur la chaire, il a dit : J'ai entendu le Messager de Dieu, que les prières et la paix de Dieu soient sur lui. lui, dites : « Les actions ne sont que par intentions, et chacun aura ce qu'il a voulu. Alors je l'ai émigré pour ce pour quoi il a émigré.\"  \r\n    },\r\n    \"infobanner\":{\r\n        \"topheading\": \"Informations sur le pays\", \r\n        \"para1\": \"Coordonnés:\", \r\n        \"para2\": \"correspondant\", \r\n        \"countryheading\": \"Pays:\", \r\n        \"countrysubheading\": \"La capitale:\", \r\n        \"timepara\": \"Format de l'heure:\",  \r\n        \"doctrinepara\": \"Doctrine:\",  \r\n        \"calpara\": \"Méthode de calcul:\",\r\n        \"timingheading\": \"Horaires de prière\",  \r\n        \"timingsubheading\": \"aujourd'hui\",  \r\n        \"monthsubheading\": \"Horaires des prières de ce mois\",  \r\n        \"week1\": \"Week 1\",\r\n        \"week2\": \"Week 2\",\r\n        \"week3\": \"Week 3\",\r\n        \"week4\": \"Week 4\",\r\n        \"time1\": \"Aube\",\r\n        \"time2\": \"Lever du soleil\",\r\n        \"time3\": \"midi\",\r\n        \"time4\": \"âge\",\r\n        \"time5\": \"Maroc\",\r\n        \"time6\": \"dîner\",\r\n        \"date\": \"la date\"\r\n\r\n    },\r\n    \"citiescounrybanner\":{\r\n        \"heading\": \"villes du pays\"   \r\n    },\r\n    \"playbanner\":{\r\n        \"heading\": \"Dernières listes de lecture\"   \r\n    },\r\n    \"trendingbanner\":{\r\n        \"heading\": \"sujets tendances\",   \r\n        \"cardheading1\": \"Préserver la fraternité des religions\",   \r\n        \"cardsubheading1\": \"Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations\",   \r\n        \"cardheading2\": \"Préserver la fraternité des religions\",   \r\n        \"cardsubheading2\": \"Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations\",   \r\n        \"cardheading3\": \"Préserver la fraternité des religions\",   \r\n        \"cardsubheading3\": \"Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations\"   \r\n    },\r\n    \"eldersbanner\":{\r\n        \"heading\": \"Tous les anciens\",   \r\n        \"seacrhheading\": \"A la recherche de lecteurs,...\",\r\n        \"yellowpara\": \"Tous les anciens\",   \r\n        \"alphabet1\": \"une\",   \r\n        \"alphabet2\": \"B\",   \r\n        \"alphabet3\": \"J\",   \r\n        \"alphabet4\": \"W\",   \r\n        \"alphabet5\": \"c\",   \r\n        \"alphabet6\": \"h\",   \r\n        \"alphabet7\": \"x\",   \r\n        \"alphabet8\": \"Docteur\",   \r\n        \"alphabet9\": \"y\",   \r\n        \"alphabet10\": \"R\",   \r\n        \"alphabet11\": \"g\",   \r\n        \"alphabet12\": \"s\",   \r\n        \"alphabet13\": \"tu\",   \r\n        \"alphabet14\": \"s\",   \r\n        \"alphabet15\": \"z\",   \r\n        \"alphabet16\": \"je\",   \r\n        \"alphabet17\": \"Z\",   \r\n        \"alphabet18\": \"p\",   \r\n        \"alphabet19\": \"M\",   \r\n        \"alphabet20\": \"une\",   \r\n        \"alphabet21\": \"une\",   \r\n        \"alphabet22\": \"B\",   \r\n        \"alphabet23\": \"J\",   \r\n        \"alphabet24\": \"w\",   \r\n        \"alphabet25\": \"c\",   \r\n        \"alphabet26\": \"h\",   \r\n        \"alphabet27\": \"x\",   \r\n        \"alphabet28\": \"Docteur\",   \r\n        \"alphabet29\": \"y\",   \r\n        \"alphabet31\": \"R\",   \r\n        \"alphabet32\": \"g\",   \r\n        \"alphabet33\": \"s\",   \r\n        \"alphabet34\": \"tu\",   \r\n        \"alphabet35\": \"s\",   \r\n        \"alphabet36\": \"z\",   \r\n        \"alphabet37\": \"je\",   \r\n        \"alphabet38\": \"Z\",   \r\n        \"alphabet39\": \"p\",   \r\n        \"alphabet40\": \"M\",   \r\n        \"greenheading1\": \"une\",   \r\n        \"greenheading2\": \"B\",   \r\n        \"greenheading3\": \"J\",   \r\n        \"greenheading4\": \"w\",      \r\n        \"greenheading5\": \"c\"      \r\n    },\r\n    \"playlistbanner\":{\r\n        \"heading\":\"Playlist\",\r\n        \"date\":\"02/01/2020\",\r\n        \"run\":\"courses\",\r\n        \"listgreenheading\":\"Sourate Quraish avec voix :\",\r\n        \"listheading\":\"Playlist - Imams de la Grande Mosquée de La Mecque\",\r\n        \"listsubheading\":\"Sourate Quraish, complète, le Coran de la Grande Mosquée de La Mecque 1439, de haute qualité, racontée par Hafs sous l'autorité d'Asim, par la voix des imams de la Grande Mosquée de La Mecque. Écoutez en ligne avec la possibilité de copier et de partager avec un seul lien direct. voir plus\"\r\n    },\r\n    \"suratbanner\":{\r\n        \"seacrhbar\":\"Cherchez les noms des sourates, ...\"\r\n    },\r\n    \"moreplaybanner\":{\r\n        \"heading\":\"Plus de listes de lecture\"\r\n    },\r\n    \r\n    \"footerbanner\":{\r\n        \"logoheading\": \"Prière maintenant | Priez maintenant\",\r\n        \"link1\": \"Centre d'aide\",\r\n        \"link2\": \"Mosquées\",   \r\n        \"link3\": \"Fonctionnalités des applications\",\r\n        \"link4\": \"faites de la publicité avec nous\",\r\n        \"link5\": \"à propos de nous\",\r\n        \"link6\": \"appelez-nous\",\r\n        \"footerbtn\": \"arabe\",\r\n        \"para1\": \"Questions fréquemment posées\",\r\n        \"para2\": \"politique de confidentialité\",\r\n        \"para3\": \"Conditions d'utilisation\",\r\n        \"para4\": \"Des articles\",\r\n        \"para5\": \"informer sur le contenu\",\r\n        \"para6\": \"de suggestions et de plaintes\",\r\n        \"para7\": \"Télécharger la prière maintenant\",\r\n        \"para8\": \"autour du monde islamique\",\r\n        \"para9\": \"mosquées\",\r\n        \"footerleft\": \"Développé par Ab Rocks\",\r\n        \"footerright\": \"© Bray maintenant  Priez maintenant. Marque déposée 2014 - 2022.\"\r\n    }\r\n}",
+      "start": 1710887975309,
+      "end": 1710887975462,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887975462,
+      "end": 1710887975462,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887975462,
+      "end": 1710887975462,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887975462,
+      "end": 1710887975462,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887975462,
+      "end": 1710887975462,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887975462,
+      "end": 1710887975462,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887975462,
+      "end": 1710887975462,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "result": "export const header = {\n\theaderbtn: \"Télécharger la priorité maintenant\"\n};\nexport const banner = {\n\tsubheading: \"Recevez gratuitement l'alerte des heures de prière sur votre téléphone\",\n\theading: \"Avez-vous encore manqué votre prière? L'application Prayer Now peut vous aider.\",\n\tbannerbtn: \"Téléchargez Priorité maintenant.\"\n};\nexport const sidebar = {\n\titem: \"Horaires de prière\",\n\titem1: \"Le Coran\",\n\titem2: \"Histoire islamique\",\n\titem3: \"Histoire islamique\",\n\titem4: \"Histoire islamique\",\n\tdownload: \"Téléchargez l'application\"\n};\nexport const add1 = {\n\theading: \"Espace publicitaire\",\n\tsubheading: \"Lorem Ipsum est simplement un texte formel (ce qui signifie que la forme est l'objectif, pas le contenu) et est utilisé par les industries de l'impression et de l'édition.\"\n};\nexport const searchbar = {\n\tsearchtext1: \"Retrouvez les horaires de prières, les récitants,...\",\n\tsearchtext2: \"Rechercher Gouvernorat du Caire...\"\n};\nexport const allcountries = {\n\theading: \"Tous les pays\",\n\tcountry: \"Arab countries\",\n\tcountry1: \"pays arabes\",\n\tcountry2: \"Amérique du Nord\",\n\tcountry3: \"Amérique du Sud\",\n\tcountry4: \"Asie\",\n\tcountry5: \"Afrique\",\n\tcountry6: \"autre\"\n};\nexport const location = {\n\tlocationtext: \"Pour obtenir l'heure exacte, veuillez indiquer votre emplacement.\",\n\tbuttongreen: \"localiser le lieu\",\n\tbuttonwhite: \"Je ne suis pas d'accord\"\n};\nexport const add2 = {\n\theading: \"Espace publicitaire\",\n\tsubheading: \"Lorem Ipsum est simplement un texte formel (ce qui signifie que la forme est l'objectif, pas le contenu) et est utilisé par les industries de l'impression et de l'édition.\",\n\tstartbtn: \"commencez maintenant\"\n};\nexport const citiesbanner = {\n\theading: \"grandes villes islamiques\"\n};\nexport const advantagebanner = {\n\ttopheading: \"Avantages de Priorité Maintenant.\",\n\ttopsubheading: \"Recevez gratuitement l'alerte des heures de prière sur votre téléphone.\",\n\theading1: \"temps de prière\",\n\tsubheading1: \"Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.\",\n\theading2: \"Lire le Coran\",\n\tsubheading2: \"Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.\",\n\theading3: \"temps de prière\",\n\tsubheading3: \"Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.\"\n};\nexport const mobilebanner = {\n\tsubheading: \"Recevez gratuitement l'alerte des heures de prière sur votre téléphone.\",\n\theading: \"Avez-vous encore manqué votre prière? L'application Prayer Now peut vous aider.\"\n};\nexport const add3 = {\n\theading: \"Le discours d'aujourd'hui\",\n\tsubheading: \"Sous l'autorité d'Alqamah bin Waqqas Al-Laithi, il dit : J'ai entendu Umar bin Al-Khattab, que Dieu soit satisfait de lui, sur la chaire, il a dit : J'ai entendu le Messager de Dieu, que les prières et la paix de Dieu soient sur lui. lui, dites : « Les actions ne sont que par intentions, et chacun aura ce qu'il a voulu. Alors je l'ai émigré pour ce pour quoi il a émigré.\"\n};\nexport const infobanner = {\n\ttopheading: \"Informations sur le pays\",\n\tpara1: \"Coordonnés:\",\n\tpara2: \"correspondant\",\n\tcountryheading: \"Pays:\",\n\tcountrysubheading: \"La capitale:\",\n\ttimepara: \"Format de l'heure:\",\n\tdoctrinepara: \"Doctrine:\",\n\tcalpara: \"Méthode de calcul:\",\n\ttimingheading: \"Horaires de prière\",\n\ttimingsubheading: \"aujourd'hui\",\n\tmonthsubheading: \"Horaires des prières de ce mois\",\n\tweek1: \"Week 1\",\n\tweek2: \"Week 2\",\n\tweek3: \"Week 3\",\n\tweek4: \"Week 4\",\n\ttime1: \"Aube\",\n\ttime2: \"Lever du soleil\",\n\ttime3: \"midi\",\n\ttime4: \"âge\",\n\ttime5: \"Maroc\",\n\ttime6: \"dîner\",\n\tdate: \"la date\"\n};\nexport const citiescounrybanner = {\n\theading: \"villes du pays\"\n};\nexport const playbanner = {\n\theading: \"Dernières listes de lecture\"\n};\nexport const trendingbanner = {\n\theading: \"sujets tendances\",\n\tcardheading1: \"Préserver la fraternité des religions\",\n\tcardsubheading1: \"Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations\",\n\tcardheading2: \"Préserver la fraternité des religions\",\n\tcardsubheading2: \"Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations\",\n\tcardheading3: \"Préserver la fraternité des religions\",\n\tcardsubheading3: \"Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations\"\n};\nexport const eldersbanner = {\n\theading: \"Tous les anciens\",\n\tseacrhheading: \"A la recherche de lecteurs,...\",\n\tyellowpara: \"Tous les anciens\",\n\talphabet1: \"une\",\n\talphabet2: \"B\",\n\talphabet3: \"J\",\n\talphabet4: \"W\",\n\talphabet5: \"c\",\n\talphabet6: \"h\",\n\talphabet7: \"x\",\n\talphabet8: \"Docteur\",\n\talphabet9: \"y\",\n\talphabet10: \"R\",\n\talphabet11: \"g\",\n\talphabet12: \"s\",\n\talphabet13: \"tu\",\n\talphabet14: \"s\",\n\talphabet15: \"z\",\n\talphabet16: \"je\",\n\talphabet17: \"Z\",\n\talphabet18: \"p\",\n\talphabet19: \"M\",\n\talphabet20: \"une\",\n\talphabet21: \"une\",\n\talphabet22: \"B\",\n\talphabet23: \"J\",\n\talphabet24: \"w\",\n\talphabet25: \"c\",\n\talphabet26: \"h\",\n\talphabet27: \"x\",\n\talphabet28: \"Docteur\",\n\talphabet29: \"y\",\n\talphabet31: \"R\",\n\talphabet32: \"g\",\n\talphabet33: \"s\",\n\talphabet34: \"tu\",\n\talphabet35: \"s\",\n\talphabet36: \"z\",\n\talphabet37: \"je\",\n\talphabet38: \"Z\",\n\talphabet39: \"p\",\n\talphabet40: \"M\",\n\tgreenheading1: \"une\",\n\tgreenheading2: \"B\",\n\tgreenheading3: \"J\",\n\tgreenheading4: \"w\",\n\tgreenheading5: \"c\"\n};\nexport const playlistbanner = {\n\theading: \"Playlist\",\n\tdate: \"02/01/2020\",\n\trun: \"courses\",\n\tlistgreenheading: \"Sourate Quraish avec voix :\",\n\tlistheading: \"Playlist - Imams de la Grande Mosquée de La Mecque\",\n\tlistsubheading: \"Sourate Quraish, complète, le Coran de la Grande Mosquée de La Mecque 1439, de haute qualité, racontée par Hafs sous l'autorité d'Asim, par la voix des imams de la Grande Mosquée de La Mecque. Écoutez en ligne avec la possibilité de copier et de partager avec un seul lien direct. voir plus\"\n};\nexport const suratbanner = {\n\tseacrhbar: \"Cherchez les noms des sourates, ...\"\n};\nexport const moreplaybanner = {\n\theading: \"Plus de listes de lecture\"\n};\nexport const footerbanner = {\n\tlogoheading: \"Prière maintenant | Priez maintenant\",\n\tlink1: \"Centre d'aide\",\n\tlink2: \"Mosquées\",\n\tlink3: \"Fonctionnalités des applications\",\n\tlink4: \"faites de la publicité avec nous\",\n\tlink5: \"à propos de nous\",\n\tlink6: \"appelez-nous\",\n\tfooterbtn: \"arabe\",\n\tpara1: \"Questions fréquemment posées\",\n\tpara2: \"politique de confidentialité\",\n\tpara3: \"Conditions d'utilisation\",\n\tpara4: \"Des articles\",\n\tpara5: \"informer sur le contenu\",\n\tpara6: \"de suggestions et de plaintes\",\n\tpara7: \"Télécharger la prière maintenant\",\n\tpara8: \"autour du monde islamique\",\n\tpara9: \"mosquées\",\n\tfooterleft: \"Développé par Ab Rocks\",\n\tfooterright: \"© Bray maintenant  Priez maintenant. Marque déposée 2014 - 2022.\"\n};\nexport default {\n\theader: header,\n\tbanner: banner,\n\tsidebar: sidebar,\n\tadd1: add1,\n\tsearchbar: searchbar,\n\tallcountries: allcountries,\n\tlocation: location,\n\tadd2: add2,\n\tcitiesbanner: citiesbanner,\n\tadvantagebanner: advantagebanner,\n\tmobilebanner: mobilebanner,\n\tadd3: add3,\n\tinfobanner: infobanner,\n\tcitiescounrybanner: citiescounrybanner,\n\tplaybanner: playbanner,\n\ttrendingbanner: trendingbanner,\n\teldersbanner: eldersbanner,\n\tplaylistbanner: playlistbanner,\n\tsuratbanner: suratbanner,\n\tmoreplaybanner: moreplaybanner,\n\tfooterbanner: footerbanner\n};\n",
+      "start": 1710887975462,
+      "end": 1710887975463,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887975463,
+      "end": 1710887975463,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887975463,
+      "end": 1710887975464,
+      "order": "normal"
+    }
+  ]
+}

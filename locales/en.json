@@ -1,0 +1,213 @@
+{
+  "header": {
+    "headerbtn": "Download Priority Now"
+  },
+  "banner": {
+    "subheading": "Get prayer times alert on your phone for free",
+    "heading": "Did you miss your prayer again? The Prayer Now app can help you .",
+    "bannerbtn": "Download Priority Now."
+  },
+  "sidebar": {
+    "item0": "Home ",
+    "item": "Prayer times",
+    "item1": "The Holy Quran",
+    "item2": "Islamic History",
+    "item3": "Islamic History",
+    "item4": "Islamic History",
+    "download": "Download the app"
+  },
+  "add1": {
+    "heading": "Ad space",
+    "subheading": "Lorem Ipsum is simply a formal text (meaning form is the goal, not content) and is used by the printing and publishing industries."
+  },
+  "searchbar": {
+    "searchtext1": "Find prayer times, reciters,...",
+    "searchtext2": "Search for Cairo Governorate..."
+  },
+  "allcountries": {
+    "heading": "All countries",
+    "country": "Arab countries",
+    "country1": "Europe",
+    "country2": "north america",
+    "country3": "south america",
+    "country4": "Asia",
+    "country5": "Africa",
+    "country6": "other"
+  },
+  "location": {
+    "locationtext": "To get the correct time, please indicate your location.",
+    "buttongreen": "detect location",
+    "buttonwhite": "I do not agree"
+  },
+  "add2": {
+    "heading": "Ad space",
+    "subheading": "Lorem Ipsum is simply a formal text (meaning form is the goal, not content) and is used by the printing and publishing industries.",
+    "startbtn": "start now"
+  },
+  "citiesbanner": {
+    "heading": "major Islamic cities"
+  },
+  "advantagebanner": {
+    "topheading": "Advantages of prayer time Now.",
+    "topsubheading": "Get prayer times alert on your phone for free.",
+    "heading1": "prayer time",
+    "subheading1": "This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.",
+    "heading2": "Read the Qur'an",
+    "subheading2": "This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an.",
+    "heading3": "prayer time",
+    "subheading3": "This course aims to help students memorize the Holy Quran. Students who wish to memorize part or all of the Qur'an."
+  },
+  "mobilebanner": {
+    "subheading": "Get prayer times alert on your phone for free.",
+    "heading": "Did you miss your prayer again? The Prayer Now app can help you."
+  },
+  "add3": {
+    "heading": "Today's talk",
+    "subheading": "On the authority of Alqamah bin Waqqas Al-Laithi, he says: I heard Umar bin Al-Khattab, may God be pleased with him, on the pulpit, he said: I heard the Messenger of God, may God’s prayers and peace be upon him, say: “Actions are but by intentions, and each person will have what he intended. So I emigrated him for what he emigrated for.”"
+  },
+  "infobanner": {
+    "topheading": "Information about the country",
+    "para1": "Coordinates:",
+    "para2": "corresponding",
+    "countryheading": "Country:",
+    "countrysubheading": "The capital:",
+    "timepara": "Time format:",
+    "doctrinepara": "Doctrine:",
+    "calpara": "Calculation method:",
+    "timingheading": "Prayer Timings",
+    "timingsubheading": "today",
+    "monthsubheading": "Prayer times for this month",
+    "week1": "Week 1",
+    "week2": "Week 2",
+    "week3": "Week 3",
+    "week4": "Week 4",
+    "time1": "Daybreak",
+    "time2": "Sunrise",
+    "time3": "noon",
+    "time4": "age",
+    "time5": "Morocco",
+    "time6": "dinner",
+    "date": "the date",
+    "countrysubheading2": "City:",
+    "timestyle": "Time style"
+  },
+  "citiescounrybanner": {
+    "heading": "cities within the country"
+  },
+  "playbanner": {
+    "heading": "Latest playlists",
+    "numberOfTracks": "Number of tracks"
+  },
+  "trendingbanner": {
+    "heading": "trending topics",
+    "cardheading1": "Preserving the brotherhood of religion",
+    "cardsubheading1": "What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation",
+    "cardheading2": "Preserving the brotherhood of religion",
+    "cardsubheading2": "What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation",
+    "cardheading3": "Preserving the brotherhood of religion",
+    "cardsubheading3": "What befell the Muslims today of the delay, when in the past they were the masters of the general world as a result of dispersal and disagreement, and their reliance on the world and its trappings, and preoccupation"
+  },
+  "eldersbanner": {
+    "heading": "All elders",
+    "seacrhheading": "Looking for readers,...",
+    "yellowpara": "All elders",
+    "alphabet1": "a",
+    "alphabet2": "B",
+    "alphabet3": "T",
+    "alphabet4": "W",
+    "alphabet5": "c",
+    "alphabet6": "h",
+    "alphabet7": "x",
+    "alphabet8": "Dr",
+    "alphabet9": "y",
+    "alphabet10": "R",
+    "alphabet11": "g",
+    "alphabet12": "s",
+    "alphabet13": "u",
+    "alphabet14": "s",
+    "alphabet15": "z",
+    "alphabet16": "i",
+    "alphabet17": "Z",
+    "alphabet18": "p",
+    "alphabet19": "M",
+    "alphabet20": "a",
+    "alphabet21": "a",
+    "alphabet22": "B",
+    "alphabet23": "T",
+    "alphabet24": "w",
+    "alphabet25": "c",
+    "alphabet26": "h",
+    "alphabet27": "x",
+    "alphabet28": "Dr",
+    "alphabet29": "y",
+    "alphabet31": "R",
+    "alphabet32": "g",
+    "alphabet33": "s",
+    "alphabet34": "u",
+    "alphabet35": "s",
+    "alphabet36": "z",
+    "alphabet37": "i",
+    "alphabet38": "Z",
+    "alphabet39": "p",
+    "alphabet40": "M",
+    "greenheading1": "a",
+    "greenheading2": "B",
+    "greenheading3": "T",
+    "greenheading4": "w",
+    "greenheading5": "c"
+  },
+  "playlistbanner": {
+    "heading": "Playlist",
+    "date": "1/2/2020",
+    "run": "play",
+    "listgreenheading": "Surah Quraish with voice:",
+    "listheading": "Playlist - Imams of the Great Mosque of Mecca",
+    "listsubheading": "Surah Quraish, complete, the Qur’an of the Grand Mosque in Mecca 1439, with high quality, narrated by Hafs on the authority of Asim, in the voice of the imams of the Grand Mosque in Mecca. Listen online with the possibility of copying and sharing with one direct link. see more"
+  },
+  "suratbanner": {
+    "seacrhbar": "Look for the names of the surahs, ..."
+  },
+  "moreplaybanner": {
+    "heading": "More playlists"
+  },
+  "in": {
+    "numberOfTracks": "Numer of tracks"
+  },
+  "footerbanner": {
+    "logoheading": "Prayer Now | Pray now",
+    "link1": "Help Center",
+    "link2": "Mosques",
+    "link3": "Application features",
+    "link4": "advertise with us",
+    "link5": "about us",
+    "link6": "call us",
+    "footerbtn": "Arabic",
+    "para1": "Frequently Asked Questions ",
+    "para2": "Privacy Policy ",
+    "para3": "Terms of Use",
+    "para4": "Articles ",
+    "para5": "inform about the content",
+    "para6": "of suggestions and complaints",
+    "para7": "Download Prayer Now",
+    "para8": "around the Islamic world",
+    "para9": "mosques",
+    "footerleft": "Developed by Ab Rocks",
+    "footerright": "© Bray Now  Pray now. Registered trademark 2014 - 2022."
+  },
+  "seeMore": "see More",
+  "seeLess": "see Less",
+  "index": {
+    "prayerWeb": "Prayer web",
+    "downloadfrom": "Download from",
+    "watch": "Watch"
+  },
+  "cookiebanner": {
+    "topersonalisecontentandimprove": "to improve your experience. By using our site, ",
+    "youagreetotheouruseofcookies": "you agree to our use of cookies ?",
+    "decline": "Decline",
+    "accept": "Accept All"
+  },
+  "Weuse": "We use",
+  "cookies": "cookies",
+  "SeePrivacyPolicy": "Read privacy policy"
+}

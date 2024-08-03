@@ -1,0 +1,238 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/locales/turk.json",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "{\r\n    \"header\":{\r\n        \"headerbtn\": \"Önceliği Şimdi İndir\"\r\n    },\r\n    \"banner\":{\r\n        \"subheading\": \"Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın\",\r\n        \"heading\": \"Yine namazını mı kaçırdın? Şimdi Dua uygulaması size yardımcı olabilir.\",\r\n        \"bannerbtn\": \"Önceliği Şimdi İndir.\"\r\n    },\r\n    \"sidebar\":{\r\n        \"item\": \"İbadet zamanları\",\r\n        \"item1\": \"Kutsal Kuran\",\r\n        \"item2\": \"İslam Tarihi\",\r\n        \"item3\": \"İslam Tarihi\",\r\n        \"item4\": \"İslam Tarihi\",\r\n        \"download\": \"uygulamayı indir\"\r\n    },\r\n    \"add1\":{\r\n        \"heading\": \"Reklam alanı\",\r\n        \"subheading\": \"Lorem Ipsum basitçe resmi bir metindir (anlam biçimdir, içerik değil, amaçtır) ve basım ve yayıncılık endüstrileri tarafından kullanılır.\"\r\n    },\r\n\r\n    \"searchbar\":{\r\n        \"searchtext1\": \"Namaz vakitlerini, okuyucuları, bul...\",\r\n        \"searchtext2\": \"Kahire Valiliği'ni arayın...\"\r\n    },\r\n    \"allcountries\":{\r\n        \"heading\": \"Tüm ülkeler\",\r\n        \"country\": \"Arap ülkeleri\",\r\n        \"country1\": \"Avrupa\",\r\n        \"country2\": \"Kuzey Amerika\",\r\n        \"country3\": \"Güney Amerika\",\r\n        \"country4\": \"Asya\",\r\n        \"country5\": \"Afrika\",\r\n        \"country6\": \"diğer\"\r\n    },\r\n    \"location\":{\r\n        \"locationtext\": \"Doğru saati almak için lütfen konumunuzu belirtin.\",\r\n        \"buttongreen\": \"konumu tespit et\",\r\n        \"buttonwhite\": \"katılmıyorum\"\r\n    },\r\n    \"add2\":{\r\n        \"heading\": \"Reklam alanı\",\r\n        \"subheading\": \"Lorem Ipsum kullanmak resmi bir metindir (anlam biçimidir, içerik değil, amaçtır) ve basım ve yayıncılık endüstrileri tarafından kullanılır.\",\r\n        \"startbtn\": \"şimdi başla\"\r\n    },\r\n    \"citiesbanner\":{\r\n        \"heading\": \"büyük İslam şehirleri\"\r\n        \r\n    },\r\n    \"advantagebanner\":{\r\n        \"topheading\": \"Priority Now'ın Avantajları.\",\r\n        \"topsubheading\": \"Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın.\",\r\n        \"heading1\": \"namaz vakti\",\r\n        \"subheading1\": \"Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.\",\r\n        \"heading2\": \"Read the Qur'an\",\r\n        \"subheading2\": \"Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.\",\r\n        \"heading3\": \"namaz vakti\",\r\n        \"subheading3\": \"Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.\"\r\n    },\r\n    \"mobilebanner\":{\r\n        \"subheading\": \"Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın.\",\r\n        \"heading\": \"Yine namazını mı kaçırdın? Şimdi Dua uygulaması size yardımcı olabilir.\"   \r\n    },\r\n    \"add3\":{\r\n        \"heading\": \"bugünün konuşması\", \r\n        \"subheading\": \"Alkame bin Vakkas el-Leysi'den rivayet edildiğine göre o şöyle diyor: Ömer bin el-Hattab'ı (Allah ondan razı olsun) minberde işittim, şöyle dediğini işittim: Allah'ın Resulü'nü (sallallahu aleyhi ve sellem) işittim. ona de ki: Ameller ancak niyetlere göredir ve herkes için niyet ettiği vardır. Onun için ben de onu hicret ettim.\"  \r\n    },\r\n    \"infobanner\":{\r\n        \"topheading\": \"Information about the country\", \r\n        \"para1\": \"Coordinates:\", \r\n        \"para2\": \"corresponding\", \r\n        \"countryheading\": \"Country:\", \r\n        \"countrysubheading\": \"The capital:\", \r\n        \"timepara\": \"Time format:\",  \r\n        \"doctrinepara\": \"Doctrine:\",  \r\n        \"calpara\": \"Calculation method:\",\r\n        \"timingheading\": \"Prayer Timings\",  \r\n        \"timingsubheading\": \"today\",  \r\n        \"monthsubheading\": \"Prayer times for this month\",  \r\n        \"week1\": \"Week 1\",\r\n        \"week2\": \"Week 2\",\r\n        \"week3\": \"Week 3\",\r\n        \"week4\": \"Week 4\",\r\n        \"time1\": \"Şafak\",\r\n        \"time2\": \"gündoğumu\",\r\n        \"time3\": \"öğlen\",\r\n        \"time4\": \"yaş\",\r\n        \"time5\": \"Fas\",\r\n        \"time6\": \"akşam yemeği\",\r\n        \"date\": \"tarih\"\r\n\r\n    },\r\n    \"citiescounrybanner\":{\r\n        \"heading\": \"ülke içindeki şehirler\"   \r\n    },\r\n    \"playbanner\":{\r\n        \"heading\": \"En yeni çalma listeleri\"   \r\n    },\r\n    \"trendingbanner\":{\r\n        \"heading\": \"çok konuşulan konular\",   \r\n        \"cardheading1\": \"Din kardeşliğini korumak\",   \r\n        \"cardsubheading1\": \"Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.\",   \r\n        \"cardheading2\": \"Din kardeşliğini korumak\",   \r\n        \"cardsubheading2\": \"Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.\",   \r\n        \"cardheading3\": \"Din kardeşliğini korumak\",   \r\n        \"cardsubheading3\": \"Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.\"   \r\n    },\r\n    \"eldersbanner\":{\r\n        \"heading\": \"Tüm yaşlılar\",   \r\n        \"seacrhheading\": \"Okuyucular aranıyor...\",\r\n        \"yellowpara\": \"Tüm yaşlılar\",   \r\n        \"alphabet1\": \"A\",   \r\n        \"alphabet2\": \"B\",   \r\n        \"alphabet3\": \"T\",   \r\n        \"alphabet4\": \"w\",   \r\n        \"alphabet5\": \"C\",   \r\n        \"alphabet6\": \"H\",   \r\n        \"alphabet7\": \"X\",   \r\n        \"alphabet8\": \"doktor\",   \r\n        \"alphabet9\": \"y\",   \r\n        \"alphabet10\": \"R\",   \r\n        \"alphabet11\": \"g\",   \r\n        \"alphabet12\": \"s\",   \r\n        \"alphabet13\": \"sen\",   \r\n        \"alphabet14\": \"S\",   \r\n        \"alphabet15\": \"z\",   \r\n        \"alphabet16\": \"Ben\",   \r\n        \"alphabet17\": \"Z\",   \r\n        \"alphabet18\": \"P\",   \r\n        \"alphabet19\": \"M\",   \r\n        \"alphabet20\": \"A\",   \r\n        \"alphabet21\": \"A\",   \r\n        \"alphabet22\": \"B\",   \r\n        \"alphabet23\": \"T\",   \r\n        \"alphabet24\": \"w\",   \r\n        \"alphabet25\": \"C\",   \r\n        \"alphabet26\": \"H\",   \r\n        \"alphabet27\": \"X\",   \r\n        \"alphabet28\": \"doktor\",   \r\n        \"alphabet29\": \"y\",   \r\n        \"alphabet31\": \"R\",   \r\n        \"alphabet32\": \"G\",   \r\n        \"alphabet33\": \"S\",   \r\n        \"alphabet34\": \"sen\",   \r\n        \"alphabet35\": \"S\",   \r\n        \"alphabet36\": \"z\",   \r\n        \"alphabet37\": \"Ben\",   \r\n        \"alphabet38\": \"Z\",   \r\n        \"alphabet39\": \"p\",   \r\n        \"alphabet40\": \"M\",   \r\n        \"greenheading1\": \"A\",   \r\n        \"greenheading2\": \"B\",   \r\n        \"greenheading3\": \"T\",   \r\n        \"greenheading4\": \"w\",\r\n        \"greenheading5\": \"C\"            \r\n    },\r\n    \"playlistbanner\":{\r\n        \"heading\":\"oynatma listesi\",\r\n        \"date\":\"2/1/2020\",\r\n        \"run\":\"koşu\",\r\n        \"listgreenheading\":\"Sesli Kureyş Suresi:\",\r\n        \"listheading\":\"Oynatma Listesi - Mekke Ulu Camii İmamları\",\r\n        \"listsubheading\":\"Kureyş Suresi, eksiksiz, Mekke'deki Ulu Cami'nin Kuran'ı 1439, yüksek kalitede, Hafs tarafından Asım'ın yetkisi üzerine, Mekke'deki Ulu Cami imamlarının sesiyle anlatılmıştır. Tek bir doğrudan bağlantıyla kopyalama ve paylaşma olanağıyla çevrimiçi dinleyin. daha fazla gör\"\r\n    },\r\n    \"suratbanner\":{\r\n        \"seacrhbar\":\"Surelerin isimlerini arayın, ...\"\r\n    },\r\n    \"moreplaybanner\":{\r\n        \"heading\":\"Daha fazla oynatma listesi\"\r\n    },\r\n    \r\n    \"footerbanner\":{\r\n        \"logoheading\": \"Şimdi Dua Edin | şimdi dua et\",\r\n        \"link1\": \"Yardım Merkezi\",\r\n        \"link2\": \"Camiler\",   \r\n        \"link3\": \"Uygulama özellikleri\",\r\n        \"link4\": \"Bize reklam verin\",\r\n        \"link5\": \"Hakkımızda\",\r\n        \"link6\": \"bizi ara\",\r\n        \"footerbtn\": \"Arapça\",\r\n        \"para1\": \"Sıkça Sorulan Sorular\",\r\n        \"para2\": \"Gizlilik Politikası\",\r\n        \"para3\": \"Kullanım Şartları\",\r\n        \"para4\": \"Nesne\",\r\n        \"para5\": \"içerik hakkında bilgi ver\",\r\n        \"para6\": \"öneri ve şikayetlerin\",\r\n        \"para7\": \"Download Prayer Now\",\r\n        \"para8\": \"İslam dünyasının etrafında\",\r\n        \"para9\": \"camiler\",\r\n        \"footerleft\": \"Ab Rocks tarafından geliştirildi\",\r\n        \"footerright\": \"© Bray Şimdi  Şimdi dua et. Tescilli ticari marka 2014 - 2022.\"\r\n    }\r\n}",
+      "start": 1710887975330,
+      "end": 1710887975509,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "result": "export const header = {\n\theaderbtn: \"Önceliği Şimdi İndir\"\n};\nexport const banner = {\n\tsubheading: \"Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın\",\n\theading: \"Yine namazını mı kaçırdın? Şimdi Dua uygulaması size yardımcı olabilir.\",\n\tbannerbtn: \"Önceliği Şimdi İndir.\"\n};\nexport const sidebar = {\n\titem: \"İbadet zamanları\",\n\titem1: \"Kutsal Kuran\",\n\titem2: \"İslam Tarihi\",\n\titem3: \"İslam Tarihi\",\n\titem4: \"İslam Tarihi\",\n\tdownload: \"uygulamayı indir\"\n};\nexport const add1 = {\n\theading: \"Reklam alanı\",\n\tsubheading: \"Lorem Ipsum basitçe resmi bir metindir (anlam biçimdir, içerik değil, amaçtır) ve basım ve yayıncılık endüstrileri tarafından kullanılır.\"\n};\nexport const searchbar = {\n\tsearchtext1: \"Namaz vakitlerini, okuyucuları, bul...\",\n\tsearchtext2: \"Kahire Valiliği'ni arayın...\"\n};\nexport const allcountries = {\n\theading: \"Tüm ülkeler\",\n\tcountry: \"Arap ülkeleri\",\n\tcountry1: \"Avrupa\",\n\tcountry2: \"Kuzey Amerika\",\n\tcountry3: \"Güney Amerika\",\n\tcountry4: \"Asya\",\n\tcountry5: \"Afrika\",\n\tcountry6: \"diğer\"\n};\nexport const location = {\n\tlocationtext: \"Doğru saati almak için lütfen konumunuzu belirtin.\",\n\tbuttongreen: \"konumu tespit et\",\n\tbuttonwhite: \"katılmıyorum\"\n};\nexport const add2 = {\n\theading: \"Reklam alanı\",\n\tsubheading: \"Lorem Ipsum kullanmak resmi bir metindir (anlam biçimidir, içerik değil, amaçtır) ve basım ve yayıncılık endüstrileri tarafından kullanılır.\",\n\tstartbtn: \"şimdi başla\"\n};\nexport const citiesbanner = {\n\theading: \"büyük İslam şehirleri\"\n};\nexport const advantagebanner = {\n\ttopheading: \"Priority Now'ın Avantajları.\",\n\ttopsubheading: \"Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın.\",\n\theading1: \"namaz vakti\",\n\tsubheading1: \"Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.\",\n\theading2: \"Read the Qur'an\",\n\tsubheading2: \"Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.\",\n\theading3: \"namaz vakti\",\n\tsubheading3: \"Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.\"\n};\nexport const mobilebanner = {\n\tsubheading: \"Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın.\",\n\theading: \"Yine namazını mı kaçırdın? Şimdi Dua uygulaması size yardımcı olabilir.\"\n};\nexport const add3 = {\n\theading: \"bugünün konuşması\",\n\tsubheading: \"Alkame bin Vakkas el-Leysi'den rivayet edildiğine göre o şöyle diyor: Ömer bin el-Hattab'ı (Allah ondan razı olsun) minberde işittim, şöyle dediğini işittim: Allah'ın Resulü'nü (sallallahu aleyhi ve sellem) işittim. ona de ki: Ameller ancak niyetlere göredir ve herkes için niyet ettiği vardır. Onun için ben de onu hicret ettim.\"\n};\nexport const infobanner = {\n\ttopheading: \"Information about the country\",\n\tpara1: \"Coordinates:\",\n\tpara2: \"corresponding\",\n\tcountryheading: \"Country:\",\n\tcountrysubheading: \"The capital:\",\n\ttimepara: \"Time format:\",\n\tdoctrinepara: \"Doctrine:\",\n\tcalpara: \"Calculation method:\",\n\ttimingheading: \"Prayer Timings\",\n\ttimingsubheading: \"today\",\n\tmonthsubheading: \"Prayer times for this month\",\n\tweek1: \"Week 1\",\n\tweek2: \"Week 2\",\n\tweek3: \"Week 3\",\n\tweek4: \"Week 4\",\n\ttime1: \"Şafak\",\n\ttime2: \"gündoğumu\",\n\ttime3: \"öğlen\",\n\ttime4: \"yaş\",\n\ttime5: \"Fas\",\n\ttime6: \"akşam yemeği\",\n\tdate: \"tarih\"\n};\nexport const citiescounrybanner = {\n\theading: \"ülke içindeki şehirler\"\n};\nexport const playbanner = {\n\theading: \"En yeni çalma listeleri\"\n};\nexport const trendingbanner = {\n\theading: \"çok konuşulan konular\",\n\tcardheading1: \"Din kardeşliğini korumak\",\n\tcardsubheading1: \"Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.\",\n\tcardheading2: \"Din kardeşliğini korumak\",\n\tcardsubheading2: \"Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.\",\n\tcardheading3: \"Din kardeşliğini korumak\",\n\tcardsubheading3: \"Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.\"\n};\nexport const eldersbanner = {\n\theading: \"Tüm yaşlılar\",\n\tseacrhheading: \"Okuyucular aranıyor...\",\n\tyellowpara: \"Tüm yaşlılar\",\n\talphabet1: \"A\",\n\talphabet2: \"B\",\n\talphabet3: \"T\",\n\talphabet4: \"w\",\n\talphabet5: \"C\",\n\talphabet6: \"H\",\n\talphabet7: \"X\",\n\talphabet8: \"doktor\",\n\talphabet9: \"y\",\n\talphabet10: \"R\",\n\talphabet11: \"g\",\n\talphabet12: \"s\",\n\talphabet13: \"sen\",\n\talphabet14: \"S\",\n\talphabet15: \"z\",\n\talphabet16: \"Ben\",\n\talphabet17: \"Z\",\n\talphabet18: \"P\",\n\talphabet19: \"M\",\n\talphabet20: \"A\",\n\talphabet21: \"A\",\n\talphabet22: \"B\",\n\talphabet23: \"T\",\n\talphabet24: \"w\",\n\talphabet25: \"C\",\n\talphabet26: \"H\",\n\talphabet27: \"X\",\n\talphabet28: \"doktor\",\n\talphabet29: \"y\",\n\talphabet31: \"R\",\n\talphabet32: \"G\",\n\talphabet33: \"S\",\n\talphabet34: \"sen\",\n\talphabet35: \"S\",\n\talphabet36: \"z\",\n\talphabet37: \"Ben\",\n\talphabet38: \"Z\",\n\talphabet39: \"p\",\n\talphabet40: \"M\",\n\tgreenheading1: \"A\",\n\tgreenheading2: \"B\",\n\tgreenheading3: \"T\",\n\tgreenheading4: \"w\",\n\tgreenheading5: \"C\"\n};\nexport const playlistbanner = {\n\theading: \"oynatma listesi\",\n\tdate: \"2/1/2020\",\n\trun: \"koşu\",\n\tlistgreenheading: \"Sesli Kureyş Suresi:\",\n\tlistheading: \"Oynatma Listesi - Mekke Ulu Camii İmamları\",\n\tlistsubheading: \"Kureyş Suresi, eksiksiz, Mekke'deki Ulu Cami'nin Kuran'ı 1439, yüksek kalitede, Hafs tarafından Asım'ın yetkisi üzerine, Mekke'deki Ulu Cami imamlarının sesiyle anlatılmıştır. Tek bir doğrudan bağlantıyla kopyalama ve paylaşma olanağıyla çevrimiçi dinleyin. daha fazla gör\"\n};\nexport const suratbanner = {\n\tseacrhbar: \"Surelerin isimlerini arayın, ...\"\n};\nexport const moreplaybanner = {\n\theading: \"Daha fazla oynatma listesi\"\n};\nexport const footerbanner = {\n\tlogoheading: \"Şimdi Dua Edin | şimdi dua et\",\n\tlink1: \"Yardım Merkezi\",\n\tlink2: \"Camiler\",\n\tlink3: \"Uygulama özellikleri\",\n\tlink4: \"Bize reklam verin\",\n\tlink5: \"Hakkımızda\",\n\tlink6: \"bizi ara\",\n\tfooterbtn: \"Arapça\",\n\tpara1: \"Sıkça Sorulan Sorular\",\n\tpara2: \"Gizlilik Politikası\",\n\tpara3: \"Kullanım Şartları\",\n\tpara4: \"Nesne\",\n\tpara5: \"içerik hakkında bilgi ver\",\n\tpara6: \"öneri ve şikayetlerin\",\n\tpara7: \"Download Prayer Now\",\n\tpara8: \"İslam dünyasının etrafında\",\n\tpara9: \"camiler\",\n\tfooterleft: \"Ab Rocks tarafından geliştirildi\",\n\tfooterright: \"© Bray Şimdi  Şimdi dua et. Tescilli ticari marka 2014 - 2022.\"\n};\nexport default {\n\theader: header,\n\tbanner: banner,\n\tsidebar: sidebar,\n\tadd1: add1,\n\tsearchbar: searchbar,\n\tallcountries: allcountries,\n\tlocation: location,\n\tadd2: add2,\n\tcitiesbanner: citiesbanner,\n\tadvantagebanner: advantagebanner,\n\tmobilebanner: mobilebanner,\n\tadd3: add3,\n\tinfobanner: infobanner,\n\tcitiescounrybanner: citiescounrybanner,\n\tplaybanner: playbanner,\n\ttrendingbanner: trendingbanner,\n\teldersbanner: eldersbanner,\n\tplaylistbanner: playlistbanner,\n\tsuratbanner: suratbanner,\n\tmoreplaybanner: moreplaybanner,\n\tfooterbanner: footerbanner\n};\n",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887975509,
+      "end": 1710887975509,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887975509,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887975510,
+      "end": 1710887975510,
+      "order": "normal"
+    }
+  ]
+}

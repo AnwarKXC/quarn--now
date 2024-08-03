@@ -1,0 +1,238 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/locales/indo.json",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "{\r\n    \"header\": {\r\n        \"headerbtn\": \"Unduh Prioritas Sekarang\"\r\n    },\r\n    \"banner\": {\r\n        \"subheading\": \"Dapatkan peringatan waktu sholat di ponsel Anda secara gratis\",\r\n        \"heading\": \"Apakah Anda melewatkan doa Anda lagi? Aplikasi Doa Sekarang dapat membantu Anda.\",\r\n        \"bannerbtn\": \"Unduh Prioritas Sekarang.\"\r\n    },\r\n    \"sidebar\": {\r\n        \"item\": \"Waktu sholat\",\r\n        \"item1\": \"Kitab suci Al-Quran\",\r\n        \"item2\": \"Sejarah Islam\",\r\n        \"item3\": \"Sejarah Islam\",\r\n        \"item4\": \"Sejarah Islam\",\r\n        \"download\": \"Unduh aplikasi\"\r\n    },\r\n    \"add1\": {\r\n        \"heading\": \"Ruang iklan\",\r\n        \"subheading\": \"Lorem Ipsum hanyalah teks formal (artinya bentuk adalah tujuan, bukan isi) dan digunakan oleh industri percetakan dan penerbitan.\"\r\n    },\r\n\r\n    \"searchbar\": {\r\n        \"searchtext1\": \"Temukan waktu sholat, qari, ...\",\r\n        \"searchtext2\": \"Telusuri Kegubernuran Kairo...\"\r\n    },\r\n    \"allcountries\": {\r\n        \"heading\": \"Semua negara\",\r\n        \"country\": \"negara-negara Arab\",\r\n        \"country1\": \"Eropa\",\r\n        \"country2\": \"Amerika Utara\",\r\n        \"country3\": \"Amerika Selatan\",\r\n        \"country4\": \"Asia\",\r\n        \"country5\": \"Afrika\",\r\n        \"country6\": \"lainnya\"\r\n    },\r\n    \"location\": {\r\n        \"locationtext\": \"Untuk mendapatkan waktu yang tepat, harap tunjukkan lokasi Anda.\",\r\n        \"buttongreen\": \"mendeteksi lokasi\",\r\n        \"buttonwhite\": \"saya tidak setuju\"\r\n    },\r\n    \"add2\": {\r\n        \"heading\": \"Ruang iklan\",\r\n        \"subheading\": \"Lorem Ipsum hanyalah teks formal (artinya bentuk adalah tujuan, bukan isi) dan digunakan oleh industri percetakan dan penerbitan..\",\r\n        \"startbtn\": \"mulai sekarang\"\r\n    },\r\n    \"citiesbanner\": {\r\n        \"heading\": \"kota-kota besar Islam\"\r\n\r\n    },\r\n    \"advantagebanner\": {\r\n        \"topheading\": \"Keuntungan Prioritas Sekarang.\",\r\n        \"topsubheading\": \"Dapatkan peringatan waktu sholat di ponsel Anda secara gratis.\",\r\n        \"heading1\": \"waktunya sholat\",\r\n        \"subheading1\": \"Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.\",\r\n        \"heading2\": \"Baca Al-Qur'an\",\r\n        \"subheading2\": \"Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.\",\r\n        \"heading3\": \"waktunya sholat\",\r\n        \"subheading3\": \"Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.\"\r\n    },\r\n    \"mobilebanner\": {\r\n        \"subheading\": \"Dapatkan peringatan waktu sholat di ponsel Anda secara gratis.\",\r\n        \"heading\": \"Apakah Anda melewatkan doa Anda lagi? Aplikasi Doa Sekarang dapat membantu Anda.\"\r\n    },\r\n    \"add3\": {\r\n        \"heading\": \"Pembicaraan hari ini\",\r\n        \"subheading\": \"Atas otoritas Alqamah bin Waqqas Al-Laithi, dia berkata: Saya mendengar Umar bin Al-Khattab, semoga Tuhan meridhoi dia, di atas mimbar, dia berkata: Saya mendengar Rasulullah, semoga doa dan damai Tuhan menyertai kepadanya, katakanlah: “Amal itu hanyalah karena niat, dan setiap orang akan mendapatkan apa yang dia niatkan. Jadi saya beremigrasi untuk apa dia beremigrasi.\"\r\n    },\r\n    \"infobanner\": {\r\n        \"topheading\": \"Informasi tentang negara\",\r\n        \"para1\": \"Koordinat:\",\r\n        \"para2\": \"sesuai\",\r\n        \"countryheading\": \"Negara:\",\r\n        \"countrysubheading\": \"The capital:\",\r\n        \"timepara\": \"Time format:\",\r\n        \"doctrinepara\": \"Doctrine:\",\r\n        \"calpara\": \"Calculation method:\",\r\n        \"timingheading\": \"Prayer Timings\",\r\n        \"timingsubheading\": \"today\",\r\n        \"monthsubheading\": \"Prayer times for this month\",\r\n        \"week1\": \"Week 1\",\r\n        \"week2\": \"Week 2\",\r\n        \"week3\": \"Week 3\",\r\n        \"week4\": \"Week 4\",\r\n        \"time1\": \"Fajar\",\r\n        \"time2\": \"Matahari terbit\",\r\n        \"time3\": \"siang\",\r\n        \"time4\": \"usia\",\r\n        \"time5\": \"Maroko\",\r\n        \"time6\": \"makan malam\",\r\n        \"date\": \"tanggal\"\r\n\r\n    },\r\n    \"citiescounrybanner\": {\r\n        \"heading\": \"kota-kota di dalam negeri\"\r\n    },\r\n    \"playbanner\": {\r\n        \"heading\": \"Daftar putar terbaru\"\r\n    },\r\n    \"trendingbanner\": {\r\n        \"heading\": \"topik yang sedang tren\",\r\n        \"cardheading1\": \"Menjaga persaudaraan antar agama\",\r\n        \"cardsubheading1\": \"Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan\",\r\n        \"cardheading2\": \"Menjaga persaudaraan antar agama\",\r\n        \"cardsubheading2\": \"Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan\",\r\n        \"cardheading3\": \"Menjaga persaudaraan antar agama\",\r\n        \"cardsubheading3\": \"Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan\"\r\n    },\r\n    \"eldersbanner\": {\r\n        \"heading\": \"Semua penatua\",\r\n        \"seacrhheading\": \"Mencari pembaca,...\",\r\n        \"yellowpara\": \"Semua penatua\",\r\n        \"alphabet1\": \"A\",\r\n        \"alphabet2\": \"B\",\r\n        \"alphabet3\": \"T\",\r\n        \"alphabet4\": \"w\",\r\n        \"alphabet5\": \"C\",\r\n        \"alphabet6\": \"H\",\r\n        \"alphabet7\": \"X\",\r\n        \"alphabet8\": \"dr\",\r\n        \"alphabet9\": \"y\",\r\n        \"alphabet10\": \"R\",\r\n        \"alphabet11\": \"G\",\r\n        \"alphabet12\": \"S\",\r\n        \"alphabet13\": \"kamu\",\r\n        \"alphabet14\": \"S\",\r\n        \"alphabet15\": \"z\",\r\n        \"alphabet16\": \"Saya\",\r\n        \"alphabet17\": \"Z\",\r\n        \"alphabet18\": \"p\",\r\n        \"alphabet19\": \"M\",\r\n        \"alphabet20\": \"A\",\r\n        \"alphabet21\": \"A\",\r\n        \"alphabet22\": \"B\",\r\n        \"alphabet23\": \"T\",\r\n        \"alphabet24\": \"w\",\r\n        \"alphabet25\": \"C\",\r\n        \"alphabet26\": \"H\",\r\n        \"alphabet27\": \"X\",\r\n        \"alphabet28\": \"dr\",\r\n        \"alphabet29\": \"y\",\r\n        \"alphabet31\": \"R\",\r\n        \"alphabet32\": \"G\",\r\n        \"alphabet33\": \"S\",\r\n        \"alphabet34\": \"kamu\",\r\n        \"alphabet35\": \"S\",\r\n        \"alphabet36\": \"z\",\r\n        \"alphabet37\": \"Saya\",\r\n        \"alphabet38\": \"Z\",\r\n        \"alphabet39\": \"p\",\r\n        \"alphabet40\": \"M\",\r\n        \"greenheading1\": \"A\",\r\n        \"greenheading2\": \"B\",\r\n        \"greenheading3\": \"T\",\r\n        \"greenheading4\": \"w\",\r\n        \"greenheading5\": \"C\"\r\n    },\r\n    \"playlistbanner\": {\r\n        \"heading\": \"Daftar putar\",\r\n        \"date\": \"1/2/2020\",\r\n        \"run\": \"lari\",\r\n        \"listgreenheading\": \"Surat Quraisy dengan suara:\",\r\n        \"listheading\": \"Playlist - Imam Masjid Agung Mekkah\",\r\n        \"listsubheading\": \"Surah Quraish, lengkap, Al-Qur'an Masjidil Haram di Mekkah 1439, dengan kualitas tinggi, diriwayatkan oleh Hafs atas otoritas Asim, dengan suara para imam Masjidil Haram di Mekkah. Dengarkan online dengan kemungkinan menyalin dan berbagi dengan satu tautan langsung. lihat lebih banyak\"\r\n    },\r\n    \"suratbanner\": {\r\n        \"seacrhbar\": \"Carilah nama-nama surah, ...\"\r\n    },\r\n    \"moreplaybanner\": {\r\n        \"heading\": \"Daftar putar lainnya\"\r\n    },\r\n\r\n    \"footerbanner\": {\r\n        \"logoheading\": \"Doa Sekarang | Berdoalah sekarang\",\r\n        \"link1\": \"Pusat Bantuan\",\r\n        \"link2\": \"Masjid\",\r\n        \"link3\": \"Fitur aplikasi\",\r\n        \"link4\": \"Beriklan dengan kami\",\r\n        \"link5\": \"tentang kami\",\r\n        \"link6\": \"hubungi kami\",\r\n        \"footerbtn\": \"Arab\",\r\n        \"para1\": \"Pertanyaan yang Sering Diajukan\",\r\n        \"para2\": \"Kebijakan pribadi\",\r\n        \"para3\": \"Syarat Penggunaan\",\r\n        \"para4\": \"Artikel\",\r\n        \"para5\": \"menginformasikan tentang isinya\",\r\n        \"para6\": \"dari saran dan keluhan\",\r\n        \"para7\": \"Unduh Doa Sekarang\",\r\n        \"para8\": \"di seluruh dunia Islam\",\r\n        \"para9\": \"masjid\",\r\n        \"footerleft\": \"Dikembangkan oleh Ab Rocks\",\r\n        \"footerright\": \"© Bray Sekarang  Berdoalah sekarang. Merek dagang terdaftar 2014 - 2022.\"\r\n    }\r\n}\r\n",
+      "start": 1710887975318,
+      "end": 1710887975465,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887975465,
+      "end": 1710887975465,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887975465,
+      "end": 1710887975465,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887975465,
+      "end": 1710887975466,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887975466,
+      "end": 1710887975466,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887975466,
+      "end": 1710887975466,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887975466,
+      "end": 1710887975466,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "result": "export const header = {\n\theaderbtn: \"Unduh Prioritas Sekarang\"\n};\nexport const banner = {\n\tsubheading: \"Dapatkan peringatan waktu sholat di ponsel Anda secara gratis\",\n\theading: \"Apakah Anda melewatkan doa Anda lagi? Aplikasi Doa Sekarang dapat membantu Anda.\",\n\tbannerbtn: \"Unduh Prioritas Sekarang.\"\n};\nexport const sidebar = {\n\titem: \"Waktu sholat\",\n\titem1: \"Kitab suci Al-Quran\",\n\titem2: \"Sejarah Islam\",\n\titem3: \"Sejarah Islam\",\n\titem4: \"Sejarah Islam\",\n\tdownload: \"Unduh aplikasi\"\n};\nexport const add1 = {\n\theading: \"Ruang iklan\",\n\tsubheading: \"Lorem Ipsum hanyalah teks formal (artinya bentuk adalah tujuan, bukan isi) dan digunakan oleh industri percetakan dan penerbitan.\"\n};\nexport const searchbar = {\n\tsearchtext1: \"Temukan waktu sholat, qari, ...\",\n\tsearchtext2: \"Telusuri Kegubernuran Kairo...\"\n};\nexport const allcountries = {\n\theading: \"Semua negara\",\n\tcountry: \"negara-negara Arab\",\n\tcountry1: \"Eropa\",\n\tcountry2: \"Amerika Utara\",\n\tcountry3: \"Amerika Selatan\",\n\tcountry4: \"Asia\",\n\tcountry5: \"Afrika\",\n\tcountry6: \"lainnya\"\n};\nexport const location = {\n\tlocationtext: \"Untuk mendapatkan waktu yang tepat, harap tunjukkan lokasi Anda.\",\n\tbuttongreen: \"mendeteksi lokasi\",\n\tbuttonwhite: \"saya tidak setuju\"\n};\nexport const add2 = {\n\theading: \"Ruang iklan\",\n\tsubheading: \"Lorem Ipsum hanyalah teks formal (artinya bentuk adalah tujuan, bukan isi) dan digunakan oleh industri percetakan dan penerbitan..\",\n\tstartbtn: \"mulai sekarang\"\n};\nexport const citiesbanner = {\n\theading: \"kota-kota besar Islam\"\n};\nexport const advantagebanner = {\n\ttopheading: \"Keuntungan Prioritas Sekarang.\",\n\ttopsubheading: \"Dapatkan peringatan waktu sholat di ponsel Anda secara gratis.\",\n\theading1: \"waktunya sholat\",\n\tsubheading1: \"Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.\",\n\theading2: \"Baca Al-Qur'an\",\n\tsubheading2: \"Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.\",\n\theading3: \"waktunya sholat\",\n\tsubheading3: \"Kursus ini bertujuan untuk membantu siswa menghafal Al-Qur'an. Siswa yang ingin menghafal sebagian atau seluruh Al-Qur'an.\"\n};\nexport const mobilebanner = {\n\tsubheading: \"Dapatkan peringatan waktu sholat di ponsel Anda secara gratis.\",\n\theading: \"Apakah Anda melewatkan doa Anda lagi? Aplikasi Doa Sekarang dapat membantu Anda.\"\n};\nexport const add3 = {\n\theading: \"Pembicaraan hari ini\",\n\tsubheading: \"Atas otoritas Alqamah bin Waqqas Al-Laithi, dia berkata: Saya mendengar Umar bin Al-Khattab, semoga Tuhan meridhoi dia, di atas mimbar, dia berkata: Saya mendengar Rasulullah, semoga doa dan damai Tuhan menyertai kepadanya, katakanlah: “Amal itu hanyalah karena niat, dan setiap orang akan mendapatkan apa yang dia niatkan. Jadi saya beremigrasi untuk apa dia beremigrasi.\"\n};\nexport const infobanner = {\n\ttopheading: \"Informasi tentang negara\",\n\tpara1: \"Koordinat:\",\n\tpara2: \"sesuai\",\n\tcountryheading: \"Negara:\",\n\tcountrysubheading: \"The capital:\",\n\ttimepara: \"Time format:\",\n\tdoctrinepara: \"Doctrine:\",\n\tcalpara: \"Calculation method:\",\n\ttimingheading: \"Prayer Timings\",\n\ttimingsubheading: \"today\",\n\tmonthsubheading: \"Prayer times for this month\",\n\tweek1: \"Week 1\",\n\tweek2: \"Week 2\",\n\tweek3: \"Week 3\",\n\tweek4: \"Week 4\",\n\ttime1: \"Fajar\",\n\ttime2: \"Matahari terbit\",\n\ttime3: \"siang\",\n\ttime4: \"usia\",\n\ttime5: \"Maroko\",\n\ttime6: \"makan malam\",\n\tdate: \"tanggal\"\n};\nexport const citiescounrybanner = {\n\theading: \"kota-kota di dalam negeri\"\n};\nexport const playbanner = {\n\theading: \"Daftar putar terbaru\"\n};\nexport const trendingbanner = {\n\theading: \"topik yang sedang tren\",\n\tcardheading1: \"Menjaga persaudaraan antar agama\",\n\tcardsubheading1: \"Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan\",\n\tcardheading2: \"Menjaga persaudaraan antar agama\",\n\tcardsubheading2: \"Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan\",\n\tcardheading3: \"Menjaga persaudaraan antar agama\",\n\tcardsubheading3: \"Apa yang menimpa umat Islam hari ini tentang penundaan, padahal di masa lalu mereka adalah penguasa dunia umum sebagai akibat dari bubar dan perselisihan, dan ketergantungan mereka pada dunia dan perangkapnya, dan keasyikan\"\n};\nexport const eldersbanner = {\n\theading: \"Semua penatua\",\n\tseacrhheading: \"Mencari pembaca,...\",\n\tyellowpara: \"Semua penatua\",\n\talphabet1: \"A\",\n\talphabet2: \"B\",\n\talphabet3: \"T\",\n\talphabet4: \"w\",\n\talphabet5: \"C\",\n\talphabet6: \"H\",\n\talphabet7: \"X\",\n\talphabet8: \"dr\",\n\talphabet9: \"y\",\n\talphabet10: \"R\",\n\talphabet11: \"G\",\n\talphabet12: \"S\",\n\talphabet13: \"kamu\",\n\talphabet14: \"S\",\n\talphabet15: \"z\",\n\talphabet16: \"Saya\",\n\talphabet17: \"Z\",\n\talphabet18: \"p\",\n\talphabet19: \"M\",\n\talphabet20: \"A\",\n\talphabet21: \"A\",\n\talphabet22: \"B\",\n\talphabet23: \"T\",\n\talphabet24: \"w\",\n\talphabet25: \"C\",\n\talphabet26: \"H\",\n\talphabet27: \"X\",\n\talphabet28: \"dr\",\n\talphabet29: \"y\",\n\talphabet31: \"R\",\n\talphabet32: \"G\",\n\talphabet33: \"S\",\n\talphabet34: \"kamu\",\n\talphabet35: \"S\",\n\talphabet36: \"z\",\n\talphabet37: \"Saya\",\n\talphabet38: \"Z\",\n\talphabet39: \"p\",\n\talphabet40: \"M\",\n\tgreenheading1: \"A\",\n\tgreenheading2: \"B\",\n\tgreenheading3: \"T\",\n\tgreenheading4: \"w\",\n\tgreenheading5: \"C\"\n};\nexport const playlistbanner = {\n\theading: \"Daftar putar\",\n\tdate: \"1/2/2020\",\n\trun: \"lari\",\n\tlistgreenheading: \"Surat Quraisy dengan suara:\",\n\tlistheading: \"Playlist - Imam Masjid Agung Mekkah\",\n\tlistsubheading: \"Surah Quraish, lengkap, Al-Qur'an Masjidil Haram di Mekkah 1439, dengan kualitas tinggi, diriwayatkan oleh Hafs atas otoritas Asim, dengan suara para imam Masjidil Haram di Mekkah. Dengarkan online dengan kemungkinan menyalin dan berbagi dengan satu tautan langsung. lihat lebih banyak\"\n};\nexport const suratbanner = {\n\tseacrhbar: \"Carilah nama-nama surah, ...\"\n};\nexport const moreplaybanner = {\n\theading: \"Daftar putar lainnya\"\n};\nexport const footerbanner = {\n\tlogoheading: \"Doa Sekarang | Berdoalah sekarang\",\n\tlink1: \"Pusat Bantuan\",\n\tlink2: \"Masjid\",\n\tlink3: \"Fitur aplikasi\",\n\tlink4: \"Beriklan dengan kami\",\n\tlink5: \"tentang kami\",\n\tlink6: \"hubungi kami\",\n\tfooterbtn: \"Arab\",\n\tpara1: \"Pertanyaan yang Sering Diajukan\",\n\tpara2: \"Kebijakan pribadi\",\n\tpara3: \"Syarat Penggunaan\",\n\tpara4: \"Artikel\",\n\tpara5: \"menginformasikan tentang isinya\",\n\tpara6: \"dari saran dan keluhan\",\n\tpara7: \"Unduh Doa Sekarang\",\n\tpara8: \"di seluruh dunia Islam\",\n\tpara9: \"masjid\",\n\tfooterleft: \"Dikembangkan oleh Ab Rocks\",\n\tfooterright: \"© Bray Sekarang  Berdoalah sekarang. Merek dagang terdaftar 2014 - 2022.\"\n};\nexport default {\n\theader: header,\n\tbanner: banner,\n\tsidebar: sidebar,\n\tadd1: add1,\n\tsearchbar: searchbar,\n\tallcountries: allcountries,\n\tlocation: location,\n\tadd2: add2,\n\tcitiesbanner: citiesbanner,\n\tadvantagebanner: advantagebanner,\n\tmobilebanner: mobilebanner,\n\tadd3: add3,\n\tinfobanner: infobanner,\n\tcitiescounrybanner: citiescounrybanner,\n\tplaybanner: playbanner,\n\ttrendingbanner: trendingbanner,\n\teldersbanner: eldersbanner,\n\tplaylistbanner: playlistbanner,\n\tsuratbanner: suratbanner,\n\tmoreplaybanner: moreplaybanner,\n\tfooterbanner: footerbanner\n};\n",
+      "start": 1710887975466,
+      "end": 1710887975467,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887975467,
+      "end": 1710887975467,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887975467,
+      "end": 1710887975468,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887975468,
+      "end": 1710887975468,
+      "order": "normal"
+    }
+  ]
+}

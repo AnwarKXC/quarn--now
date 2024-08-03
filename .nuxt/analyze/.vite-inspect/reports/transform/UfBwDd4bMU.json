@@ -1,0 +1,241 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/Logo.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<NuxtLink to=\"/app/prayer-time\">\r\n\t\t<img :src=\"   props.source \" alt=\"logo\"\r\n\t\t\tclass=\"md:max-w-[65px] md:max-h-[65px] max-w-[55px] max-h-[55px] \">\r\n\t</NuxtLink>\r\n</template>\r\n\r\n<script setup>\r\nconst props = defineProps( {\r\n\tsource: {\r\n\t\ttype: String,\r\n\t\tdefault: '',\r\n\t},\r\n} )\r\n\r\nconst domain = import.meta.env.VITE_DOMAIN\r\n\r\n</script>\r\n\r\n<style scoped></style>",
+      "start": 1710887975258,
+      "end": 1710887975412,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887975412,
+      "end": 1710887975412,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = [\"src\"]\n\n\nconst _sfc_main = {\n  __name: 'Logo',\n  props: {\r\n\tsource: {\r\n\t\ttype: String,\r\n\t\tdefault: '',\r\n\t},\r\n},\n  setup(__props) {\n\r\nconst props = __props\r\n\r\nconst domain = import.meta.env.VITE_DOMAIN\r\n\r\n\nreturn (_ctx, _cache) => {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, { to: \"/app/prayer-time\" }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"img\", {\n        src:    props.source ,\n        alt: \"logo\",\n        class: \"md:max-w-[65px] md:max-h-[65px] max-w-[55px] max-h-[55px]\"\n      }, null, 8, _hoisted_1)\n    ]),\n    _: 1\n  }))\n}\n}\n\n}\n\n\n\nexport default _sfc_main",
+      "start": 1710887975412,
+      "end": 1710887975414,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887975415,
+      "end": 1710887975415,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975415,
+      "end": 1710887975415,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887975415,
+      "end": 1710887975415,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887975415,
+      "end": 1710887975415,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887975415,
+      "end": 1710887975415,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975415,
+      "end": 1710887975415,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887975415,
+      "end": 1710887975415,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = [\"src\"];\nconst _sfc_main = {\n  __name: \"Logo\",\n  props: {\n    source: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const domain = \"https://cms.prayer-now.com\";\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = _resolveComponent(\"NuxtLink\");\n      return _openBlock(), _createBlock(_component_NuxtLink, { to: \"/app/prayer-time\" }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"img\", {\n            src: props.source,\n            alt: \"logo\",\n            class: \"md:max-w-[65px] md:max-h-[65px] max-w-[55px] max-h-[55px]\"\n          }, null, 8, _hoisted_1)\n        ]),\n        _: 1\n      });\n    };\n  }\n};\nexport default _sfc_main;\n",
+      "start": 1710887975415,
+      "end": 1710887975515,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887975515,
+      "end": 1710887975515,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887975515,
+      "end": 1710887975516,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"D:/quran/nuxt-app - Copy/node_modules/nuxt/dist/app/components/nuxt-link\";\nimport { createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\";\nconst _hoisted_1 = [\"src\"];\nconst _sfc_main = {\n  __name: \"Logo\",\n  props: {\n    source: {\n      type: String,\n      default: \"\"\n    }\n  },\n  setup(__props) {\n    const props = __props;\n    const domain = \"https://cms.prayer-now.com\";\n    return (_ctx, _cache) => {\n      const _component_NuxtLink = __nuxt_component_0;\n      return _openBlock(), _createBlock(_component_NuxtLink, { to: \"/app/prayer-time\" }, {\n        default: _withCtx(() => [\n          _createElementVNode(\"img\", {\n            src: props.source,\n            alt: \"logo\",\n            class: \"md:max-w-[65px] md:max-h-[65px] max-w-[55px] max-h-[55px]\"\n          }, null, 8, _hoisted_1)\n        ]),\n        _: 1\n      });\n    };\n  }\n};\nexport default _sfc_main;\n",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887975516,
+      "end": 1710887975516,
+      "order": "normal"
+    }
+  ]
+}

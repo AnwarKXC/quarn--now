@@ -1,0 +1,240 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/PlayControl.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<div class=\"flex-grow \">\r\n\t\t<div v-for=\"(      audioPlayer, index      ) in       audioPlayers      \" :key=\" index \"\r\n\t\t\tclass=\"flex items-center md:gap-8 gap-3 justify-end text-white \">\r\n\t\t\t<div class=\"flex gap-3 flex-grow\">\r\n\t\t\t\t<!-- Volume Control -->\r\n\t\t\t\t<div class=\"relative group shrink-0 \">\r\n\t\t\t\t\t<!-- <input class=\"p-0 absolute group-hover:block right-0 left-0 bottom-10 hidden\"\r\n\t\t\t\t\t\tstyle=\"writing-mode: vertical-lr; direction: rtl\" type=\"range\" min=\"0\" max=\"1\"\r\n\t\t\t\t\t\tstep=\"0.1\" v-model=\" audioPlayer.volume \"> -->\r\n\t\t\t\t\t<button @click=\"toggleMute( audioPlayer )\">\r\n\t\t\t\t\t\t<img class=\"mt-[5px] w-[26px] h-[26px]\"\r\n\t\t\t\t\t\t\t:src=\" audioPlayer.volume === 0 ? '/svgs/Icon-Volume-mute.svg' : '/svgs/Icon-Volume.svg' \"\r\n\t\t\t\t\t\t\talt=\"\">\r\n\t\t\t\t\t</button>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- Progress Bar -->\r\n\t\t\t\t<input type=\"range\" min=\"0\" :max=\" audioPlayer.totalDuration \" step=\"1\"\r\n\t\t\t\t\tv-model=\"audioPlayer.currentTime\" @input=\"setProgress( audioPlayer )\"\r\n\t\t\t\t\tclass=\"!p-0 lg:min-w-96 md:min-w-54 w-full rotate-180 progress flex-grow\"\r\n\t\t\t\t\t:style=\" { backgroundSize: progressBackgroundSize } \">\r\n\t\t\t</div>\r\n\t\t\t<!-- Play/Pause Button -->\r\n\t\t\t<div class=\"flex md:gap-4 items-center ltr:flex-row-reverse \">\r\n\t\t\t\t<button @click=\"forwardSong( audioPlayer )\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Forwardsvg.svg\" alt=\"\">\r\n\t\t\t\t</button>\r\n\t\t\t\t<button class=\"w-10  cent\" @click=\"togglePlayPause( audioPlayer )\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Play.svg\" alt=\"\" style=\"display: none;\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Pause.svg\" alt=\"\" style=\"display: none;\">\r\n\t\t\t\t\t<img v-if=\" audioPlayer.isPlaying \" src=\"/svgs/Icon-Pause.svg\" alt=\"\"\r\n\t\t\t\t\t\tclass=\"max-md:w-4\">\r\n\t\t\t\t\t<img v-else src=\"/svgs/Icon-Play.svg\" alt=\"\" class=\"max-md:w-6\">\r\n\t\t\t\t</button>\r\n\t\t\t\t<button @click=\"rewindSong( audioPlayer )\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Rewindsvg.svg\" alt=\"\">\r\n\t\t\t\t</button>\r\n\t\t\t</div>\r\n\t\t\t<div\r\n\t\t\t\tclass=\"text-neutral-300 font-sm flex items-center gap-3 shrink-0 max-md:order-first max-md:hidden\">\r\n\t\t\t\t<span class=\"w-9\">{{ timeString( audioPlayer.currentTime ) }}</span> /\r\n\t\t\t\t<span class=\"w-9\">{{ timeString( audioPlayer.totalDuration ) }}</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script setup>\r\nimport { ref, onMounted, computed } from 'vue'\r\n\r\nconst audioPlayers = ref( [\r\n\t{ src: \"https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3\", audio: null, currentTime: 0, totalDuration: 0, volume: 1, seeking: false }\r\n] )\r\n\r\nconst timeString = ( secs ) => {\r\n\tlet ss = Math.floor( secs ),\r\n\t\thh = Math.floor( ss / 3600 ),\r\n\t\tmm = Math.floor( ( ss - hh * 3600 ) / 60 )\r\n\tss = ss - hh * 3600 - mm * 60\r\n\tmm = mm < 10 ? \"0\" + mm : mm\r\n\tss = ss < 10 ? \"0\" + ss : ss\r\n\treturn hh > 0 ? `${ hh }:${ mm }:${ ss }` : `${ mm }:${ ss }`\r\n}\r\n\r\nconst togglePlayPause = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio.paused ) {\r\n\t\taudioPlayer.audio.play()\r\n\t\taudioPlayer.isPlaying = true\r\n\t} else {\r\n\t\taudioPlayer.audio.pause()\r\n\t\taudioPlayer.isPlaying = false\r\n\t}\r\n}\r\n\r\nconst isPaused = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\treturn audioPlayer.audio.paused\r\n\t}\r\n\treturn true // Assuming that if audio is not initialized, it's considered paused\r\n}\r\n\r\nconst toggleMute = ( audioPlayer ) => {\r\n\taudioPlayer.volume = audioPlayer.volume === 0 ? 1 : 0\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.volume = audioPlayer.volume\r\n\t}\r\n}\r\n\r\nconst setProgress = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime = audioPlayer.currentTime\r\n\t}\r\n}\r\n\r\nconst forwardSong = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime += 10 // Forwarding by 10 seconds, change as needed\r\n\t}\r\n}\r\n\r\nconst rewindSong = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime -= 10 // Rewinding by 10 seconds, change as needed\r\n\t}\r\n}\r\n\r\nonMounted( () => {\r\n\tif ( process.browser ) {\r\n\t\tfor ( const player of audioPlayers.value ) {\r\n\t\t\tplayer.audio = new Audio( encodeURI( player.src ) )\r\n\t\t\tplayer.audio.addEventListener( 'loadedmetadata', () => {\r\n\t\t\t\tplayer.totalDuration = Math.floor( player.audio.duration )\r\n\t\t\t\tplayer.audio.addEventListener( 'timeupdate', () => {\r\n\t\t\t\t\tif ( !player.seeking ) {\r\n\t\t\t\t\t\tplayer.currentTime = Math.floor( player.audio.currentTime )\r\n\t\t\t\t\t}\r\n\t\t\t\t} )\r\n\t\t\t} )\r\n\t\t\tplayer.audio.addEventListener( 'seeking', () => {\r\n\t\t\t\tplayer.seeking = true\r\n\t\t\t} )\r\n\t\t\tplayer.audio.addEventListener( 'seeked', () => {\r\n\t\t\t\tplayer.seeking = false\r\n\t\t\t} )\r\n\t\t}\r\n\t}\r\n} )\r\n\r\nconst progressBackgroundSize = computed( () => {\r\n\tconst progress = audioPlayers.value[ 0 ].currentTime / audioPlayers.value[ 0 ].totalDuration\r\n\treturn `${ progress * 100 }% 100%`\r\n} )\r\n</script>\r\n\r\n<style scoped>\r\ninput[type=\"range\"] {\r\n\taccent-color: rgb(235, 235, 235);\r\n}\r\n\r\n.progress {\r\n\t-webkit-appearance: none;\r\n\tappearance: none;\r\n\tmargin-block: auto;\r\n\twidth: 200px;\r\n\theight: 7px;\r\n\tborder: none;\r\n\tbackground: rgb(160, 160, 160);\r\n\tborder-radius: 50px;\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #ffffff);\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position-x: right;\r\n\t@apply duration-[1500ms]\r\n}\r\n\r\n.progress:hover {\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #42867b);\r\n\r\n}\r\n\r\ninput[type=\"range\"]::-webkit-slider-thumb {\r\n\t-webkit-appearance: none;\r\n\theight: 0px;\r\n\twidth: 0px;\r\n\tborder-radius: 50%;\r\n\tbackground: #ffffff;\r\n\tcursor: pointer;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n</style>\r\n",
+      "start": 1710887975258,
+      "end": 1710887975389,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887975389,
+      "end": 1710887975389,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "import { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, vModelText as _vModelText, normalizeStyle as _normalizeStyle, withDirectives as _withDirectives, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from '/svgs/Icon-Forwardsvg.svg'\nimport _imports_1 from '/svgs/Icon-Play.svg'\nimport _imports_2 from '/svgs/Icon-Pause.svg'\nimport _imports_3 from '/svgs/Icon-Rewindsvg.svg'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-facfd4e0\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"flex-grow\" }\nconst _hoisted_2 = { class: \"flex gap-3 flex-grow\" }\nconst _hoisted_3 = { class: \"relative group shrink-0\" }\nconst _hoisted_4 = [\"onClick\"]\nconst _hoisted_5 = [\"src\"]\nconst _hoisted_6 = [\"max\", \"onUpdate:modelValue\", \"onInput\"]\nconst _hoisted_7 = { class: \"flex md:gap-4 items-center ltr:flex-row-reverse\" }\nconst _hoisted_8 = [\"onClick\"]\nconst _hoisted_9 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"\"\n}, null, -1))\nconst _hoisted_10 = [\n  _hoisted_9\n]\nconst _hoisted_11 = [\"onClick\"]\nconst _hoisted_12 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"\",\n  style: {\"display\":\"none\"}\n}, null, -1))\nconst _hoisted_13 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"\",\n  style: {\"display\":\"none\"}\n}, null, -1))\nconst _hoisted_14 = {\n  key: 0,\n  src: _imports_2,\n  alt: \"\",\n  class: \"max-md:w-4\"\n}\nconst _hoisted_15 = {\n  key: 1,\n  src: _imports_1,\n  alt: \"\",\n  class: \"max-md:w-6\"\n}\nconst _hoisted_16 = [\"onClick\"]\nconst _hoisted_17 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_3,\n  alt: \"\"\n}, null, -1))\nconst _hoisted_18 = [\n  _hoisted_17\n]\nconst _hoisted_19 = { class: \"text-neutral-300 font-sm flex items-center gap-3 shrink-0 max-md:order-first max-md:hidden\" }\nconst _hoisted_20 = { class: \"w-9\" }\nconst _hoisted_21 = { class: \"w-9\" }\n\nimport { ref, onMounted, computed } from 'vue'\r\n\r\n\nconst _sfc_main = {\n  __name: 'PlayControl',\n  setup(__props) {\n\r\nconst audioPlayers = ref( [\r\n\t{ src: \"https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3\", audio: null, currentTime: 0, totalDuration: 0, volume: 1, seeking: false }\r\n] )\r\n\r\nconst timeString = ( secs ) => {\r\n\tlet ss = Math.floor( secs ),\r\n\t\thh = Math.floor( ss / 3600 ),\r\n\t\tmm = Math.floor( ( ss - hh * 3600 ) / 60 )\r\n\tss = ss - hh * 3600 - mm * 60\r\n\tmm = mm < 10 ? \"0\" + mm : mm\r\n\tss = ss < 10 ? \"0\" + ss : ss\r\n\treturn hh > 0 ? `${ hh }:${ mm }:${ ss }` : `${ mm }:${ ss }`\r\n}\r\n\r\nconst togglePlayPause = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio.paused ) {\r\n\t\taudioPlayer.audio.play()\r\n\t\taudioPlayer.isPlaying = true\r\n\t} else {\r\n\t\taudioPlayer.audio.pause()\r\n\t\taudioPlayer.isPlaying = false\r\n\t}\r\n}\r\n\r\nconst isPaused = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\treturn audioPlayer.audio.paused\r\n\t}\r\n\treturn true // Assuming that if audio is not initialized, it's considered paused\r\n}\r\n\r\nconst toggleMute = ( audioPlayer ) => {\r\n\taudioPlayer.volume = audioPlayer.volume === 0 ? 1 : 0\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.volume = audioPlayer.volume\r\n\t}\r\n}\r\n\r\nconst setProgress = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime = audioPlayer.currentTime\r\n\t}\r\n}\r\n\r\nconst forwardSong = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime += 10 // Forwarding by 10 seconds, change as needed\r\n\t}\r\n}\r\n\r\nconst rewindSong = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime -= 10 // Rewinding by 10 seconds, change as needed\r\n\t}\r\n}\r\n\r\nonMounted( () => {\r\n\tif ( process.browser ) {\r\n\t\tfor ( const player of audioPlayers.value ) {\r\n\t\t\tplayer.audio = new Audio( encodeURI( player.src ) )\r\n\t\t\tplayer.audio.addEventListener( 'loadedmetadata', () => {\r\n\t\t\t\tplayer.totalDuration = Math.floor( player.audio.duration )\r\n\t\t\t\tplayer.audio.addEventListener( 'timeupdate', () => {\r\n\t\t\t\t\tif ( !player.seeking ) {\r\n\t\t\t\t\t\tplayer.currentTime = Math.floor( player.audio.currentTime )\r\n\t\t\t\t\t}\r\n\t\t\t\t} )\r\n\t\t\t} )\r\n\t\t\tplayer.audio.addEventListener( 'seeking', () => {\r\n\t\t\t\tplayer.seeking = true\r\n\t\t\t} )\r\n\t\t\tplayer.audio.addEventListener( 'seeked', () => {\r\n\t\t\t\tplayer.seeking = false\r\n\t\t\t} )\r\n\t\t}\r\n\t}\r\n} )\r\n\r\nconst progressBackgroundSize = computed( () => {\r\n\tconst progress = audioPlayers.value[ 0 ].currentTime / audioPlayers.value[ 0 ].totalDuration\r\n\treturn `${ progress * 100 }% 100%`\r\n} )\r\n\nreturn (_ctx, _cache) => {\n  return (_openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n    (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(audioPlayers.value, (audioPlayer, index) => {\n      return (_openBlock(), _createElementBlock(\"div\", {\n        key:  index ,\n        class: \"flex items-center md:gap-8 gap-3 justify-end text-white\"\n      }, [\n        _createElementVNode(\"div\", _hoisted_2, [\n          _createElementVNode(\"div\", _hoisted_3, [\n            _createElementVNode(\"button\", {\n              onClick: $event => (toggleMute( audioPlayer ))\n            }, [\n              _createElementVNode(\"img\", {\n                class: \"mt-[5px] w-[26px] h-[26px]\",\n                src:  audioPlayer.volume === 0 ? '/svgs/Icon-Volume-mute.svg' : '/svgs/Icon-Volume.svg' ,\n                alt: \"\"\n              }, null, 8, _hoisted_5)\n            ], 8, _hoisted_4)\n          ]),\n          _withDirectives(_createElementVNode(\"input\", {\n            type: \"range\",\n            min: \"0\",\n            max:  audioPlayer.totalDuration ,\n            step: \"1\",\n            \"onUpdate:modelValue\": $event => ((audioPlayer.currentTime) = $event),\n            onInput: $event => (setProgress( audioPlayer )),\n            class: \"!p-0 lg:min-w-96 md:min-w-54 w-full rotate-180 progress flex-grow\",\n            style: _normalizeStyle( { backgroundSize: progressBackgroundSize.value } )\n          }, null, 44, _hoisted_6), [\n            [_vModelText, audioPlayer.currentTime]\n          ])\n        ]),\n        _createElementVNode(\"div\", _hoisted_7, [\n          _createElementVNode(\"button\", {\n            onClick: $event => (forwardSong( audioPlayer ))\n          }, _hoisted_10, 8, _hoisted_8),\n          _createElementVNode(\"button\", {\n            class: \"w-10 cent\",\n            onClick: $event => (togglePlayPause( audioPlayer ))\n          }, [\n            _hoisted_12,\n            _hoisted_13,\n            ( audioPlayer.isPlaying )\n              ? (_openBlock(), _createElementBlock(\"img\", _hoisted_14))\n              : (_openBlock(), _createElementBlock(\"img\", _hoisted_15))\n          ], 8, _hoisted_11),\n          _createElementVNode(\"button\", {\n            onClick: $event => (rewindSong( audioPlayer ))\n          }, _hoisted_18, 8, _hoisted_16)\n        ]),\n        _createElementVNode(\"div\", _hoisted_19, [\n          _createElementVNode(\"span\", _hoisted_20, _toDisplayString(timeString( audioPlayer.currentTime )), 1),\n          _createTextVNode(\" / \"),\n          _createElementVNode(\"span\", _hoisted_21, _toDisplayString(timeString( audioPlayer.totalDuration )), 1)\n        ])\n      ]))\n    }), 128))\n  ]))\n}\n}\n\n}\n\n\nimport \"D:/quran/nuxt-app - Copy/components/PlayControl.vue?vue&type=style&index=0&scoped=facfd4e0&lang.css\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['__scopeId',\"data-v-facfd4e0\"]])",
+      "start": 1710887975389,
+      "end": 1710887975396,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887975396,
+      "end": 1710887975396,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975396,
+      "end": 1710887975396,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887975397,
+      "end": 1710887975397,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887975400,
+      "end": 1710887975400,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887975401,
+      "end": 1710887975401,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975405,
+      "end": 1710887975405,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887975405,
+      "end": 1710887975405,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "result": "import { renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createElementVNode as _createElementVNode, vModelText as _vModelText, normalizeStyle as _normalizeStyle, withDirectives as _withDirectives, createCommentVNode as _createCommentVNode, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\";\nimport _imports_0 from \"/svgs/Icon-Forwardsvg.svg\";\nimport _imports_1 from \"/svgs/Icon-Play.svg\";\nimport _imports_2 from \"/svgs/Icon-Pause.svg\";\nimport _imports_3 from \"/svgs/Icon-Rewindsvg.svg\";\nconst _withScopeId = (n) => (_pushScopeId(\"data-v-facfd4e0\"), n = n(), _popScopeId(), n);\nconst _hoisted_1 = { class: \"flex-grow\" };\nconst _hoisted_2 = { class: \"flex gap-3 flex-grow\" };\nconst _hoisted_3 = { class: \"relative group shrink-0\" };\nconst _hoisted_4 = [\"onClick\"];\nconst _hoisted_5 = [\"src\"];\nconst _hoisted_6 = [\"max\", \"onUpdate:modelValue\", \"onInput\"];\nconst _hoisted_7 = { class: \"flex md:gap-4 items-center ltr:flex-row-reverse\" };\nconst _hoisted_8 = [\"onClick\"];\nconst _hoisted_9 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"\"\n}, null, -1));\nconst _hoisted_10 = [\n  _hoisted_9\n];\nconst _hoisted_11 = [\"onClick\"];\nconst _hoisted_12 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"img\", {\n  src: _imports_1,\n  alt: \"\",\n  style: { \"display\": \"none\" }\n}, null, -1));\nconst _hoisted_13 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"img\", {\n  src: _imports_2,\n  alt: \"\",\n  style: { \"display\": \"none\" }\n}, null, -1));\nconst _hoisted_14 = {\n  key: 0,\n  src: _imports_2,\n  alt: \"\",\n  class: \"max-md:w-4\"\n};\nconst _hoisted_15 = {\n  key: 1,\n  src: _imports_1,\n  alt: \"\",\n  class: \"max-md:w-6\"\n};\nconst _hoisted_16 = [\"onClick\"];\nconst _hoisted_17 = /* @__PURE__ */ _withScopeId(() => /* @__PURE__ */ _createElementVNode(\"img\", {\n  src: _imports_3,\n  alt: \"\"\n}, null, -1));\nconst _hoisted_18 = [\n  _hoisted_17\n];\nconst _hoisted_19 = { class: \"text-neutral-300 font-sm flex items-center gap-3 shrink-0 max-md:order-first max-md:hidden\" };\nconst _hoisted_20 = { class: \"w-9\" };\nconst _hoisted_21 = { class: \"w-9\" };\nimport { ref, onMounted, computed } from \"vue\";\nconst _sfc_main = {\n  __name: \"PlayControl\",\n  setup(__props) {\n    const audioPlayers = ref([\n      { src: \"https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3\", audio: null, currentTime: 0, totalDuration: 0, volume: 1, seeking: false }\n    ]);\n    const timeString = (secs) => {\n      let ss = Math.floor(secs), hh = Math.floor(ss / 3600), mm = Math.floor((ss - hh * 3600) / 60);\n      ss = ss - hh * 3600 - mm * 60;\n      mm = mm < 10 ? \"0\" + mm : mm;\n      ss = ss < 10 ? \"0\" + ss : ss;\n      return hh > 0 ? `${hh}:${mm}:${ss}` : `${mm}:${ss}`;\n    };\n    const togglePlayPause = (audioPlayer) => {\n      if (audioPlayer.audio.paused) {\n        audioPlayer.audio.play();\n        audioPlayer.isPlaying = true;\n      } else {\n        audioPlayer.audio.pause();\n        audioPlayer.isPlaying = false;\n      }\n    };\n    const isPaused = (audioPlayer) => {\n      if (audioPlayer.audio) {\n        return audioPlayer.audio.paused;\n      }\n      return true;\n    };\n    const toggleMute = (audioPlayer) => {\n      audioPlayer.volume = audioPlayer.volume === 0 ? 1 : 0;\n      if (audioPlayer.audio) {\n        audioPlayer.audio.volume = audioPlayer.volume;\n      }\n    };\n    const setProgress = (audioPlayer) => {\n      if (audioPlayer.audio) {\n        audioPlayer.audio.currentTime = audioPlayer.currentTime;\n      }\n    };\n    const forwardSong = (audioPlayer) => {\n      if (audioPlayer.audio) {\n        audioPlayer.audio.currentTime += 10;\n      }\n    };\n    const rewindSong = (audioPlayer) => {\n      if (audioPlayer.audio) {\n        audioPlayer.audio.currentTime -= 10;\n      }\n    };\n    onMounted(() => {\n      if (true) {\n        for (const player of audioPlayers.value) {\n          player.audio = new Audio(encodeURI(player.src));\n          player.audio.addEventListener(\"loadedmetadata\", () => {\n            player.totalDuration = Math.floor(player.audio.duration);\n            player.audio.addEventListener(\"timeupdate\", () => {\n              if (!player.seeking) {\n                player.currentTime = Math.floor(player.audio.currentTime);\n              }\n            });\n          });\n          player.audio.addEventListener(\"seeking\", () => {\n            player.seeking = true;\n          });\n          player.audio.addEventListener(\"seeked\", () => {\n            player.seeking = false;\n          });\n        }\n      }\n    });\n    const progressBackgroundSize = computed(() => {\n      const progress = audioPlayers.value[0].currentTime / audioPlayers.value[0].totalDuration;\n      return `${progress * 100}% 100%`;\n    });\n    return (_ctx, _cache) => {\n      return _openBlock(), _createElementBlock(\"div\", _hoisted_1, [\n        (_openBlock(true), _createElementBlock(_Fragment, null, _renderList(audioPlayers.value, (audioPlayer, index) => {\n          return _openBlock(), _createElementBlock(\"div\", {\n            key: index,\n            class: \"flex items-center md:gap-8 gap-3 justify-end text-white\"\n          }, [\n            _createElementVNode(\"div\", _hoisted_2, [\n              _createElementVNode(\"div\", _hoisted_3, [\n                _createElementVNode(\"button\", {\n                  onClick: ($event) => toggleMute(audioPlayer)\n                }, [\n                  _createElementVNode(\"img\", {\n                    class: \"mt-[5px] w-[26px] h-[26px]\",\n                    src: audioPlayer.volume === 0 ? \"/svgs/Icon-Volume-mute.svg\" : \"/svgs/Icon-Volume.svg\",\n                    alt: \"\"\n                  }, null, 8, _hoisted_5)\n                ], 8, _hoisted_4)\n              ]),\n              _withDirectives(_createElementVNode(\"input\", {\n                type: \"range\",\n                min: \"0\",\n                max: audioPlayer.totalDuration,\n                step: \"1\",\n                \"onUpdate:modelValue\": ($event) => audioPlayer.currentTime = $event,\n                onInput: ($event) => setProgress(audioPlayer),\n                class: \"!p-0 lg:min-w-96 md:min-w-54 w-full rotate-180 progress flex-grow\",\n                style: _normalizeStyle({ backgroundSize: progressBackgroundSize.value })\n              }, null, 44, _hoisted_6), [\n                [_vModelText, audioPlayer.currentTime]\n              ])\n            ]),\n            _createElementVNode(\"div\", _hoisted_7, [\n              _createElementVNode(\"button\", {\n                onClick: ($event) => forwardSong(audioPlayer)\n              }, _hoisted_10, 8, _hoisted_8),\n              _createElementVNode(\"button\", {\n                class: \"w-10 cent\",\n                onClick: ($event) => togglePlayPause(audioPlayer)\n              }, [\n                _hoisted_12,\n                _hoisted_13,\n                audioPlayer.isPlaying ? (_openBlock(), _createElementBlock(\"img\", _hoisted_14)) : (_openBlock(), _createElementBlock(\"img\", _hoisted_15))\n              ], 8, _hoisted_11),\n              _createElementVNode(\"button\", {\n                onClick: ($event) => rewindSong(audioPlayer)\n              }, _hoisted_18, 8, _hoisted_16)\n            ]),\n            _createElementVNode(\"div\", _hoisted_19, [\n              _createElementVNode(\"span\", _hoisted_20, _toDisplayString(timeString(audioPlayer.currentTime)), 1),\n              _createTextVNode(\" / \"),\n              _createElementVNode(\"span\", _hoisted_21, _toDisplayString(timeString(audioPlayer.totalDuration)), 1)\n            ])\n          ]);\n        }), 128))\n      ]);\n    };\n  }\n};\nimport \"D:/quran/nuxt-app - Copy/components/PlayControl.vue?vue&type=style&index=0&scoped=facfd4e0&lang.css\";\nimport _export_sfc from \"\\0plugin-vue:export-helper\";\nexport default /* @__PURE__ */ _export_sfc(_sfc_main, [[\"__scopeId\", \"data-v-facfd4e0\"]]);\n",
+      "start": 1710887975406,
+      "end": 1710887975445,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887975445,
+      "end": 1710887975445,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887975446,
+      "end": 1710887975448,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887975448,
+      "end": 1710887975448,
+      "order": "normal"
+    }
+  ]
+}

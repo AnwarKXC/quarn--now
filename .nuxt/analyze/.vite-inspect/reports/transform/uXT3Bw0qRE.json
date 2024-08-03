@@ -1,0 +1,238 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/locales/ar.json",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "{\r\n    \"header\":{\r\n        \"headerbtn\": \"تحميل براير ناو\"\r\n    },\r\n    \"banner\":{\r\n        \"subheading\": \"احصل على تنبيه مواقيت الصلاة على هاتفك مجانًا\",\r\n        \"heading\": \".فاتتك صلاتك مرة أخرى؟ يمكن أن يساعدك تطبيق براير ناو\",\r\n        \"bannerbtn\": \"تحميل براير ناو\"\r\n    },\r\n    \"sidebar\":{\r\n        \"item\": \"مواعيد الصلاة\",\r\n        \"item1\": \"القرأن الكريم\",\r\n        \"item2\": \"التاريخ الهجري\",\r\n        \"item3\": \"التاريخ الهجري\",\r\n        \"item4\": \"التاريخ الهجري\",\r\n        \"download\": \"تحميل التطبيق\"\r\n    },\r\n    \"add1\":{\r\n        \"heading\": \"مساحة إعلانية\",\r\n        \"subheading\": \"لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر\"\r\n    },\r\n    \"searchbar\":{\r\n        \"searchtext1\": \"ابحث عن مواعيد الصلاة ، القراء،...\",\r\n        \"searchtext2\": \"بحث عن مح  افظة القاهرة...\"\r\n    },\r\n    \"allcountries\":{\r\n        \"heading\": \"كل الدول\",\r\n        \"country\": \"الدول العربية\",\r\n        \"country1\": \"أوروبا\",\r\n        \"country2\": \"أمريكا الشمالية\",  \r\n        \"country3\": \"أمريكا الجنوبيه\",\r\n        \"country4\": \"أسيا\",\r\n        \"country5\": \"أفريقيا \",\r\n        \"country6\": \"أخرى\"\r\n    },\r\n    \"location\":{\r\n        \"locationtext\": \"للحصول علي التوقيت بشكل صحيح يرجي تحديد موقعك.\",\r\n        \"buttongreen\": \"تحديد الموقع\",\r\n        \"buttonwhite\": \"لا أوافق\"\r\n    },\r\n    \"add2\":{\r\n        \"heading\": \"مساحة إعلانية\",\r\n        \"subheading\": \"Lorem Ipsum هو ببساطة نص رسمي (بمعنى أن الشكل هو الهدف وليس المحتوى) ويتم استخدامه في صناعات الطباعة والنشر.\",\r\n        \"startbtn\": \"إبدأ الأن\"\r\n    },\r\n    \"citiesbanner\":{\r\n        \"heading\": \"مدن إسلامية كبرى\"\r\n        \r\n    },\r\n    \"advantagebanner\":{\r\n        \"topheading\": \"مزايا براير ناو.\",\r\n        \"topsubheading\": \"احصل على تنبيه مواقيت الصلاة على هاتفك مجانًا.\",\r\n        \"heading1\": \"أوقات الصلاة\",\r\n        \"subheading1\": \"يهدف هذا المساق إلى مساعدة الطلاب على حفظ القرآن الكريم. الطلاب الذين يرغبون في حفظ جزء من القرآن أو كله.\",\r\n        \"heading2\": \"قرأة القرآن\",\r\n        \"subheading2\": \"يهدف هذا المساق إلى مساعدة الطلاب على حفظ القرآن الكريم. الطلاب الذين يرغبون في حفظ جزء من القرآن أو كله.\",\r\n        \"heading3\": \"أوقات الصلاة\",\r\n        \"subheading3\": \"يهدف هذا المساق إلى مساعدة الطلاب على حفظ القرآن الكريم. الطلاب الذين يرغبون في حفظ جزء من القرآن أو كله.\"\r\n    },\r\n    \"mobilebanner\":{\r\n        \"subheading\": \"احصل على تنبيه مواقيت الصلاة على هاتفك مجانًا.\",\r\n        \"heading\": \"فاتتك صلاتك مرة أخرى؟ يمكن أن يساعدك تطبيق براير ناو.\"   \r\n    },\r\n    \"add3\":{\r\n        \"heading\": \"حديث اليوم\", \r\n        \"subheading\": \"عن علقمة بن وقاص الليثي، يقول: سمعت عمر بن الخطاب رضي الله عنه على المنبر قال: سمعت رسول الله صلى الله عليه وسلم يقول: «إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى، فمن كانت هجرته إلى دنيا يصيبها، أو إلى امرأة ينكحها، فهجرته إلى ما هاجر إليه»\"  \r\n    },\r\n    \"infobanner\":{\r\n        \"topheading\": \"معلومات عن الدولة\", \r\n        \"para1\": \"الإحداثيات:\", \r\n        \"para2\": \"هجرية الموافق \", \r\n        \"countryheading\": \"الدولة:\", \r\n        \"countrysubheading\": \"المحافظة:\", \r\n        \"countrysubheading2\": \"المدينة:\", \r\n        \"timepara\": \"مواقيت الصلاة:\",  \r\n        \"doctrinepara\": \"المذهب:\",  \r\n        \"timestyle\": \"صيغة الوقت:\",  \r\n        \"calpara\": \"طريقة الحساب :\",\r\n        \"timingheading\": \"مواقيت الصلاة\",  \r\n        \"timingsubheading\": \"اليوم\",  \r\n        \"monthsubheading\": \"مواقيت الصلاة لهذا الشهر\",  \r\n        \"week1\": \"الأسبوع الأول\",  \r\n        \"week2\": \"الأسبوع الثاني\",  \r\n        \"week3\": \"الأسبوع الثالث\",  \r\n        \"week4\": \"الأسبوع الرابع\",\r\n        \"time1\": \"الفجر\",\r\n        \"time2\": \"الشروق\",\r\n        \"time3\": \"الظُّهْر\",\r\n        \"time4\": \"العَصر\",\r\n        \"time5\": \"المَغرب\",\r\n        \"time6\": \"العِشاء\",\r\n        \"date\": \"التاريخ\"  \r\n    },\r\n    \"citiescounrybanner\":{\r\n        \"heading\": \"المدن داخل الدولة\"   \r\n    },\r\n    \"playbanner\":{\r\n        \"heading\": \"أحدث قوائم التشغيل\"   \r\n    },\r\n    \"trendingbanner\":{\r\n        \"heading\": \"مواضيع رائجة\",   \r\n        \"cardheading1\": \"المحافظة على أخوة الدين\",   \r\n        \"cardsubheading1\": \"فما أصاب المسلمين اليوم من التأخر وقد كانوا فيما مضى سادة العام نتيجة للتفرق والاختلاف وركونهم إلى الدنيا وزخارفها والاشتغال\",   \r\n        \"cardheading2\": \"المحافظة على أخوة الدين\",   \r\n        \"cardsubheading2\": \"فما أصاب المسلمين اليوم من التأخر وقد كانوا فيما مضى سادة العام نتيجة للتفرق والاختلاف وركونهم إلى الدنيا وزخارفها والاشتغال\",   \r\n        \"cardheading3\": \"المحافظة على أخوة الدين\",   \r\n        \"cardsubheading3\": \"فما أصاب المسلمين اليوم من التأخر وقد كانوا فيما مضى سادة العام نتيجة للتفرق والاختلاف وركونهم إلى الدنيا وزخارفها والاشتغال\"   \r\n    },\r\n    \"eldersbanner\":{\r\n        \"heading\": \"كل الشيوخ\",   \r\n        \"seacrhheading\": \"ابحث عن القراء،  ...\",\r\n        \"yellowpara\": \"كل الشيوخ\",   \r\n        \"alphabet1\": \"  أ \",   \r\n        \"alphabet2\": \" ب \",   \r\n        \"alphabet3\": \" ت \",   \r\n        \"alphabet4\": \" ث \",   \r\n        \"alphabet5\": \" ج \",   \r\n        \"alphabet6\": \" ح \",   \r\n        \"alphabet7\": \" خ \",   \r\n        \"alphabet8\": \" د \",   \r\n        \"alphabet9\": \" ذ \",   \r\n        \"alphabet10\": \" ر \",   \r\n        \"alphabet11\": \" ز \",   \r\n        \"alphabet12\": \" س \",   \r\n        \"alphabet13\": \" ش \",   \r\n        \"alphabet14\": \" ص \",   \r\n        \"alphabet15\": \" ض \",   \r\n        \"alphabet16\": \" ط \",   \r\n        \"alphabet17\": \" ظ \",   \r\n        \"alphabet18\": \" ع \",   \r\n        \"alphabet19\": \" م \",   \r\n        \"alphabet20\": \" أ \",   \r\n        \"alphabet21\": \" أ \",   \r\n        \"alphabet22\": \" ب \",   \r\n        \"alphabet23\": \" ت \",   \r\n        \"alphabet24\": \" ث \",   \r\n        \"alphabet25\": \" ج \",   \r\n        \"alphabet26\": \" ح \",   \r\n        \"alphabet27\": \" خ \",   \r\n        \"alphabet28\": \" د \",   \r\n        \"alphabet29\": \" ذ \",   \r\n        \"alphabet31\": \" ر \",   \r\n        \"alphabet32\": \" ز \",   \r\n        \"alphabet33\": \" س \",   \r\n        \"alphabet34\": \" ش \",   \r\n        \"alphabet35\": \" ص \",   \r\n        \"alphabet36\": \" ض \",   \r\n        \"alphabet37\": \" ط \",   \r\n        \"alphabet38\": \" ظ \",   \r\n        \"alphabet39\": \" ع \",   \r\n        \"alphabet40\": \" م \",   \r\n        \"greenheading1\": \" أ \",   \r\n        \"greenheading2\": \" ب \",   \r\n        \"greenheading3\": \" ت \",   \r\n        \"greenheading4\": \" ث \",\r\n        \"greenheading5\": \" ج \"            \r\n    },\r\n    \"playlistbanner\":{\r\n        \"heading\":\"قائمة التشغيل\",\r\n        \"date\":\"1/2/2020\",\r\n        \"run\":\"تشغيل\",\r\n        \"listgreenheading\":\"سورة قريش بصوت :\",\r\n        \"listheading\":\"قائمة تشغيل - أئمة الحرم المكي\",\r\n        \"listsubheading\":\"سورة قريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم المكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر . رؤية المزيد\"\r\n    },\r\n    \"suratbanner\":{\r\n        \"seacrhbar\":\"ابحث عن أسماء السور،  ...\"\r\n    },\r\n    \"moreplaybanner\":{\r\n        \"heading\":\"قوائم أكثر تشغيلا\"\r\n    },\r\n    \r\n    \"footerbanner\":{\r\n        \"logoheading\": \"براير ناو | الصلاة الأن\",\r\n        \"link1\": \"مركز المساعدة\",\r\n        \"link2\": \"المساجد\",   \r\n        \"link3\": \"مميزات التطبيق\",\r\n        \"link4\": \"اعلن معنا\",\r\n        \"link5\": \"معلومات عنا\",\r\n        \"link6\": \"اتصل بنا\",\r\n        \"footerbtn\": \"العربية\",\r\n        \"para1\": \" الاسئلة الشائعة \",\r\n        \"para2\": \" سياسة الخصوصية \",\r\n        \"para3\": \" شروط الاستخدام \",\r\n        \"para4\": \" المقالات \",\r\n        \"para5\": \" إبلاغ عن محتوى \",\r\n        \"para6\": \" المقترحات والشكاوى \",\r\n        \"para7\": \" تحميل براير ناو \",\r\n        \"para8\": \" حول العالم الإسلامي\",\r\n        \"para9\": \" المساجد \",\r\n        \"footerleft\": \"تطوير شركه أب روكس \",\r\n        \"footerright\": \"© براير ناو  الصلاة الأن. علامة تجارية مسجله 2014 - 2022.\",\r\n        \"footer_mobile_right\":\"جميع الحقوق محفوظة - براير ناو 2023\"\r\n    }\r\n}",
+      "start": 1710887975278,
+      "end": 1710887975437,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887975437,
+      "end": 1710887975437,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887975437,
+      "end": 1710887975437,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887975437,
+      "end": 1710887975437,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887975437,
+      "end": 1710887975437,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887975437,
+      "end": 1710887975437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887975437,
+      "end": 1710887975437,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "result": "export const header = {\n\theaderbtn: \"تحميل براير ناو\"\n};\nexport const banner = {\n\tsubheading: \"احصل على تنبيه مواقيت الصلاة على هاتفك مجانًا\",\n\theading: \".فاتتك صلاتك مرة أخرى؟ يمكن أن يساعدك تطبيق براير ناو\",\n\tbannerbtn: \"تحميل براير ناو\"\n};\nexport const sidebar = {\n\titem: \"مواعيد الصلاة\",\n\titem1: \"القرأن الكريم\",\n\titem2: \"التاريخ الهجري\",\n\titem3: \"التاريخ الهجري\",\n\titem4: \"التاريخ الهجري\",\n\tdownload: \"تحميل التطبيق\"\n};\nexport const add1 = {\n\theading: \"مساحة إعلانية\",\n\tsubheading: \"لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر\"\n};\nexport const searchbar = {\n\tsearchtext1: \"ابحث عن مواعيد الصلاة ، القراء،...\",\n\tsearchtext2: \"بحث عن مح  افظة القاهرة...\"\n};\nexport const allcountries = {\n\theading: \"كل الدول\",\n\tcountry: \"الدول العربية\",\n\tcountry1: \"أوروبا\",\n\tcountry2: \"أمريكا الشمالية\",\n\tcountry3: \"أمريكا الجنوبيه\",\n\tcountry4: \"أسيا\",\n\tcountry5: \"أفريقيا \",\n\tcountry6: \"أخرى\"\n};\nexport const location = {\n\tlocationtext: \"للحصول علي التوقيت بشكل صحيح يرجي تحديد موقعك.\",\n\tbuttongreen: \"تحديد الموقع\",\n\tbuttonwhite: \"لا أوافق\"\n};\nexport const add2 = {\n\theading: \"مساحة إعلانية\",\n\tsubheading: \"Lorem Ipsum هو ببساطة نص رسمي (بمعنى أن الشكل هو الهدف وليس المحتوى) ويتم استخدامه في صناعات الطباعة والنشر.\",\n\tstartbtn: \"إبدأ الأن\"\n};\nexport const citiesbanner = {\n\theading: \"مدن إسلامية كبرى\"\n};\nexport const advantagebanner = {\n\ttopheading: \"مزايا براير ناو.\",\n\ttopsubheading: \"احصل على تنبيه مواقيت الصلاة على هاتفك مجانًا.\",\n\theading1: \"أوقات الصلاة\",\n\tsubheading1: \"يهدف هذا المساق إلى مساعدة الطلاب على حفظ القرآن الكريم. الطلاب الذين يرغبون في حفظ جزء من القرآن أو كله.\",\n\theading2: \"قرأة القرآن\",\n\tsubheading2: \"يهدف هذا المساق إلى مساعدة الطلاب على حفظ القرآن الكريم. الطلاب الذين يرغبون في حفظ جزء من القرآن أو كله.\",\n\theading3: \"أوقات الصلاة\",\n\tsubheading3: \"يهدف هذا المساق إلى مساعدة الطلاب على حفظ القرآن الكريم. الطلاب الذين يرغبون في حفظ جزء من القرآن أو كله.\"\n};\nexport const mobilebanner = {\n\tsubheading: \"احصل على تنبيه مواقيت الصلاة على هاتفك مجانًا.\",\n\theading: \"فاتتك صلاتك مرة أخرى؟ يمكن أن يساعدك تطبيق براير ناو.\"\n};\nexport const add3 = {\n\theading: \"حديث اليوم\",\n\tsubheading: \"عن علقمة بن وقاص الليثي، يقول: سمعت عمر بن الخطاب رضي الله عنه على المنبر قال: سمعت رسول الله صلى الله عليه وسلم يقول: «إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى، فمن كانت هجرته إلى دنيا يصيبها، أو إلى امرأة ينكحها، فهجرته إلى ما هاجر إليه»\"\n};\nexport const infobanner = {\n\ttopheading: \"معلومات عن الدولة\",\n\tpara1: \"الإحداثيات:\",\n\tpara2: \"هجرية الموافق \",\n\tcountryheading: \"الدولة:\",\n\tcountrysubheading: \"المحافظة:\",\n\tcountrysubheading2: \"المدينة:\",\n\ttimepara: \"مواقيت الصلاة:\",\n\tdoctrinepara: \"المذهب:\",\n\ttimestyle: \"صيغة الوقت:\",\n\tcalpara: \"طريقة الحساب :\",\n\ttimingheading: \"مواقيت الصلاة\",\n\ttimingsubheading: \"اليوم\",\n\tmonthsubheading: \"مواقيت الصلاة لهذا الشهر\",\n\tweek1: \"الأسبوع الأول\",\n\tweek2: \"الأسبوع الثاني\",\n\tweek3: \"الأسبوع الثالث\",\n\tweek4: \"الأسبوع الرابع\",\n\ttime1: \"الفجر\",\n\ttime2: \"الشروق\",\n\ttime3: \"الظُّهْر\",\n\ttime4: \"العَصر\",\n\ttime5: \"المَغرب\",\n\ttime6: \"العِشاء\",\n\tdate: \"التاريخ\"\n};\nexport const citiescounrybanner = {\n\theading: \"المدن داخل الدولة\"\n};\nexport const playbanner = {\n\theading: \"أحدث قوائم التشغيل\"\n};\nexport const trendingbanner = {\n\theading: \"مواضيع رائجة\",\n\tcardheading1: \"المحافظة على أخوة الدين\",\n\tcardsubheading1: \"فما أصاب المسلمين اليوم من التأخر وقد كانوا فيما مضى سادة العام نتيجة للتفرق والاختلاف وركونهم إلى الدنيا وزخارفها والاشتغال\",\n\tcardheading2: \"المحافظة على أخوة الدين\",\n\tcardsubheading2: \"فما أصاب المسلمين اليوم من التأخر وقد كانوا فيما مضى سادة العام نتيجة للتفرق والاختلاف وركونهم إلى الدنيا وزخارفها والاشتغال\",\n\tcardheading3: \"المحافظة على أخوة الدين\",\n\tcardsubheading3: \"فما أصاب المسلمين اليوم من التأخر وقد كانوا فيما مضى سادة العام نتيجة للتفرق والاختلاف وركونهم إلى الدنيا وزخارفها والاشتغال\"\n};\nexport const eldersbanner = {\n\theading: \"كل الشيوخ\",\n\tseacrhheading: \"ابحث عن القراء،  ...\",\n\tyellowpara: \"كل الشيوخ\",\n\talphabet1: \"  أ \",\n\talphabet2: \" ب \",\n\talphabet3: \" ت \",\n\talphabet4: \" ث \",\n\talphabet5: \" ج \",\n\talphabet6: \" ح \",\n\talphabet7: \" خ \",\n\talphabet8: \" د \",\n\talphabet9: \" ذ \",\n\talphabet10: \" ر \",\n\talphabet11: \" ز \",\n\talphabet12: \" س \",\n\talphabet13: \" ش \",\n\talphabet14: \" ص \",\n\talphabet15: \" ض \",\n\talphabet16: \" ط \",\n\talphabet17: \" ظ \",\n\talphabet18: \" ع \",\n\talphabet19: \" م \",\n\talphabet20: \" أ \",\n\talphabet21: \" أ \",\n\talphabet22: \" ب \",\n\talphabet23: \" ت \",\n\talphabet24: \" ث \",\n\talphabet25: \" ج \",\n\talphabet26: \" ح \",\n\talphabet27: \" خ \",\n\talphabet28: \" د \",\n\talphabet29: \" ذ \",\n\talphabet31: \" ر \",\n\talphabet32: \" ز \",\n\talphabet33: \" س \",\n\talphabet34: \" ش \",\n\talphabet35: \" ص \",\n\talphabet36: \" ض \",\n\talphabet37: \" ط \",\n\talphabet38: \" ظ \",\n\talphabet39: \" ع \",\n\talphabet40: \" م \",\n\tgreenheading1: \" أ \",\n\tgreenheading2: \" ب \",\n\tgreenheading3: \" ت \",\n\tgreenheading4: \" ث \",\n\tgreenheading5: \" ج \"\n};\nexport const playlistbanner = {\n\theading: \"قائمة التشغيل\",\n\tdate: \"1/2/2020\",\n\trun: \"تشغيل\",\n\tlistgreenheading: \"سورة قريش بصوت :\",\n\tlistheading: \"قائمة تشغيل - أئمة الحرم المكي\",\n\tlistsubheading: \"سورة قريش كاملة مصحف الحرم المكي 1439 بجودة عاليه برواية حفص عن عاصم بصوت أئمة الحرم المكي استماع أون لاين مع إمكانية النسخ والمشاركة برابط واحد مباشر . رؤية المزيد\"\n};\nexport const suratbanner = {\n\tseacrhbar: \"ابحث عن أسماء السور،  ...\"\n};\nexport const moreplaybanner = {\n\theading: \"قوائم أكثر تشغيلا\"\n};\nexport const footerbanner = {\n\tlogoheading: \"براير ناو | الصلاة الأن\",\n\tlink1: \"مركز المساعدة\",\n\tlink2: \"المساجد\",\n\tlink3: \"مميزات التطبيق\",\n\tlink4: \"اعلن معنا\",\n\tlink5: \"معلومات عنا\",\n\tlink6: \"اتصل بنا\",\n\tfooterbtn: \"العربية\",\n\tpara1: \" الاسئلة الشائعة \",\n\tpara2: \" سياسة الخصوصية \",\n\tpara3: \" شروط الاستخدام \",\n\tpara4: \" المقالات \",\n\tpara5: \" إبلاغ عن محتوى \",\n\tpara6: \" المقترحات والشكاوى \",\n\tpara7: \" تحميل براير ناو \",\n\tpara8: \" حول العالم الإسلامي\",\n\tpara9: \" المساجد \",\n\tfooterleft: \"تطوير شركه أب روكس \",\n\tfooterright: \"© براير ناو  الصلاة الأن. علامة تجارية مسجله 2014 - 2022.\",\n\tfooter_mobile_right: \"جميع الحقوق محفوظة - براير ناو 2023\"\n};\nexport default {\n\theader: header,\n\tbanner: banner,\n\tsidebar: sidebar,\n\tadd1: add1,\n\tsearchbar: searchbar,\n\tallcountries: allcountries,\n\tlocation: location,\n\tadd2: add2,\n\tcitiesbanner: citiesbanner,\n\tadvantagebanner: advantagebanner,\n\tmobilebanner: mobilebanner,\n\tadd3: add3,\n\tinfobanner: infobanner,\n\tcitiescounrybanner: citiescounrybanner,\n\tplaybanner: playbanner,\n\ttrendingbanner: trendingbanner,\n\teldersbanner: eldersbanner,\n\tplaylistbanner: playlistbanner,\n\tsuratbanner: suratbanner,\n\tmoreplaybanner: moreplaybanner,\n\tfooterbanner: footerbanner\n};\n",
+      "start": 1710887975437,
+      "end": 1710887975440,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887975440,
+      "end": 1710887975440,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887975440,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887975441,
+      "end": 1710887975441,
+      "order": "normal"
+    }
+  ]
+}

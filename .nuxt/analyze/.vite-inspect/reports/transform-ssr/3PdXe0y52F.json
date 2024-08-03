@@ -1,0 +1,330 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/pages/app/prayer-time/index.vue?macro=true",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <div class=\" grid gap-6 \">\r\n\r\n\r\n    <!--  ads 1 -->\r\n    <Add1 />\r\n\r\n\r\n    <!-- search bar -->\r\n    <div class=\" relative\">\r\n      <div class=\"bg-white rounded-xl border border-gray-200 flex items-center p-3 gap-[15px] \">\r\n        <Search />\r\n      </div>\r\n    </div>\r\n\r\n\r\n\r\n\r\n\r\n    <AllCountries />\r\n\r\n\r\n    <!-- ad2 -->\r\n    <GoogleAds />\r\n\r\n\r\n    <!-- all Capital  -->\r\n    <AllCapitals />\r\n\r\n\r\n    <!-- ad 3 -->\r\n    <PrayerFeature />\r\n\r\n\r\n    <!-- last add in home page -->\r\n    <NativePanners/>\r\n\r\n\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>",
+      "start": 1710887981043,
+      "end": 1710887981382,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887981382,
+      "end": 1710887981382,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887981382,
+      "end": 1710887981382,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887981382,
+      "end": 1710887981383,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887981382,
+      "end": 1710887981383,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887981383,
+      "end": 1710887981383,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { resolveComponent as _resolveComponent, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  const _component_Add1 = _resolveComponent(\"Add1\")\n  const _component_Search = _resolveComponent(\"Search\")\n  const _component_AllCountries = _resolveComponent(\"AllCountries\")\n  const _component_GoogleAds = _resolveComponent(\"GoogleAds\")\n  const _component_AllCapitals = _resolveComponent(\"AllCapitals\")\n  const _component_PrayerFeature = _resolveComponent(\"PrayerFeature\")\n  const _component_NativePanners = _resolveComponent(\"NativePanners\")\n\n  _push(`<div${_ssrRenderAttrs(_mergeProps({ class: \"grid gap-6\" }, _attrs))}>`)\n  _push(_ssrRenderComponent(_component_Add1, null, null, _parent))\n  _push(`<div class=\"relative\"><div class=\"bg-white rounded-xl border border-gray-200 flex items-center p-3 gap-[15px]\">`)\n  _push(_ssrRenderComponent(_component_Search, null, null, _parent))\n  _push(`</div></div>`)\n  _push(_ssrRenderComponent(_component_AllCountries, null, null, _parent))\n  _push(_ssrRenderComponent(_component_GoogleAds, null, null, _parent))\n  _push(_ssrRenderComponent(_component_AllCapitals, null, null, _parent))\n  _push(_ssrRenderComponent(_component_PrayerFeature, null, null, _parent))\n  _push(_ssrRenderComponent(_component_NativePanners, null, null, _parent))\n  _push(`</div>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"pages/app/prayer-time/index.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1710887981383,
+      "end": 1710887981385,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/quran/nuxt-app - Copy/pages/app/prayer-time/index.vue"
+        ],
+        "names": [],
+        "mappings": ";;;;;;;;;;;;EAAA,aAAA,gBAAA,cACO,KAAK,EAAC,YAAc,IAD3B;EAAA,MAAA;EAAA;EAAA,MAAA;EAAA;EAAA,MAAA;EAAA,MAAA;EAAA,MAAA;EAAA,MAAA;EAAA,MAAA;EAAA",
+        "sourcesContent": [
+          "<template>\r\n  <div class=\" grid gap-6 \">\r\n\r\n\r\n    <!--  ads 1 -->\r\n    <Add1 />\r\n\r\n\r\n    <!-- search bar -->\r\n    <div class=\" relative\">\r\n      <div class=\"bg-white rounded-xl border border-gray-200 flex items-center p-3 gap-[15px] \">\r\n        <Search />\r\n      </div>\r\n    </div>\r\n\r\n\r\n\r\n\r\n\r\n    <AllCountries />\r\n\r\n\r\n    <!-- ad2 -->\r\n    <GoogleAds />\r\n\r\n\r\n    <!-- all Capital  -->\r\n    <AllCapitals />\r\n\r\n\r\n    <!-- ad 3 -->\r\n    <PrayerFeature />\r\n\r\n\r\n    <!-- last add in home page -->\r\n    <NativePanners/>\r\n\r\n\r\n  </div>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>"
+        ]
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887981385,
+      "end": 1710887981385,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887981385,
+      "end": 1710887981385,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887981385,
+      "end": 1710887981385,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887981385,
+      "end": 1710887981385,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887981385,
+      "end": 1710887981385,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887981385,
+      "end": 1710887981385,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887981385,
+      "end": 1710887981385,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887981385,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887981386,
+      "end": 1710887981386,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887981386,
+      "end": 1710887981387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887981386,
+      "end": 1710887981387,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887981387,
+      "end": 1710887981387,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887981387,
+      "end": 1710887981387,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1710887981387,
+      "end": 1710887981388,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "result": "\nconst __nuxt_page_meta = null\nexport default __nuxt_page_meta\n",
+      "start": 1710887981387,
+      "end": 1710887981388,
+      "order": "post",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          ""
+        ],
+        "names": [],
+        "mappings": "AAAA;AAAA;AAAA;"
+      }
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710887981388,
+      "end": 1710887981388,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887981388,
+      "end": 1710887981388,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887981388,
+      "end": 1710887981388,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887981388,
+      "end": 1710887981388,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887981388,
+      "end": 1710887981388,
+      "order": "normal"
+    }
+  ]
+}

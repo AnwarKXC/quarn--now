@@ -1,0 +1,194 @@
+{
+    "header":{
+        "headerbtn": "Önceliği Şimdi İndir"
+    },
+    "banner":{
+        "subheading": "Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın",
+        "heading": "Yine namazını mı kaçırdın? Şimdi Dua uygulaması size yardımcı olabilir.",
+        "bannerbtn": "Önceliği Şimdi İndir."
+    },
+    "sidebar":{
+        "item": "İbadet zamanları",
+        "item1": "Kutsal Kuran",
+        "item2": "İslam Tarihi",
+        "item3": "İslam Tarihi",
+        "item4": "İslam Tarihi",
+        "download": "uygulamayı indir"
+    },
+    "add1":{
+        "heading": "Reklam alanı",
+        "subheading": "Lorem Ipsum basitçe resmi bir metindir (anlam biçimdir, içerik değil, amaçtır) ve basım ve yayıncılık endüstrileri tarafından kullanılır."
+    },
+
+    "searchbar":{
+        "searchtext1": "Namaz vakitlerini, okuyucuları, bul...",
+        "searchtext2": "Kahire Valiliği'ni arayın..."
+    },
+    "allcountries":{
+        "heading": "Tüm ülkeler",
+        "country": "Arap ülkeleri",
+        "country1": "Avrupa",
+        "country2": "Kuzey Amerika",
+        "country3": "Güney Amerika",
+        "country4": "Asya",
+        "country5": "Afrika",
+        "country6": "diğer"
+    },
+    "location":{
+        "locationtext": "Doğru saati almak için lütfen konumunuzu belirtin.",
+        "buttongreen": "konumu tespit et",
+        "buttonwhite": "katılmıyorum"
+    },
+    "add2":{
+        "heading": "Reklam alanı",
+        "subheading": "Lorem Ipsum kullanmak resmi bir metindir (anlam biçimidir, içerik değil, amaçtır) ve basım ve yayıncılık endüstrileri tarafından kullanılır.",
+        "startbtn": "şimdi başla"
+    },
+    "citiesbanner":{
+        "heading": "büyük İslam şehirleri"
+        
+    },
+    "advantagebanner":{
+        "topheading": "Priority Now'ın Avantajları.",
+        "topsubheading": "Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın.",
+        "heading1": "namaz vakti",
+        "subheading1": "Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.",
+        "heading2": "Read the Qur'an",
+        "subheading2": "Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler.",
+        "heading3": "namaz vakti",
+        "subheading3": "Bu ders, öğrencilerin Kur'an-ı Kerim'i ezberlemelerine yardımcı olmayı amaçlamaktadır. Kur'an-ı Kerim'in bir kısmını veya tamamını ezberlemek isteyen öğrenciler."
+    },
+    "mobilebanner":{
+        "subheading": "Telefonunuzda ücretsiz olarak namaz vakitleri uyarısı alın.",
+        "heading": "Yine namazını mı kaçırdın? Şimdi Dua uygulaması size yardımcı olabilir."   
+    },
+    "add3":{
+        "heading": "bugünün konuşması", 
+        "subheading": "Alkame bin Vakkas el-Leysi'den rivayet edildiğine göre o şöyle diyor: Ömer bin el-Hattab'ı (Allah ondan razı olsun) minberde işittim, şöyle dediğini işittim: Allah'ın Resulü'nü (sallallahu aleyhi ve sellem) işittim. ona de ki: Ameller ancak niyetlere göredir ve herkes için niyet ettiği vardır. Onun için ben de onu hicret ettim."  
+    },
+    "infobanner":{
+        "topheading": "Information about the country", 
+        "para1": "Coordinates:", 
+        "para2": "corresponding", 
+        "countryheading": "Country:", 
+        "countrysubheading": "The capital:", 
+        "timepara": "Time format:",  
+        "doctrinepara": "Doctrine:",  
+        "calpara": "Calculation method:",
+        "timingheading": "Prayer Timings",  
+        "timingsubheading": "today",  
+        "monthsubheading": "Prayer times for this month",  
+        "week1": "Week 1",
+        "week2": "Week 2",
+        "week3": "Week 3",
+        "week4": "Week 4",
+        "time1": "Şafak",
+        "time2": "gündoğumu",
+        "time3": "öğlen",
+        "time4": "yaş",
+        "time5": "Fas",
+        "time6": "akşam yemeği",
+        "date": "tarih"
+
+    },
+    "citiescounrybanner":{
+        "heading": "ülke içindeki şehirler"   
+    },
+    "playbanner":{
+        "heading": "En yeni çalma listeleri"   
+    },
+    "trendingbanner":{
+        "heading": "çok konuşulan konular",   
+        "cardheading1": "Din kardeşliğini korumak",   
+        "cardsubheading1": "Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.",   
+        "cardheading2": "Din kardeşliğini korumak",   
+        "cardsubheading2": "Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir.",   
+        "cardheading3": "Din kardeşliğini korumak",   
+        "cardsubheading3": "Geçmişte dağılma ve ihtilaf, dünyâya ve onun ziynetlerine tevekkül ve meşgaleleri neticesi olarak âlem-i âlemin efendileri iken, bugün müslimânların başına gelenler tehirdir."   
+    },
+    "eldersbanner":{
+        "heading": "Tüm yaşlılar",   
+        "seacrhheading": "Okuyucular aranıyor...",
+        "yellowpara": "Tüm yaşlılar",   
+        "alphabet1": "A",   
+        "alphabet2": "B",   
+        "alphabet3": "T",   
+        "alphabet4": "w",   
+        "alphabet5": "C",   
+        "alphabet6": "H",   
+        "alphabet7": "X",   
+        "alphabet8": "doktor",   
+        "alphabet9": "y",   
+        "alphabet10": "R",   
+        "alphabet11": "g",   
+        "alphabet12": "s",   
+        "alphabet13": "sen",   
+        "alphabet14": "S",   
+        "alphabet15": "z",   
+        "alphabet16": "Ben",   
+        "alphabet17": "Z",   
+        "alphabet18": "P",   
+        "alphabet19": "M",   
+        "alphabet20": "A",   
+        "alphabet21": "A",   
+        "alphabet22": "B",   
+        "alphabet23": "T",   
+        "alphabet24": "w",   
+        "alphabet25": "C",   
+        "alphabet26": "H",   
+        "alphabet27": "X",   
+        "alphabet28": "doktor",   
+        "alphabet29": "y",   
+        "alphabet31": "R",   
+        "alphabet32": "G",   
+        "alphabet33": "S",   
+        "alphabet34": "sen",   
+        "alphabet35": "S",   
+        "alphabet36": "z",   
+        "alphabet37": "Ben",   
+        "alphabet38": "Z",   
+        "alphabet39": "p",   
+        "alphabet40": "M",   
+        "greenheading1": "A",   
+        "greenheading2": "B",   
+        "greenheading3": "T",   
+        "greenheading4": "w",
+        "greenheading5": "C"            
+    },
+    "playlistbanner":{
+        "heading":"oynatma listesi",
+        "date":"2/1/2020",
+        "run":"koşu",
+        "listgreenheading":"Sesli Kureyş Suresi:",
+        "listheading":"Oynatma Listesi - Mekke Ulu Camii İmamları",
+        "listsubheading":"Kureyş Suresi, eksiksiz, Mekke'deki Ulu Cami'nin Kuran'ı 1439, yüksek kalitede, Hafs tarafından Asım'ın yetkisi üzerine, Mekke'deki Ulu Cami imamlarının sesiyle anlatılmıştır. Tek bir doğrudan bağlantıyla kopyalama ve paylaşma olanağıyla çevrimiçi dinleyin. daha fazla gör"
+    },
+    "suratbanner":{
+        "seacrhbar":"Surelerin isimlerini arayın, ..."
+    },
+    "moreplaybanner":{
+        "heading":"Daha fazla oynatma listesi"
+    },
+    
+    "footerbanner":{
+        "logoheading": "Şimdi Dua Edin | şimdi dua et",
+        "link1": "Yardım Merkezi",
+        "link2": "Camiler",   
+        "link3": "Uygulama özellikleri",
+        "link4": "Bize reklam verin",
+        "link5": "Hakkımızda",
+        "link6": "bizi ara",
+        "footerbtn": "Arapça",
+        "para1": "Sıkça Sorulan Sorular",
+        "para2": "Gizlilik Politikası",
+        "para3": "Kullanım Şartları",
+        "para4": "Nesne",
+        "para5": "içerik hakkında bilgi ver",
+        "para6": "öneri ve şikayetlerin",
+        "para7": "Download Prayer Now",
+        "para8": "İslam dünyasının etrafında",
+        "para9": "camiler",
+        "footerleft": "Ab Rocks tarafından geliştirildi",
+        "footerright": "© Bray Şimdi  Şimdi dua et. Tescilli ticari marka 2014 - 2022."
+    }
+}

@@ -1,0 +1,239 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/trackCard.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<NuxtLink to=\"/\"\r\n\t\tclass=\" w-full bg-white rounded-xl border border-gray-300 grid grid-cols-5 gap-5 p-3\">\r\n\t\t<div class=\" cent \">\r\n\t\t\t<slot name=\"image\" />\r\n\t\t</div>\r\n\t\t<div class=\" flex items-center col-span-4\">\r\n\t\t\t<div class=\"grid \">\r\n\t\t\t\t<div class=\" text-zinc-800 font-semibold max-md:text-[13px]\">\r\n\t\t\t\t\t<slot name=\"title\" />\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\" text-neutral-400 max-md:text-xs \">\r\n\t\t\t\t\t<slot name=\"by\" />\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</NuxtLink>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style scoped></style>",
+      "start": 1710887975140,
+      "end": 1710887975341,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887975341,
+      "end": 1710887975341,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887975341,
+      "end": 1710887975342,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887975342,
+      "end": 1710887975342,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887975342,
+      "end": 1710887975342,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887975342,
+      "end": 1710887975342,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887975342,
+      "end": 1710887975342,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887975342,
+      "end": 1710887975342,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887975342,
+      "end": 1710887975342,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { renderSlot as _renderSlot, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"cent\" }\nconst _hoisted_2 = { class: \"flex items-center col-span-4\" }\nconst _hoisted_3 = { class: \"grid\" }\nconst _hoisted_4 = { class: \"text-zinc-800 font-semibold max-md:text-[13px]\" }\nconst _hoisted_5 = { class: \"text-neutral-400 max-md:text-xs\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_NuxtLink = _resolveComponent(\"NuxtLink\")\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    to: \"/\",\n    class: \"w-full bg-white rounded-xl border border-gray-300 grid grid-cols-5 gap-5 p-3\"\n  }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _renderSlot(_ctx.$slots, \"image\")\n      ]),\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"div\", _hoisted_4, [\n            _renderSlot(_ctx.$slots, \"title\")\n          ]),\n          _createElementVNode(\"div\", _hoisted_5, [\n            _renderSlot(_ctx.$slots, \"by\")\n          ])\n        ])\n      ])\n    ]),\n    _: 3\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710887975342,
+      "end": 1710887975343,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887975343,
+      "end": 1710887975343,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887975343,
+      "end": 1710887975345,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887975345,
+      "end": 1710887975345,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887975345,
+      "end": 1710887975346,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887975346,
+      "end": 1710887975347,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"D:/quran/nuxt-app - Copy/node_modules/nuxt/dist/app/components/nuxt-link\";\nconst _sfc_main = {}\nimport { renderSlot as _renderSlot, createElementVNode as _createElementVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, openBlock as _openBlock, createBlock as _createBlock } from \"vue\"\n\nconst _hoisted_1 = { class: \"cent\" }\nconst _hoisted_2 = { class: \"flex items-center col-span-4\" }\nconst _hoisted_3 = { class: \"grid\" }\nconst _hoisted_4 = { class: \"text-zinc-800 font-semibold max-md:text-[13px]\" }\nconst _hoisted_5 = { class: \"text-neutral-400 max-md:text-xs\" }\n\nfunction _sfc_render(_ctx, _cache) {\n  const _component_NuxtLink = __nuxt_component_0\n\n  return (_openBlock(), _createBlock(_component_NuxtLink, {\n    to: \"/\",\n    class: \"w-full bg-white rounded-xl border border-gray-300 grid grid-cols-5 gap-5 p-3\"\n  }, {\n    default: _withCtx(() => [\n      _createElementVNode(\"div\", _hoisted_1, [\n        _renderSlot(_ctx.$slots, \"image\")\n      ]),\n      _createElementVNode(\"div\", _hoisted_2, [\n        _createElementVNode(\"div\", _hoisted_3, [\n          _createElementVNode(\"div\", _hoisted_4, [\n            _renderSlot(_ctx.$slots, \"title\")\n          ]),\n          _createElementVNode(\"div\", _hoisted_5, [\n            _renderSlot(_ctx.$slots, \"by\")\n          ])\n        ])\n      ])\n    ]),\n    _: 3\n  }))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887975347,
+      "end": 1710887975347,
+      "order": "normal"
+    }
+  ]
+}

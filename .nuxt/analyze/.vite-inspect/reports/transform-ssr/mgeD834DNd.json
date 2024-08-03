@@ -1,0 +1,312 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/Pagination.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n\t<nav aria-label=\"pagenation\">\r\n\t\t<ul class=\"flex items-center max-sm:justify-center gap-2  md:h-8 h-[30px] text-sm\">\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 rounded-s-lg hover:bg-primary duration-300 hover:text-white\">\r\n\t\t\t\t\t<span class=\"sr-only\">Previous</span>\r\n\t\t\t\t\t<svg class=\"md:w-2.5 w-2 md:h-2.5 h-2  rtl:rotate-180\" aria-hidden=\"true\"\r\n\t\t\t\t\t\txmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\r\n\t\t\t\t\t\t<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\r\n\t\t\t\t\t\t\tstroke-width=\"2\" d=\"M5 1 1 5l4 4\" />\r\n\t\t\t\t\t</svg>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">1</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">2</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\" aria-current=\"page\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">3</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">4</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">5</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 rounded-e-lg hover:bg-primary duration-300 hover:text-white\">\r\n\t\t\t\t\t<span class=\"sr-only\">Next</span>\r\n\t\t\t\t\t<svg class=\"w-2.5 h-2.5 rtl:rotate-180\" aria-hidden=\"true\"\r\n\t\t\t\t\t\txmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\r\n\t\t\t\t\t\t<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\r\n\t\t\t\t\t\t\tstroke-width=\"2\" d=\"m1 9 4-4-4-4\" />\r\n\t\t\t\t\t</svg>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</nav>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style  scoped></style>",
+      "start": 1710887982613,
+      "end": 1710887982943,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887982943,
+      "end": 1710887982943,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<nav${_ssrRenderAttrs(_mergeProps({ \"aria-label\": \"pagenation\" }, _attrs))}><ul class=\"flex items-center max-sm:justify-center gap-2 md:h-8 h-[30px] text-sm\"><li><a href=\"#\" class=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 rounded-s-lg hover:bg-primary duration-300 hover:text-white\"><span class=\"sr-only\">Previous</span><svg class=\"md:w-2.5 w-2 md:h-2.5 h-2 rtl:rotate-180\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M5 1 1 5l4 4\"></path></svg></a></li><li><a href=\"#\" class=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">1</a></li><li><a href=\"#\" class=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">2</a></li><li><a href=\"#\" aria-current=\"page\" class=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">3</a></li><li><a href=\"#\" class=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">4</a></li><li><a href=\"#\" class=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">5</a></li><li><a href=\"#\" class=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 rounded-e-lg hover:bg-primary duration-300 hover:text-white\"><span class=\"sr-only\">Next</span><svg class=\"w-2.5 h-2.5 rtl:rotate-180\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m1 9 4-4-4-4\"></path></svg></a></li></ul></nav>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Pagination.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1710887982943,
+      "end": 1710887982947,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/quran/nuxt-app - Copy/components/Pagination.vue"
+        ],
+        "names": [],
+        "mappings": ";;;;EAAA,aAAA,gBAAA,cACM,YAAU,EAAC,YAAY,IAD7B",
+        "sourcesContent": [
+          "<template>\r\n\t<nav aria-label=\"pagenation\">\r\n\t\t<ul class=\"flex items-center max-sm:justify-center gap-2  md:h-8 h-[30px] text-sm\">\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 rounded-s-lg hover:bg-primary duration-300 hover:text-white\">\r\n\t\t\t\t\t<span class=\"sr-only\">Previous</span>\r\n\t\t\t\t\t<svg class=\"md:w-2.5 w-2 md:h-2.5 h-2  rtl:rotate-180\" aria-hidden=\"true\"\r\n\t\t\t\t\t\txmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\r\n\t\t\t\t\t\t<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\r\n\t\t\t\t\t\t\tstroke-width=\"2\" d=\"M5 1 1 5l4 4\" />\r\n\t\t\t\t\t</svg>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">1</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">2</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\" aria-current=\"page\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">3</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">4</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 hover:bg-primary duration-300 hover:text-white rounded-md font-semibold pt-1\">5</a>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<a href=\"#\"\r\n\t\t\t\t\tclass=\"flex items-center justify-center md:px-3 px-2.5 md:h-8 h-[30px] leading-tight text-primary bg-white border border-gray-300 rounded-e-lg hover:bg-primary duration-300 hover:text-white\">\r\n\t\t\t\t\t<span class=\"sr-only\">Next</span>\r\n\t\t\t\t\t<svg class=\"w-2.5 h-2.5 rtl:rotate-180\" aria-hidden=\"true\"\r\n\t\t\t\t\t\txmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 6 10\">\r\n\t\t\t\t\t\t<path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\r\n\t\t\t\t\t\t\tstroke-width=\"2\" d=\"m1 9 4-4-4-4\" />\r\n\t\t\t\t\t</svg>\r\n\t\t\t\t</a>\r\n\t\t\t</li>\r\n\t\t</ul>\r\n\t</nav>\r\n</template>\r\n\r\n<script setup>\r\n\r\n</script>\r\n\r\n<style  scoped></style>"
+        ]
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887982948,
+      "end": 1710887982948,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982948,
+      "end": 1710887982948,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982948,
+      "end": 1710887982948,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887982948,
+      "end": 1710887982948,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887982948,
+      "end": 1710887982948,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887982948,
+      "end": 1710887982948,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982948,
+      "end": 1710887982948,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887982948,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887982950,
+      "end": 1710887982950,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887982950,
+      "end": 1710887982951,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887982950,
+      "end": 1710887982951,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887982951,
+      "end": 1710887982951,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887982951,
+      "end": 1710887982951,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887982951,
+      "end": 1710887982951,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887982951,
+      "end": 1710887982951,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710887982951,
+      "end": 1710887982951,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887982951,
+      "end": 1710887982952,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887982952,
+      "end": 1710887982952,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887982952,
+      "end": 1710887982952,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887982952,
+      "end": 1710887982952,
+      "order": "normal"
+    }
+  ]
+}

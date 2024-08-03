@@ -1,0 +1,194 @@
+{
+    "header":{
+        "headerbtn": "Télécharger la priorité maintenant"
+    },
+    "banner":{
+        "subheading": "Recevez gratuitement l'alerte des heures de prière sur votre téléphone",
+        "heading": "Avez-vous encore manqué votre prière? L'application Prayer Now peut vous aider.",
+        "bannerbtn": "Téléchargez Priorité maintenant."
+    },
+    "sidebar":{
+        "item": "Horaires de prière",
+        "item1": "Le Coran",
+        "item2": "Histoire islamique",
+        "item3": "Histoire islamique",
+        "item4": "Histoire islamique",
+        "download": "Téléchargez l'application"
+    },
+    "add1":{
+        "heading": "Espace publicitaire",
+        "subheading": "Lorem Ipsum est simplement un texte formel (ce qui signifie que la forme est l'objectif, pas le contenu) et est utilisé par les industries de l'impression et de l'édition."
+    },
+
+    "searchbar":{
+        "searchtext1": "Retrouvez les horaires de prières, les récitants,...",
+        "searchtext2": "Rechercher Gouvernorat du Caire..."
+    },
+    "allcountries":{
+        "heading": "Tous les pays",
+        "country": "Arab countries",
+        "country1": "pays arabes",
+        "country2": "Amérique du Nord",
+        "country3": "Amérique du Sud",
+        "country4": "Asie",
+        "country5": "Afrique",
+        "country6": "autre"
+    },
+    "location":{
+        "locationtext": "Pour obtenir l'heure exacte, veuillez indiquer votre emplacement.",
+        "buttongreen": "localiser le lieu",
+        "buttonwhite": "Je ne suis pas d'accord"
+    },
+    "add2":{
+        "heading": "Espace publicitaire",
+        "subheading": "Lorem Ipsum est simplement un texte formel (ce qui signifie que la forme est l'objectif, pas le contenu) et est utilisé par les industries de l'impression et de l'édition.",
+        "startbtn": "commencez maintenant"
+    },
+    "citiesbanner":{
+        "heading": "grandes villes islamiques"
+        
+    },
+    "advantagebanner":{
+        "topheading": "Avantages de Priorité Maintenant.",
+        "topsubheading": "Recevez gratuitement l'alerte des heures de prière sur votre téléphone.",
+        "heading1": "temps de prière",
+        "subheading1": "Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.",
+        "heading2": "Lire le Coran",
+        "subheading2": "Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran.",
+        "heading3": "temps de prière",
+        "subheading3": "Ce cours vise à aider les étudiants à mémoriser le Saint Coran. Les étudiants qui souhaitent mémoriser une partie ou la totalité du Coran."
+    },
+    "mobilebanner":{
+        "subheading": "Recevez gratuitement l'alerte des heures de prière sur votre téléphone.",
+        "heading": "Avez-vous encore manqué votre prière? L'application Prayer Now peut vous aider."   
+    },
+    "add3":{
+        "heading": "Le discours d'aujourd'hui", 
+        "subheading": "Sous l'autorité d'Alqamah bin Waqqas Al-Laithi, il dit : J'ai entendu Umar bin Al-Khattab, que Dieu soit satisfait de lui, sur la chaire, il a dit : J'ai entendu le Messager de Dieu, que les prières et la paix de Dieu soient sur lui. lui, dites : « Les actions ne sont que par intentions, et chacun aura ce qu'il a voulu. Alors je l'ai émigré pour ce pour quoi il a émigré."  
+    },
+    "infobanner":{
+        "topheading": "Informations sur le pays", 
+        "para1": "Coordonnés:", 
+        "para2": "correspondant", 
+        "countryheading": "Pays:", 
+        "countrysubheading": "La capitale:", 
+        "timepara": "Format de l'heure:",  
+        "doctrinepara": "Doctrine:",  
+        "calpara": "Méthode de calcul:",
+        "timingheading": "Horaires de prière",  
+        "timingsubheading": "aujourd'hui",  
+        "monthsubheading": "Horaires des prières de ce mois",  
+        "week1": "Week 1",
+        "week2": "Week 2",
+        "week3": "Week 3",
+        "week4": "Week 4",
+        "time1": "Aube",
+        "time2": "Lever du soleil",
+        "time3": "midi",
+        "time4": "âge",
+        "time5": "Maroc",
+        "time6": "dîner",
+        "date": "la date"
+
+    },
+    "citiescounrybanner":{
+        "heading": "villes du pays"   
+    },
+    "playbanner":{
+        "heading": "Dernières listes de lecture"   
+    },
+    "trendingbanner":{
+        "heading": "sujets tendances",   
+        "cardheading1": "Préserver la fraternité des religions",   
+        "cardsubheading1": "Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations",   
+        "cardheading2": "Préserver la fraternité des religions",   
+        "cardsubheading2": "Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations",   
+        "cardheading3": "Préserver la fraternité des religions",   
+        "cardsubheading3": "Qu'est-il arrivé aux musulmans aujourd'hui du retard, alors que dans le passé, ils étaient les maîtres du monde général en raison de la dispersion et du désaccord, et de leur dépendance vis-à-vis du monde et de ses pièges, et de leurs préoccupations"   
+    },
+    "eldersbanner":{
+        "heading": "Tous les anciens",   
+        "seacrhheading": "A la recherche de lecteurs,...",
+        "yellowpara": "Tous les anciens",   
+        "alphabet1": "une",   
+        "alphabet2": "B",   
+        "alphabet3": "J",   
+        "alphabet4": "W",   
+        "alphabet5": "c",   
+        "alphabet6": "h",   
+        "alphabet7": "x",   
+        "alphabet8": "Docteur",   
+        "alphabet9": "y",   
+        "alphabet10": "R",   
+        "alphabet11": "g",   
+        "alphabet12": "s",   
+        "alphabet13": "tu",   
+        "alphabet14": "s",   
+        "alphabet15": "z",   
+        "alphabet16": "je",   
+        "alphabet17": "Z",   
+        "alphabet18": "p",   
+        "alphabet19": "M",   
+        "alphabet20": "une",   
+        "alphabet21": "une",   
+        "alphabet22": "B",   
+        "alphabet23": "J",   
+        "alphabet24": "w",   
+        "alphabet25": "c",   
+        "alphabet26": "h",   
+        "alphabet27": "x",   
+        "alphabet28": "Docteur",   
+        "alphabet29": "y",   
+        "alphabet31": "R",   
+        "alphabet32": "g",   
+        "alphabet33": "s",   
+        "alphabet34": "tu",   
+        "alphabet35": "s",   
+        "alphabet36": "z",   
+        "alphabet37": "je",   
+        "alphabet38": "Z",   
+        "alphabet39": "p",   
+        "alphabet40": "M",   
+        "greenheading1": "une",   
+        "greenheading2": "B",   
+        "greenheading3": "J",   
+        "greenheading4": "w",      
+        "greenheading5": "c"      
+    },
+    "playlistbanner":{
+        "heading":"Playlist",
+        "date":"02/01/2020",
+        "run":"courses",
+        "listgreenheading":"Sourate Quraish avec voix :",
+        "listheading":"Playlist - Imams de la Grande Mosquée de La Mecque",
+        "listsubheading":"Sourate Quraish, complète, le Coran de la Grande Mosquée de La Mecque 1439, de haute qualité, racontée par Hafs sous l'autorité d'Asim, par la voix des imams de la Grande Mosquée de La Mecque. Écoutez en ligne avec la possibilité de copier et de partager avec un seul lien direct. voir plus"
+    },
+    "suratbanner":{
+        "seacrhbar":"Cherchez les noms des sourates, ..."
+    },
+    "moreplaybanner":{
+        "heading":"Plus de listes de lecture"
+    },
+    
+    "footerbanner":{
+        "logoheading": "Prière maintenant | Priez maintenant",
+        "link1": "Centre d'aide",
+        "link2": "Mosquées",   
+        "link3": "Fonctionnalités des applications",
+        "link4": "faites de la publicité avec nous",
+        "link5": "à propos de nous",
+        "link6": "appelez-nous",
+        "footerbtn": "arabe",
+        "para1": "Questions fréquemment posées",
+        "para2": "politique de confidentialité",
+        "para3": "Conditions d'utilisation",
+        "para4": "Des articles",
+        "para5": "informer sur le contenu",
+        "para6": "de suggestions et de plaintes",
+        "para7": "Télécharger la prière maintenant",
+        "para8": "autour du monde islamique",
+        "para9": "mosquées",
+        "footerleft": "Développé par Ab Rocks",
+        "footerright": "© Bray maintenant  Priez maintenant. Marque déposée 2014 - 2022."
+    }
+}

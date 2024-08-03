@@ -1,0 +1,342 @@
+{
+  "resolvedId": "D:/quran/nuxt-app - Copy/components/PlayControl.vue?vue&type=style&index=0&scoped=facfd4e0&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\r\ninput[type=\"range\"] {\r\n\taccent-color: rgb(235, 235, 235);\r\n}\r\n\r\n.progress {\r\n\t-webkit-appearance: none;\r\n\tappearance: none;\r\n\tmargin-block: auto;\r\n\twidth: 200px;\r\n\theight: 7px;\r\n\tborder: none;\r\n\tbackground: rgb(160, 160, 160);\r\n\tborder-radius: 50px;\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #ffffff);\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position-x: right;\r\n\t@apply duration-[1500ms]\r\n}\r\n\r\n.progress:hover {\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #42867b);\r\n\r\n}\r\n\r\ninput[type=\"range\"]::-webkit-slider-thumb {\r\n\t-webkit-appearance: none;\r\n\theight: 0px;\r\n\twidth: 0px;\r\n\tborder-radius: 50%;\r\n\tbackground: #ffffff;\r\n\tcursor: pointer;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n",
+      "start": 1710887982825,
+      "end": 1710887982825,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "D:/quran/nuxt-app - Copy/components/PlayControl.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "D:/quran/nuxt-app - Copy/components/PlayControl.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\r\n\t<div class=\"flex-grow \">\r\n\t\t<div v-for=\"(      audioPlayer, index      ) in       audioPlayers      \" :key=\" index \"\r\n\t\t\tclass=\"flex items-center md:gap-8 gap-3 justify-end text-white \">\r\n\t\t\t<div class=\"flex gap-3 flex-grow\">\r\n\t\t\t\t<!-- Volume Control -->\r\n\t\t\t\t<div class=\"relative group shrink-0 \">\r\n\t\t\t\t\t<!-- <input class=\"p-0 absolute group-hover:block right-0 left-0 bottom-10 hidden\"\r\n\t\t\t\t\t\tstyle=\"writing-mode: vertical-lr; direction: rtl\" type=\"range\" min=\"0\" max=\"1\"\r\n\t\t\t\t\t\tstep=\"0.1\" v-model=\" audioPlayer.volume \"> -->\r\n\t\t\t\t\t<button @click=\"toggleMute( audioPlayer )\">\r\n\t\t\t\t\t\t<img class=\"mt-[5px] w-[26px] h-[26px]\"\r\n\t\t\t\t\t\t\t:src=\" audioPlayer.volume === 0 ? '/svgs/Icon-Volume-mute.svg' : '/svgs/Icon-Volume.svg' \"\r\n\t\t\t\t\t\t\talt=\"\">\r\n\t\t\t\t\t</button>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- Progress Bar -->\r\n\t\t\t\t<input type=\"range\" min=\"0\" :max=\" audioPlayer.totalDuration \" step=\"1\"\r\n\t\t\t\t\tv-model=\"audioPlayer.currentTime\" @input=\"setProgress( audioPlayer )\"\r\n\t\t\t\t\tclass=\"!p-0 lg:min-w-96 md:min-w-54 w-full rotate-180 progress flex-grow\"\r\n\t\t\t\t\t:style=\" { backgroundSize: progressBackgroundSize } \">\r\n\t\t\t</div>\r\n\t\t\t<!-- Play/Pause Button -->\r\n\t\t\t<div class=\"flex md:gap-4 items-center ltr:flex-row-reverse \">\r\n\t\t\t\t<button @click=\"forwardSong( audioPlayer )\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Forwardsvg.svg\" alt=\"\">\r\n\t\t\t\t</button>\r\n\t\t\t\t<button class=\"w-10  cent\" @click=\"togglePlayPause( audioPlayer )\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Play.svg\" alt=\"\" style=\"display: none;\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Pause.svg\" alt=\"\" style=\"display: none;\">\r\n\t\t\t\t\t<img v-if=\" audioPlayer.isPlaying \" src=\"/svgs/Icon-Pause.svg\" alt=\"\"\r\n\t\t\t\t\t\tclass=\"max-md:w-4\">\r\n\t\t\t\t\t<img v-else src=\"/svgs/Icon-Play.svg\" alt=\"\" class=\"max-md:w-6\">\r\n\t\t\t\t</button>\r\n\t\t\t\t<button @click=\"rewindSong( audioPlayer )\">\r\n\t\t\t\t\t<img src=\"/svgs/Icon-Rewindsvg.svg\" alt=\"\">\r\n\t\t\t\t</button>\r\n\t\t\t</div>\r\n\t\t\t<div\r\n\t\t\t\tclass=\"text-neutral-300 font-sm flex items-center gap-3 shrink-0 max-md:order-first max-md:hidden\">\r\n\t\t\t\t<span class=\"w-9\">{{ timeString( audioPlayer.currentTime ) }}</span> /\r\n\t\t\t\t<span class=\"w-9\">{{ timeString( audioPlayer.totalDuration ) }}</span>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</template>\r\n\r\n<script setup>\r\nimport { ref, onMounted, computed } from 'vue'\r\n\r\nconst audioPlayers = ref( [\r\n\t{ src: \"https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3\", audio: null, currentTime: 0, totalDuration: 0, volume: 1, seeking: false }\r\n] )\r\n\r\nconst timeString = ( secs ) => {\r\n\tlet ss = Math.floor( secs ),\r\n\t\thh = Math.floor( ss / 3600 ),\r\n\t\tmm = Math.floor( ( ss - hh * 3600 ) / 60 )\r\n\tss = ss - hh * 3600 - mm * 60\r\n\tmm = mm < 10 ? \"0\" + mm : mm\r\n\tss = ss < 10 ? \"0\" + ss : ss\r\n\treturn hh > 0 ? `${ hh }:${ mm }:${ ss }` : `${ mm }:${ ss }`\r\n}\r\n\r\nconst togglePlayPause = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio.paused ) {\r\n\t\taudioPlayer.audio.play()\r\n\t\taudioPlayer.isPlaying = true\r\n\t} else {\r\n\t\taudioPlayer.audio.pause()\r\n\t\taudioPlayer.isPlaying = false\r\n\t}\r\n}\r\n\r\nconst isPaused = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\treturn audioPlayer.audio.paused\r\n\t}\r\n\treturn true // Assuming that if audio is not initialized, it's considered paused\r\n}\r\n\r\nconst toggleMute = ( audioPlayer ) => {\r\n\taudioPlayer.volume = audioPlayer.volume === 0 ? 1 : 0\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.volume = audioPlayer.volume\r\n\t}\r\n}\r\n\r\nconst setProgress = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime = audioPlayer.currentTime\r\n\t}\r\n}\r\n\r\nconst forwardSong = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime += 10 // Forwarding by 10 seconds, change as needed\r\n\t}\r\n}\r\n\r\nconst rewindSong = ( audioPlayer ) => {\r\n\tif ( audioPlayer.audio ) {\r\n\t\taudioPlayer.audio.currentTime -= 10 // Rewinding by 10 seconds, change as needed\r\n\t}\r\n}\r\n\r\nonMounted( () => {\r\n\tif ( process.browser ) {\r\n\t\tfor ( const player of audioPlayers.value ) {\r\n\t\t\tplayer.audio = new Audio( encodeURI( player.src ) )\r\n\t\t\tplayer.audio.addEventListener( 'loadedmetadata', () => {\r\n\t\t\t\tplayer.totalDuration = Math.floor( player.audio.duration )\r\n\t\t\t\tplayer.audio.addEventListener( 'timeupdate', () => {\r\n\t\t\t\t\tif ( !player.seeking ) {\r\n\t\t\t\t\t\tplayer.currentTime = Math.floor( player.audio.currentTime )\r\n\t\t\t\t\t}\r\n\t\t\t\t} )\r\n\t\t\t} )\r\n\t\t\tplayer.audio.addEventListener( 'seeking', () => {\r\n\t\t\t\tplayer.seeking = true\r\n\t\t\t} )\r\n\t\t\tplayer.audio.addEventListener( 'seeked', () => {\r\n\t\t\t\tplayer.seeking = false\r\n\t\t\t} )\r\n\t\t}\r\n\t}\r\n} )\r\n\r\nconst progressBackgroundSize = computed( () => {\r\n\tconst progress = audioPlayers.value[ 0 ].currentTime / audioPlayers.value[ 0 ].totalDuration\r\n\treturn `${ progress * 100 }% 100%`\r\n} )\r\n</script>\r\n\r\n<style scoped>\r\ninput[type=\"range\"] {\r\n\taccent-color: rgb(235, 235, 235);\r\n}\r\n\r\n.progress {\r\n\t-webkit-appearance: none;\r\n\tappearance: none;\r\n\tmargin-block: auto;\r\n\twidth: 200px;\r\n\theight: 7px;\r\n\tborder: none;\r\n\tbackground: rgb(160, 160, 160);\r\n\tborder-radius: 50px;\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #ffffff);\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position-x: right;\r\n\t@apply duration-[1500ms]\r\n}\r\n\r\n.progress:hover {\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #42867b);\r\n\r\n}\r\n\r\ninput[type=\"range\"]::-webkit-slider-thumb {\r\n\t-webkit-appearance: none;\r\n\theight: 0px;\r\n\twidth: 0px;\r\n\tborder-radius: 50%;\r\n\tbackground: #ffffff;\r\n\tcursor: pointer;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n</style>\r\n"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887982825,
+      "end": 1710887982825,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1710887982825,
+      "end": 1710887982825,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887982825,
+      "end": 1710887982825,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1710887982825,
+      "end": 1710887982825,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887982825,
+      "end": 1710887982825,
+      "order": "pre"
+    },
+    {
+      "name": "unplugin-vue-i18n",
+      "start": 1710887982825,
+      "end": 1710887982825,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1710887982825,
+      "end": 1710887982826,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1710887982826,
+      "end": 1710887982826,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "input[type=range]{accent-color:#ebebeb}.progress{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:#a0a0a0;background-image:linear-gradient(90deg,#fff,#fff);background-position-x:right;background-repeat:no-repeat;border:none;border-radius:50px;height:7px;margin-block:auto;transition-duration:1.5s;width:200px}.progress:hover{background-image:linear-gradient(90deg,#fff,#42867b)}input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border-radius:50%;cursor:pointer;height:0;-webkit-transition:background .3s ease-in-out;transition:background .3s ease-in-out;width:0}",
+      "start": 1710887982826,
+      "end": 1710887982838,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "D:/quran/nuxt-app - Copy/components/PlayControl.vue",
+        "mappings": "AACA,kBACC,oBACD,CAEA,UACC,uBAAwB,CACxB,oBAAgB,CAAhB,eAAgB,CAKhB,kBAA8B,CAE9B,iDAA0D,CAE1D,2BAA4B,CAD5B,2BAA4B,CAJ5B,WAAY,CAEZ,kBAAmB,CAHnB,UAAW,CAFX,iBAAkB,CASlB,wBAAuB,CARvB,WASD,CAEA,gBACC,oDAED,CAEA,wCACC,uBAAwB,CAIxB,eAAmB,CADnB,iBAAkB,CAElB,cAAe,CAJf,QAAW,CAKX,6CAAsC,CAAtC,qCAAsC,CAJtC,OAKD",
+        "names": [],
+        "sources": [
+          "D:/quran/nuxt-app - Copy/components/PlayControl.vue"
+        ],
+        "sourcesContent": [
+          "\r\ninput[type=\"range\"] {\r\n\taccent-color: rgb(235, 235, 235);\r\n}\r\n\r\n.progress {\r\n\t-webkit-appearance: none;\r\n\tappearance: none;\r\n\tmargin-block: auto;\r\n\twidth: 200px;\r\n\theight: 7px;\r\n\tborder: none;\r\n\tbackground: rgb(160, 160, 160);\r\n\tborder-radius: 50px;\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #ffffff);\r\n\tbackground-repeat: no-repeat;\r\n\tbackground-position-x: right;\r\n\t@apply duration-[1500ms]\r\n}\r\n\r\n.progress:hover {\r\n\tbackground-image: linear-gradient(90deg, #ffffff, #42867b);\r\n\r\n}\r\n\r\ninput[type=\"range\"]::-webkit-slider-thumb {\r\n\t-webkit-appearance: none;\r\n\theight: 0px;\r\n\twidth: 0px;\r\n\tborder-radius: 50%;\r\n\tbackground: #ffffff;\r\n\tcursor: pointer;\r\n\ttransition: background .3s ease-in-out;\r\n}\r\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1710887982838,
+      "end": 1710887982838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1710887982838,
+      "end": 1710887982838,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1710887982839,
+      "end": 1710887982839,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "input[type=range][data-v-facfd4e0]{accent-color:#ebebeb}.progress[data-v-facfd4e0]{-webkit-appearance:none;-moz-appearance:none;appearance:none;background:#a0a0a0;background-image:linear-gradient(90deg,#fff,#fff);background-position-x:right;background-repeat:no-repeat;border:none;border-radius:50px;height:7px;margin-block:auto;transition-duration:1.5s;width:200px}.progress[data-v-facfd4e0]:hover{background-image:linear-gradient(90deg,#fff,#42867b)}input[type=range][data-v-facfd4e0]::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border-radius:50%;cursor:pointer;height:0;-webkit-transition:background .3s ease-in-out;transition:background .3s ease-in-out;width:0}",
+      "start": 1710887982839,
+      "end": 1710887982840,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "D:/quran/nuxt-app - Copy/components/PlayControl.vue",
+        "mappings": "AAAA,mCAAkB,oBAAoB,CAAC,2BAAU,uBAAuB,CAAC,oBAAoB,CAAC,eAAe,CAAC,kBAAkB,CAAC,iDAAiD,CAAC,2BAA2B,CAAC,2BAA2B,CAAC,WAAW,CAAC,kBAAkB,CAAC,UAAU,CAAC,iBAAiB,CAAC,wBAAwB,CAAC,WAAW,CAAC,iCAAgB,oDAAoD,CAAC,yDAAwC,uBAAuB,CAAC,eAAe,CAAC,iBAAiB,CAAC,cAAc,CAAC,QAAQ,CAAC,6CAA6C,CAAC,qCAAqC,CAAC,OAAO",
+        "names": [],
+        "sources": [
+          "D:/quran/nuxt-app - Copy/components/PlayControl.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1710887982840,
+      "end": 1710887982840,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982841,
+      "end": 1710887982841,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982841,
+      "end": 1710887982841,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887982841,
+      "end": 1710887982841,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1710887982841,
+      "end": 1710887982841,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1710887982841,
+      "end": 1710887982841,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1710887982841,
+      "end": 1710887982841,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1710887982841,
+      "end": 1710887982845,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1710887982846,
+      "end": 1710887982846,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1710887982846,
+      "end": 1710887982846,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1710887982846,
+      "end": 1710887982846,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1710887982846,
+      "end": 1710887982846,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1710887982846,
+      "end": 1710887982847,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1710887982847,
+      "end": 1710887982847,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1710887982847,
+      "end": 1710887982847,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1710887982848,
+      "end": 1710887982848,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887982848,
+      "end": 1710887982848,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1710887982848,
+      "end": 1710887982848,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887982848,
+      "end": 1710887982848,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-macros-transform",
+      "start": 1710887982848,
+      "end": 1710887982848,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-resource",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxtjs:i18n-meta-deprecation",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1710887982849,
+      "end": 1710887982849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1710887982850,
+      "end": 1710887982850,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1710887982850,
+      "end": 1710887982850,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1710887982850,
+      "end": 1710887982859,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1710887982859,
+      "end": 1710887982859,
+      "order": "normal"
+    }
+  ]
+}
