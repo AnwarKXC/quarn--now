@@ -103,20 +103,6 @@ export default defineNuxtConfig({
 	css: ["./assets/main.css"],
 
 	devtools: { enabled: true },
-	routeRules: {
-		"/": {
-			swr: 60 * 60 * 24,
-			prerender: true,
-		},
-		"/**": {
-			swr: 60 * 60 * 24,
-			prerender: true,
-		},
-		"/app/quran": {
-			swr: 60 * 60 * 24,
-			prerender: true,
-		},
-	},
 
 	postcss: {
 		plugins: {
