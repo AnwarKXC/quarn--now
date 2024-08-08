@@ -97,7 +97,7 @@
 					target="_blank"
 					class="font-medium text-white max-md:flex-1 hidden md:inline-flex"
 					v-if="data?.branding?.copy_rights_info">
-					{{ data?.branding?.copy_rights_info }}
+					{{ $t('all-rights-reserved-for-prayer-now') }} {{year}}
 				</a>
 				<a
 					href="#"
@@ -112,6 +112,8 @@
 
 <script setup>
 	import footerBg from "~/assets/images/footer-bg.png";
+
+const year = new Date().getFullYear();
 
 	const store = useLandingStore();
 	const data = computed(() => {

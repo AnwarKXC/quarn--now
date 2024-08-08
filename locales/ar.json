@@ -174,7 +174,7 @@
     "heading": "قوائم أكثر تشغيلا"
   },
   "footerbanner": {
-    "logoheading": "براير ناو | الصلاة الأن",
+    "logoheading": "القرآن الآن",
     "link1": "مركز المساعدة",
     "link2": "المساجد",
     "link3": "مميزات التطبيق",
@@ -210,5 +210,6 @@
   },
   "Weuse": "نحن نستخدم",
   "cookies": "كوكيز",
-  "SeePrivacyPolicy": "اقرأ سياسة الخصوصية"
+  "SeePrivacyPolicy": "اقرأ سياسة الخصوصية",
+  "all-rights-reserved-for-prayer-now": "جميع الحقوق محفوظة للقرآن الآن"
 }

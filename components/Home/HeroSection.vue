@@ -9,6 +9,7 @@
 				class="max-h-96" loading="eager" preload />
 		</div>
 
+
 		<div class="grid gap-2 md:col-span-2 lg:col-span-1 md:order-first max-md:place-items-center">
 			<h1 class="text-brown text-xl sm:text-3xl lg:text-[36px] font-bold md:leading-relaxed">
 				{{ data?.landing2?.section1_title1 }}

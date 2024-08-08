@@ -4,7 +4,7 @@
   },
   "banner": {
     "subheading": "Get prayer times alert on your phone for free",
-    "heading": "Did you miss your prayer again? The Prayer Now app can help you .",
+    "heading": "Did you miss your prayer again? The Quran Now app can help you .",
     "bannerbtn": "Download Priority Now."
   },
   "sidebar": {
@@ -59,7 +59,7 @@
   },
   "mobilebanner": {
     "subheading": "Get prayer times alert on your phone for free.",
-    "heading": "Did you miss your prayer again? The Prayer Now app can help you."
+    "heading": "Did you miss your prayer again? The Quran Now app can help you."
   },
   "add3": {
     "heading": "Today's talk",
@@ -174,7 +174,7 @@
     "numberOfTracks": "Numer of tracks"
   },
   "footerbanner": {
-    "logoheading": "Prayer Now | Pray now",
+    "logoheading": "Quran Now ",
     "link1": "Help Center",
     "link2": "Mosques",
     "link3": "Application features",
@@ -188,7 +188,7 @@
     "para4": "Articles ",
     "para5": "inform about the content",
     "para6": "of suggestions and complaints",
-    "para7": "Download Prayer Now",
+    "para7": "Download Quran Now",
     "para8": "around the Islamic world",
     "para9": "mosques",
     "footerleft": "Developed by Ab Rocks",
@@ -209,5 +209,6 @@
   },
   "Weuse": "We use",
   "cookies": "cookies",
-  "SeePrivacyPolicy": "Read privacy policy"
+  "SeePrivacyPolicy": "Read privacy policy",
+  "all-rights-reserved-for-prayer-now": "All Rights Reserved for Quran Now"
 }

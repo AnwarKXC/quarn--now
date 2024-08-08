@@ -3,15 +3,6 @@
 		:lang="localeProperties.code"
 		:dir="localeProperties.direction">
 		<Body class="relative">
-			<!-- Google Tag Manager (noscript) -->
-			<noscript
-				><iframe
-					src="https://www.googletagmanager.com/ns.html?id=GTM-M44BJZXF"
-					height="0"
-					width="0"
-					style="display: none; visibility: hidden"></iframe
-			></noscript>
-			<!-- End Google Tag Manager (noscript) -->
 			<NuxtLoadingIndicator color="#E5AC2E" />
 			<NuxtPwaManifest />
 			<LazyDownloadPopup />
@@ -26,7 +17,6 @@
 	</Html>
 </template>
 <script setup>
-	import { useHead, useSeoMeta } from "nuxt/app";
 
 	const { localeProperties } = useI18n();
 	const { changeDataAr, changeDataEn } = useLandingStore();
@@ -37,7 +27,4 @@
 	const en = await useFetchWithCache(`${domain}${landing}en`);
 	changeDataAr(ar.value);
 	changeDataEn(en.value);
-
-
-
 </script>

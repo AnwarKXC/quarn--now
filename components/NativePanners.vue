@@ -15,7 +15,7 @@
 							<Image
 								isrc="/svgs/google-store.svg"
 								ialt="google play"
-								iclass=" max-w-[140px] min-h-[41px] duration-300 hover:scale-105" />
+								iclass=" max-w-[130px] min-h-[41px] duration-300 hover:scale-105" />
 						</NuxtLink>
 						<NuxtLink
 							:to="links?.link_download_apple"
@@ -24,7 +24,7 @@
 							<Image
 								isrc="/svgs/app-store.svg"
 								ialt="app store"
-								iclass=" max-w-[140px] min-h-[41px] duration-300 hover:scale-105" />
+								iclass=" max-w-[130px] min-h-[41px] duration-300 hover:scale-105" />
 						</NuxtLink>
 						<NuxtLink
 							:to="links?.link_download_app_gallery"
@@ -33,7 +33,7 @@
 							<Image
 								isrc="/huawei-appgalley.jpg"
 								ialt="app store"
-								iclass=" max-w-[140px] min-h-[41px] duration-300 hover:scale-105" />
+								iclass=" max-w-[130px] min-h-[41px] duration-300 hover:scale-105" />
 						</NuxtLink>
 					</div>
 				</div>

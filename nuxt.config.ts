@@ -6,7 +6,6 @@ export default defineNuxtConfig({
 			charset: "utf-8",
 			viewport: "width=device-width, initial-scale=1",
 			link: [{ rel: "icon", type: "image/x-icon", href: "/logo.png" }],
-			script: [],
 		},
 	},
 
@@ -95,10 +94,13 @@ export default defineNuxtConfig({
 			},
 		],
 		"nuxt-swiper",
-		"@vite-pwa/nuxt",
-		"@nuxtjs/seo",
 	],
 
+	runtimeConfig: {
+		public: {
+			gtagId: "G-C9ERJLM3PP",
+		},
+	},
 	imports: { dirs: ["./composables", "./stores"] },
 	css: ["./assets/main.css"],
 
